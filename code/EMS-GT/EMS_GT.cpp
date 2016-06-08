@@ -356,9 +356,9 @@ private:
 	            case 'T': suffix += 3; currentMapping+=3; break;
 	        }
 
-	        collectProcessedLmersToPrune(currentSequence, currentMapping, i);
+	        // collectProcessedLmersToPrune(currentSequence, currentMapping, i);
 
-	        if (currentMinDistance > 0) {
+	        // if (currentMinDistance > 0) {
 		        currentBlockRow = (int) (suffix / config->TABLE_WIDTH);
 		        currentBlockCol = (int) (suffix % config->TABLE_WIDTH);
 		        currentBlockMasks = blockMasks[(int)suffix];
@@ -375,7 +375,7 @@ private:
 		        // it is possible to create a new addNeighbor function that checks if 
 		        // rather than comparing all the time
 		        addNeighbors(prefix, 0, ds->numberOfAllowedMutations);
-	        }
+	        // }
 	    }
 	}
 
@@ -514,8 +514,8 @@ private:
 	        currentBlockMasks = blockMasks[(int)suffix];
 	        int blockStart = (int) (prefix * config->numberOfRowsInBlock);
 
-	        collectProcessedLmersToPrune(currentSequence, currentMapping, i);
-	        if (currentMinDistance > 0) {
+	        // collectProcessedLmersToPrune(currentSequence, currentMapping, i);
+	        // if (currentMinDistance > 0) {
 		        for(int offset=0; offset < config->numberOfRowsInBlock; offset++) {
 		            if(ds->numberOfAllowedMutations >= config->blockDegree)
 		                currentNeighborhood[blockStart+offset] = INT_MAX;
@@ -524,7 +524,7 @@ private:
 		                    |= currentBlockMasks[ds->numberOfAllowedMutations - 1][offset];
 		        }
 		        addNeighborsB(prefix, 0, ds->numberOfAllowedMutations);
-	        }
+	        // }
 	    }
 	}
 
@@ -547,20 +547,20 @@ private:
 	        int blockStart2 = (int) alt2 << config->prefixShift;
 	        int blockStart3 = (int) alt3 << config->prefixShift;
 
-	        int level = (ds->numberOfAllowedMutations - allowedMutations + 1);
-	        if (pruneLmers.size() > 0 && level < ds->numberOfAllowedMutations && !pruneLmers[level].empty()) {
-	        	vector<long> lmers = pruneLmers[level];
+	        // int level = (ds->numberOfAllowedMutations - allowedMutations + 1);
+	        // if (pruneLmers.size() > 0 && level < ds->numberOfAllowedMutations && !pruneLmers[level].empty()) {
+	        // 	vector<long> lmers = pruneLmers[level];
 
-	        	if (find(lmers.begin(), lmers.end(), mapping1) != lmers.end()) {
-	        		continue;
-	        	}
-	        	if (find(lmers.begin(), lmers.end(), mapping2) != lmers.end()) {
-	        		continue;
-	        	}
-	        	if (find(lmers.begin(), lmers.end(), mapping3) != lmers.end()) {
-	        		continue;
-	        	}
-	        }
+	        // 	if (find(lmers.begin(), lmers.end(), mapping1) != lmers.end()) {
+	        // 		continue;
+	        // 	}
+	        // 	if (find(lmers.begin(), lmers.end(), mapping2) != lmers.end()) {
+	        // 		continue;
+	        // 	}
+	        // 	if (find(lmers.begin(), lmers.end(), mapping3) != lmers.end()) {
+	        // 		continue;
+	        // 	}
+	        // }
 
 	        int allow_d = allowedMutations - 1;
 	        if (allow_d >= config->blockDegree)  {
