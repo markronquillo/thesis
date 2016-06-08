@@ -191,33 +191,33 @@ private:
 	// 	    }
 	// 	}
 	// }
-	void writeBlockMasks() {
-		ofstream output;
-		string filename = "blockmasks/bm-" + to_string(config->blockDegree) + "-0.cpp";
-		output.open(filename);
+	// void writeBlockMasks() {
+	// 	ofstream output;
+	// 	string filename = "blockmasks/bm-" + to_string(config->blockDegree) + "-0.cpp";
+	// 	output.open(filename);
 
-		output << "const static int cbm[" << config->numberOfLmersInBlock << "]" 
-			<< "[" << config->blockDegree-1 << "]" << "[" << config->numberOfRowsInBlock << "] = {" << endl;
+	// 	output << "const static int cbm[" << config->numberOfLmersInBlock << "]" 
+	// 		<< "[" << config->blockDegree-1 << "]" << "[" << config->numberOfRowsInBlock << "] = {" << endl;
 
-			for (int i=0; i < config->numberOfLmersInBlock; i++) {
-				output << "\t{" << endl;
-				for (int k=0; k < config->blockDegree-1; k++) {
-					output << "\t\t{" << endl;
-					for (int l=0; l < config->numberOfRowsInBlock; l++) {
-						// output << i << "," << k << "," << blockMasks[i][k][l] << endl;
-						if ( l != 0 ) output << "," << endl;
-						output << "\t\t\t" << blockMasks[i][k][l];
-					}
-					output << endl;
-					output << "\t\t}," << endl;
-				}
-				output << "\t}," << endl;
-			}
+	// 		for (int i=0; i < config->numberOfLmersInBlock; i++) {
+	// 			output << "\t{" << endl;
+	// 			for (int k=0; k < config->blockDegree-1; k++) {
+	// 				output << "\t\t{" << endl;
+	// 				for (int l=0; l < config->numberOfRowsInBlock; l++) {
+	// 					// output << i << "," << k << "," << blockMasks[i][k][l] << endl;
+	// 					if ( l != 0 ) output << "," << endl;
+	// 					output << "\t\t\t" << blockMasks[i][k][l];
+	// 				}
+	// 				output << endl;
+	// 				output << "\t\t}," << endl;
+	// 			}
+	// 			output << "\t}," << endl;
+	// 		}
 
-		output << "};";
+	// 	output << "};";
 
-		output.close();
-	}
+	// 	output.close();
+	// }
 
 	void collectCandidateMotifs() {
 
