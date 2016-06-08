@@ -1,0 +1,8 @@
+Reading file dataset/FASTA/15,5,20
+n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
+s=4 n'=7
+[P0] Index 32 out of 586; current time 2s; projected 37s       [P0] Index 77 out of 586; current time 4s; projected 30s       [P0] Index 122 out of 586; current time 6s; projected 28s       [P0] Index 170 out of 586; current time 8s; projected 27s       [P0] Index 216 out of 586; current time 10s; projected 27s       [P0] Index 258 out of 586; current time 12s; projected 27s       [P0] Index 299 out of 586; current time 14s; projected 27s       [P0] Index 344 out of 586; current time 16s; projected 27s       [P0] Index 391 out of 586; current time 18s; projected 27s       [P0] Index 438 out of 586; current time 20s; projected 26s       [P0] Index 484 out of 586; current time 22s; projected 26s       [P0] Index 530 out of 586; current time 24s; projected 26s       [P0] Index 574 out of 586; current time 26s; projected 26s       CTACCTAACCCTTAG
+TAGTCTGGCGCGAAG
+TCATTGGCCTCTTAT
+Total motifs found: 3
+Time on processor 0: 26.629s; file dataset/FASTA/15,5,20

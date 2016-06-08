@@ -23,7 +23,7 @@ do
 	mkdir result-$l-$d/PMS8
 	for((i=1; i<=t; i++)) do 
 		filename="$l,$d,$i"
-		./EMS_GT_32 dataset/$filename >> result-$l-$d/EMS_GT/$filename
+		./EMS_GT dataset/$filename >> result-$l-$d/EMS_GT/$filename
 		./qpms9 -l $l -d $d dataset/FASTA/$filename &>> result-$l-$d/qPMS9/$filename
 		./PMS8 -l $l -d $d dataset/FASTA/$filename &>> result-$l-$d/PMS8/$filename
 	done
