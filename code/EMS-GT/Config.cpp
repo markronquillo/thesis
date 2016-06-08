@@ -44,7 +44,7 @@ public:
 	 *	Usage of boolean flags in generation of neighborhood only starts
 	 *	from this value
 	 */
-	const int tPrime_2 = 5;
+	const int tPrime_2 = 15;
 
 
 	/**
