@@ -3,7 +3,7 @@
 ======================================================
  CONFIGURATION
  tPrime:		 10
- tPrime_2:		 5
+ tPrime_2:		 15
  l:		 15
  d:		 5
 ======================================================
@@ -20,8 +20,8 @@
      >    (6) Duration (s): 1
      >    (7) Duration (s): 1
      >    (8) Duration (s): 1
-     >    (9) Duration (s): 0
-     >    (10) Duration (s): 0
+     >    (9) Duration (s): 1
+     >    (10) Duration (s): 1
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -30,8 +30,8 @@
    > Search Motif is done: 0 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: CTACCTAACCCTTAG
-   > Found Motifs:  CTACCTAACCCTTAG TAGTCTGGCGCGAAG TCATTGGCCTCTTAT
+   > Planted Motif: CCGGGAGGATCACAC
+   > Found Motifs:  CCGGGAGGATCACAC GACCAATGCACATCG
 -------------------------------------------------------
-Duration: 12895738
+Duration: 12355221
 Duration (s): 12

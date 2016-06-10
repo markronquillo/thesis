@@ -1,8 +1,7 @@
 Reading file dataset/FASTA/15,5,16
 n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
 s=4 n'=7
-[P0] Index 17 out of 586; current time 2s; projected 69s       [P0] Index 59 out of 586; current time 4s; projected 40s       [P0] Index 88 out of 586; current time 6s; projected 40s       [P0] Index 124 out of 586; current time 8s; projected 37s       [P0] Index 168 out of 586; current time 10s; projected 34s       [P0] Index 218 out of 586; current time 12s; projected 32s       [P0] Index 262 out of 586; current time 14s; projected 31s       [P0] Index 302 out of 586; current time 16s; projected 31s       [P0] Index 349 out of 586; current time 18s; projected 30s       [P0] Index 400 out of 586; current time 20s; projected 29s       [P0] Index 436 out of 586; current time 22s; projected 29s       [P0] Index 480 out of 586; current time 24s; projected 29s       [P0] Index 519 out of 586; current time 26s; projected 29s       [P0] Index 571 out of 586; current time 28s; projected 28s       AATACATGCAGTAGG
-AATAGGAGATCTCGA
-AGAGATGGAGCGCTC
-Total motifs found: 3
-Time on processor 0: 28.797s; file dataset/FASTA/15,5,16
+[P0] Index 31 out of 586; current time 2s; projected 38s       [P0] Index 74 out of 586; current time 4s; projected 31s       [P0] Index 122 out of 586; current time 6s; projected 29s       [P0] Index 168 out of 586; current time 8s; projected 27s       [P0] Index 214 out of 586; current time 10s; projected 27s       [P0] Index 261 out of 586; current time 12s; projected 26s       [P0] Index 305 out of 586; current time 14s; projected 26s       [P0] Index 355 out of 586; current time 16s; projected 26s       [P0] Index 403 out of 586; current time 18s; projected 26s       [P0] Index 452 out of 586; current time 20s; projected 25s       [P0] Index 501 out of 586; current time 22s; projected 25s       [P0] Index 547 out of 586; current time 24s; projected 25s       AGACTGGGGGCATAA
+AGTGACGTTCACTCA
+Total motifs found: 2
+Time on processor 0: 25.661s; file dataset/FASTA/15,5,16

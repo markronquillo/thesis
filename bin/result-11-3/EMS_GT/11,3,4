@@ -3,7 +3,7 @@
 ======================================================
  CONFIGURATION
  tPrime:		 10
- tPrime_2:		 5
+ tPrime_2:		 15
  l:		 11
  d:		 3
 ======================================================
@@ -30,8 +30,8 @@
    > Search Motif is done: 0 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: AGCAATTGTAG
-   > Found Motifs:  AACTCGCACTT AATCCCAACTA AGCAATTGTAG CATAGAACAAT CTACGAACATA CTAGGACATTA CTCCTTTGACG GACCTAGGACT GACGAAGGACC TTCCTCCGGAC
+   > Planted Motif: CTGCGTGAGAG
+   > Found Motifs:  ACCGCAAGCGC ATAGCACGACT CCTTTAGCGGA CTACCTACTTG CTGCGTGAGAG GAGACGGCTAC GAGCACCACCG GCTAGCCCTTT
 -------------------------------------------------------
-Duration: 124801
+Duration: 78001
 Duration (s): 0

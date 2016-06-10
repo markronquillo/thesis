@@ -3,7 +3,7 @@
 ======================================================
  CONFIGURATION
  tPrime:		 10
- tPrime_2:		 5
+ tPrime_2:		 15
  l:		 17
  d:		 6
 ======================================================
@@ -12,16 +12,16 @@
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 13
-     >    (2) Duration (s): 15
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 17
+     >    (1) Duration (s): 15
+     >    (2) Duration (s): 16
+     >    (3) Duration (s): 15
+     >    (4) Duration (s): 15
+     >    (5) Duration (s): 15
      >    (6) Duration (s): 15
-     >    (7) Duration (s): 13
-     >    (8) Duration (s): 11
-     >    (9) Duration (s): 10
-     >    (10) Duration (s): 9
+     >    (7) Duration (s): 15
+     >    (8) Duration (s): 16
+     >    (9) Duration (s): 15
+     >    (10) Duration (s): 15
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -30,8 +30,8 @@
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: GTCTTGTTCTCCCGCAG
-   > Found Motifs:  GTCTTGTTCTCCCGCAG
+   > Planted Motif: GGTAAGACTCTAGTAAC
+   > Found Motifs:  GGTAAGACTCTAGTAAC
 -------------------------------------------------------
-Duration: 139745046
-Duration (s): 139
+Duration: 161007883
+Duration (s): 161

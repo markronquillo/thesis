@@ -1,10 +1,14 @@
 Reading file dataset/FASTA/13,4,14
 n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
 s=3 n'=6
-[P0] Index 232 out of 588; current time 2s; projected 5s       [P0] Index 560 out of 588; current time 4s; projected 4s       AAAAGAGTCATTT
-AAGGGGATATGCA
-ATGCCATAGTAGA
-CATAGGTGAATGC
-GGCGTAGTGGGGG
-Total motifs found: 5
-Time on processor 0: 4.181s; file dataset/FASTA/13,4,14
+[P0] Index 178 out of 588; current time 2s; projected 6s       [P0] Index 458 out of 588; current time 4s; projected 5s       AGTAATGTTGGTG
+AGTAATTTTGGTG
+CAACTCTGATGAC
+CAGTAATGTTGGT
+CCGGGTCTAGGAT
+CGTATCCTTGTAG
+CTCGTTGTTACCA
+TACGCCTGAGCGT
+TATTCACGGCATC
+Total motifs found: 9
+Time on processor 0: 4.851s; file dataset/FASTA/13,4,14

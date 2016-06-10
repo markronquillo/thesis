@@ -1,8 +1,14 @@
 Reading file dataset/FASTA/11,3,7
 n=20 q=100% L=11 d=3 totalStringLength=12000 alphabet=ACGT of size=4
 s=3 n'=6
-AAGGGTTGAGA
-ACCCAGTCACA
-TGCGTGCACCA
-Total motifs found: 3
+CCGAGATGAGC
+GACGGTAGATT
+GCACGTCACAC
+GTCCCAGGTCA
+TCCGAGTAACC
+TCTCGCAAATC
+TGAGGGACACC
+TGCGTTACGTT
+TTTGCCGGACA
+Total motifs found: 9
 Time on processor 0: 1.247s; file dataset/FASTA/11,3,7

@@ -1,8 +1,8 @@
 Reading file dataset/FASTA/9,2,3
 n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
 s=3 n'=6
-AGGGTCATC
-CGGGCCGTA
-TGGGCCGCA
+CGGGCTCGG
+TATCCGGAG
+TTGGCCTAA
 Total motifs found: 3
-Time on processor 0: 0.702s; file dataset/FASTA/9,2,3
+Time on processor 0: 0.685s; file dataset/FASTA/9,2,3

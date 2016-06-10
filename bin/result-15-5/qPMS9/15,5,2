@@ -1,9 +1,13 @@
 Reading file dataset/FASTA/15,5,2
 n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
 s=4 n'=7
-[P0] Index 33 out of 586; current time 2s; projected 35s       [P0] Index 84 out of 586; current time 4s; projected 27s       [P0] Index 131 out of 586; current time 6s; projected 27s       [P0] Index 178 out of 586; current time 8s; projected 26s       [P0] Index 225 out of 586; current time 10s; projected 26s       [P0] Index 270 out of 586; current time 12s; projected 26s       [P0] Index 315 out of 586; current time 14s; projected 26s       [P0] Index 360 out of 586; current time 16s; projected 26s       [P0] Index 399 out of 586; current time 18s; projected 26s       [P0] Index 445 out of 586; current time 20s; projected 26s       [P0] Index 492 out of 586; current time 22s; projected 26s       [P0] Index 535 out of 586; current time 24s; projected 26s       [P0] Index 581 out of 586; current time 26s; projected 26s       CCCGCAAACTGGACA
-CTTAGGATTGATAAG
-GGACGCAGTTCCTTG
-GGGGCGTTGGCAGGG
-Total motifs found: 4
-Time on processor 0: 26.239s; file dataset/FASTA/15,5,2
+[P0] Index 40 out of 586; current time 2s; projected 29s       [P0] Index 88 out of 586; current time 4s; projected 26s       [P0] Index 133 out of 586; current time 6s; projected 26s       [P0] Index 180 out of 586; current time 8s; projected 26s       [P0] Index 229 out of 586; current time 10s; projected 25s       [P0] Index 272 out of 586; current time 12s; projected 25s       [P0] Index 317 out of 586; current time 14s; projected 25s       [P0] Index 367 out of 586; current time 16s; projected 25s       [P0] Index 415 out of 586; current time 18s; projected 25s       [P0] Index 464 out of 586; current time 20s; projected 25s       [P0] Index 514 out of 586; current time 22s; projected 25s       [P0] Index 561 out of 586; current time 24s; projected 25s       ACGGATATGCCTCCC
+CATCAATACGACGCC
+CATGCGCTTCGAGCT
+CCCTCCACCGTAATG
+CTGCTCGCGTAAGCC
+GCTTACGCAAATGCA
+TGCTTAGTCCGAATG
+TGGCGTGCTCAACCT
+Total motifs found: 8
+Time on processor 0: 25.116s; file dataset/FASTA/15,5,2
