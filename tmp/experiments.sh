@@ -23,7 +23,6 @@ mkdir datasets/FASTA
 
 
 cd datasets
-# (l,d): (9,2) (11,3) (13,4) (15,5) 
 for l in 9 11 13 15 17 
 do
 	((d++))
