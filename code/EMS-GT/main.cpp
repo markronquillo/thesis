@@ -2,7 +2,7 @@
 #include <vector>
 #include "DataSetParams.cpp"
 #include "Config.cpp"
-#include "EMS_GT.cpp"
+#include "EMS_GT_CLEAN.cpp"
 #include "utils.cpp"
 
 using namespace std;
