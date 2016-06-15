@@ -28,9 +28,6 @@ for l in 9 11 13 15 17
 do
 	((d++))
 	# print headers in EMS_GT result files
-	echo "l,d,run,time(s),time(min),memuse,memuse after GC,motif,motifs found" > ../results/EMS_GT_C++-$l,$d
-	echo "l,d,run,time(s),time(min),memuse,memuse after GC,motif,motifs found" > ../results/EMS_GT_32-$l,$d
-	echo "l,d,run,time(s),time(min),memuse,memuse after GC,motif,motifs found" > ../results/EMS_GT_64-$l,$d
 	# start r runs
 	for((i=1; i <= r; i++)) do
 		# generate a unique (l,d) dataset for this run
