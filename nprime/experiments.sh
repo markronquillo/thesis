@@ -27,11 +27,8 @@ do
 	for((i=1; i <= r; i++)) do
 		# generate a unique (l,d) dataset for this run
 		java -cp ../bin DatasetGenerator  $l $d $i
-		# convert this dataset to FASTA
-		java -cp ../bin DatasetConverter  $l,$d,$i
-		# test all programs on this dataset
 
-		../bin/EMS_GT $l,$d,$i 	&>> ../results/EMS_GT-$l,$d
+		../bin/EMS_GT_CLEAN $l,$d,$i 	&>> ../results/EMS_GT-$l,$d
 	done
 done
 cd ..
