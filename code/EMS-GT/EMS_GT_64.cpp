@@ -19,7 +19,7 @@ public:
 	EMS_GT(const DataSetParams *ds, const Config *c): 
 		ds(ds), config(c)
 	{
-    	currentNeighborhood = new int[config->numberOfCandidateMotifsRows];
+    	currentNeighborhood = new long[config->numberOfCandidateMotifsRows];
 	}
 
 	void start() {
@@ -69,7 +69,7 @@ public:
 		printResults();
     	high_resolution_clock::time_point t2 = high_resolution_clock::now();
     	duration = duration_cast<microseconds>( t2 - t1 ).count();
-		float sec = (float) duration / 1000000;
+		float sec = duration / 1000000;
     	cout << "Duration: " << duration << endl;
     	cout << "Duration (s): " <<  sec << endl;
 	}
@@ -77,8 +77,8 @@ public:
 private:
 	const DataSetParams *ds;
 	const Config *config;
-	int* candidateMotifs;
-	int* currentNeighborhood;
+	long* candidateMotifs;
+	long* currentNeighborhood;
 
 	// TODO: change this to a long
 	int*** blockMasks;
@@ -235,7 +235,7 @@ private:
 		// copy the whole neighborhood to the candidate motifs array
 		candidateMotifs = currentNeighborhood;
 		// clear the current neighbordhood for the succeeding generations
-    	currentNeighborhood = new int[config->numberOfCandidateMotifsRows];
+    	currentNeighborhood = new long[config->numberOfCandidateMotifsRows];
 
     	high_resolution_clock::time_point te = high_resolution_clock::now();
     	long  duration = duration_cast<microseconds>( te - ts ).count();
@@ -257,8 +257,8 @@ private:
         	    if (i == middle_T-1) {
 		    	    if (candidateMotifs[j] != 0) {
 		    	    	// count bits, 
-		    	    	int val = candidateMotifs[j];
-		    	    	for (int k=0; k < 32; k++) {
+		    	    	long val = candidateMotifs[j];
+		    	    	for (int k=0; k < 64; k++) {
 		    	    	    if ((val & 1) != 0) {
 		    	    	    	numberOfBitsPerBlock[(int)(j/32)]++;
 		    	    	    }
@@ -834,7 +834,7 @@ private:
 	}
 
 	void searchMotif() {
-	    int value, numMotifs = 0;
+	    long value, numMotifs = 0;
 	    foundMotifs = "";
 
 	    // cout << trimmedRows.size() << endl;
@@ -859,7 +859,7 @@ private:
 	        // value = candidateMotifs[row];
 	        // long base = ((long) row) << 5;
 
-	        for (int j=0; j < 32; j++) {
+	        for (int j=0; j < 64; j++) {
 	            if ((value & 1) != 0) {
 	                long candidate = base + j;
 
