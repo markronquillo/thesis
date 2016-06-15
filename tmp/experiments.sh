@@ -30,7 +30,7 @@ do
 	# print headers in EMS_GT result files
 	echo "l,d,run,time(s),time(min),memuse,memuse after GC,motif,motifs found" > ../results/EMS_GT_C++-$l,$d
 	echo "l,d,run,time(s),time(min),memuse,memuse after GC,motif,motifs found" > ../results/EMS_GT_32-$l,$d
-	# echo "l,d,run,time(s),time(min),memuse,memuse after GC,motif,motifs found" > ../results/EMS_GT_64-$l,$d
+	echo "l,d,run,time(s),time(min),memuse,memuse after GC,motif,motifs found" > ../results/EMS_GT_64-$l,$d
 	# start r runs
 	for((i=1; i <= r; i++)) do
 		# generate a unique (l,d) dataset for this run
@@ -40,17 +40,17 @@ do
 		# test all programs on this dataset
 		# java -cp ../bin EMS_GT $l,$d,$i 	>> ../results/EMS_GT-$l,$d
 		java -cp ../bin EMS_GT_32 $l,$d,$i 	>> ../results/EMS_GT_32-$l,$d
-		../bin EMS_GT $l,$d,$i 	&>> ../results/EMS_GT_C++-$l,$d
-		# java -cp ../bin EMS_GT_64 $l,$d,$i 	>> ../results/EMS_GT_64-$l,$d
-		../bin/PMS8 FASTA/$l,$d,$i $l $d 	&>> ../results/rawPMS8-$l,$d
+		../bin/EMS_GT $l,$d,$i 	&>> ../results/EMS_GT_C++-$l,$d
+		java -cp ../bin EMS_GT_64 $l,$d,$i 	>> ../results/EMS_GT_64-$l,$d
+		# ../bin/PMS8 FASTA/$l,$d,$i $l $d 	&>> ../results/rawPMS8-$l,$d
 		../bin/qPMS9 -l $l -d $d FASTA/$l,$d,$i 	&>> ../results/rawqPMS9-$l,$d
 	done
 	# print headers in PMS result files
-	echo "l,d,run,time(s)" > ../results/PMS8-$l,$d
+	# echo "l,d,run,time(s)" > ../results/PMS8-$l,$d
 	echo "l,d,run,time(s)" > ../results/qPMS9-$l,$d
 	# interpret rawPMS8 & rawqPMS9 files; note that outputReaders
 	#  are specific to this directory structure & file naming convention
-	java -cp ../bin PMS8outputReader  ../results/rawPMS8-$l,$d  >> ../results/PMS8-$l,$d
+	# java -cp ../bin PMS8outputReader  ../results/rawPMS8-$l,$d  >> ../results/PMS8-$l,$d
 	java -cp ../bin qPMS9outputReader ../results/rawqPMS9-$l,$d >> ../results/qPMS9-$l,$d
 done
 cd ..
