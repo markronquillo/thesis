@@ -8,7 +8,7 @@
 # @author Aia Sia
 # @version 1.0 9/09/2015
 
-r=20 # number of experimental runs
+r=10 # number of experimental runs
 # javac -d bin src/*.java # compile java source files
 
 d=1
@@ -24,14 +24,14 @@ do
 	((d++))
 	# print headers in EMS_GT result files
 	# start r runs
-	for((n=1; n <= 19; n++)) do
 
 		for((i=1; i <= r; i++)) do
 			# generate a unique (l,d) dataset for this run
 			java -cp ../bin DatasetGenerator  $l $d $i
 
-			../bin/EMS_GT_CLEAN $l,$d,$i $n 	&>> ../results/EMS_GT-$l,$d-$n
+			for((n=1; n <= 19; n++)) do
+				../bin/EMS_GT_CLEAN $l,$d,$i $n 	&>> ../results/EMS_GT-$l,$d-$n
+			done
 		done
-	done
 done
 cd ..

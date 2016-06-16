@@ -27,44 +27,44 @@ public:
     	// steady_clock::time_point begin = std::chrono::steady_clock::now();
 
 
-		cout << "======================================================" << endl;
-		cout << " EMS_GT v2.0" << endl;
-		cout << "======================================================" << endl;
-		cout << " CONFIGURATION" << endl;
-		cout << " tPrime:\t\t " << config->tPrime << endl;
-		cout << " tPrime_2:\t\t " << config->tPrime_2 << endl;
-		cout << " l:\t\t " << ds->lengthOfMotif << endl;
-		cout << " d:\t\t " << ds->numberOfAllowedMutations << endl;
-		cout << "======================================================" << endl;
+		// cout << "======================================================" << endl;
+		// cout << " EMS_GT v2.0" << endl;
+		// cout << "======================================================" << endl;
+		// cout << " CONFIGURATION" << endl;
+		// cout << " tPrime:\t\t " << config->tPrime << endl;
+		// cout << " tPrime_2:\t\t " << config->tPrime_2 << endl;
+		// cout << " l:\t\t " << ds->lengthOfMotif << endl;
+		// cout << " d:\t\t " << ds->numberOfAllowedMutations << endl;
+		// cout << "======================================================" << endl;
 
-		cout << "" << endl;
-		cout << " GENERATE CANDIDATE MOTIFS" << endl;
-		cout << "------------------------------------------------------" << endl;
+		// cout << "" << endl;
+		// cout << " GENERATE CANDIDATE MOTIFS" << endl;
+		// cout << "------------------------------------------------------" << endl;
 
 		// generateMismatchesCount();
-		cout << "   > Hamming Distance count generated" << endl;
+		// cout << "   > Hamming Distance count generated" << endl;
 
 		generateBlockMasks();
-		cout << "   > BlockMasks generated" << endl;
+		// cout << "   > BlockMasks generated" << endl;
 
 		collectCandidateMotifs();
-		cout << "   > Candidate Motifs generated" << endl;
+		// cout << "   > Candidate Motifs generated" << endl;
 
-		cout << "" << endl;
-		cout << " TEST CANDIDATE MOTIFS" << endl;
-		cout << "------------------------------------------------------" << endl;
+		// cout << "" << endl;
+		// cout << " TEST CANDIDATE MOTIFS" << endl;
+		// cout << "------------------------------------------------------" << endl;
 
     	high_resolution_clock::time_point ts = high_resolution_clock::now();
 		transformLmerSequences();
     	high_resolution_clock::time_point te = high_resolution_clock::now();
     	long duration = duration_cast<microseconds>( te - ts ).count();
-		cout << "   > Lmer Sequences generated: " << duration / 1000000 << " (s)" << endl;
+		// cout << "   > Lmer Sequences generated: " << duration / 1000000 << " (s)" << endl;
 
     	ts = high_resolution_clock::now();
     	searchMotif();
 		te = high_resolution_clock::now();
     	duration = duration_cast<microseconds>( te - ts ).count();
-		cout << "   > Search Motif is done: " << duration / 1000000 << " (s)" << endl;
+		// cout << "   > Search Motif is done: " << duration / 1000000 << " (s)" << endl;
 
 		printResults();
     	high_resolution_clock::time_point t2 = high_resolution_clock::now();
