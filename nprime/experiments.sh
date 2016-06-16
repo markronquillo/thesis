@@ -11,7 +11,7 @@
 r=5 # number of experimental runs
 # javac -d bin src/*.java # compile java source files
 
-d=1
+d=4
 rm -Rf datasets/
 rm -Rf results/
 mkdir results
@@ -19,7 +19,7 @@ mkdir datasets
 
 cd datasets
 # (l,d): (9,2) (11,3) (13,4) (15,5) 
-for l in 9 11 13 15 17 
+for l in 15 17 
 do
 	((d++))
 	# print headers in EMS_GT result files
@@ -29,7 +29,7 @@ do
 			# generate a unique (l,d) dataset for this run
 			java -cp ../bin DatasetGenerator  $l $d $i
 
-			for((n=1; n <= 19; n++)) do
+			for((n=5; n <= 19; n++)) do
 				../bin/EMS_GT_CLEAN $l,$d,$i $n 	&>> ../results/EMS_GT-$l,$d-$n
 			done
 		done

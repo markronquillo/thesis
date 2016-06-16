@@ -1,0 +1,35 @@
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: TCGGTAGATCTGA
+   > Found Motifs:  CTGGTTGCGGTGA GAAATCTATGAAT TCCTAAAAAGCGC TCGGTAGATCTGA
+-------------------------------------------------------
+Duration: 748801
+Duration (s): 0.748801
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: TTTCCAACGCCTA
+   > Found Motifs:  AAGATTGGAGCCG TCAACATAGCCCG TTGCGACGCGCTG TTTCCAACGCCTA
+-------------------------------------------------------
+Duration: 889201
+Duration (s): 0.889201
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: TGCGGCATAAACA
+   > Found Motifs:  ACCTCTATCCGCC TGCATTATAACGG TGCGGCATAAACA
+-------------------------------------------------------
+Duration: 826801
+Duration (s): 0.826801
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: AGACCGGATGCGG
+   > Found Motifs:  AAAAAGTTGCGAG ACCGTTTCGTCTT AGACCGGATGCGG ATTGCCAGGCGAG GCATCTCAATGCT GGCTAAGGTTCAT TCCGATAAAGGTC TGTAGAACCGGTG
+-------------------------------------------------------
+Duration: 748801
+Duration (s): 0.748801
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: ACTAATTGGGCAT
+   > Found Motifs:  ACTAATTGGGCAT ATGACTCACGAAC CAGACCAATTGGC GAGCGTCGATTTC GAGGGTGTTGCAA GGCAGTTGTAGTC TAAATTACTAACG TATTGGAGATGCG
+-------------------------------------------------------
+Duration: 904801
+Duration (s): 0.904801
