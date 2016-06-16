@@ -8,7 +8,7 @@
 # @author Aia Sia
 # @version 1.0 9/09/2015
 
-r=10 # number of experimental runs
+r=5 # number of experimental runs
 # javac -d bin src/*.java # compile java source files
 
 d=1
