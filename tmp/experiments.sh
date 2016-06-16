@@ -35,7 +35,7 @@ do
 		java -cp ../bin DatasetConverter  $l,$d,$i
 		# test all programs on this dataset
 		# java -cp ../bin EMS_GT $l,$d,$i 	>> ../results/EMS_GT-$l,$d
-		# java -cp ../bin EMS_GT_32 $l,$d,$i 	>> ../results/EMS_GT_32-$l,$d
+		java -cp ../bin EMS_GT_32 $l,$d,$i 	>> ../results/EMS_GT_32-$l,$d
 		../bin/EMS_GT $l,$d,$i 	&>> ../results/EMS_GT_C++-$l,$d
 		# java -cp ../bin EMS_GT_64 $l,$d,$i 	>> ../results/EMS_GT_64-$l,$d
 		# ../bin/PMS8 FASTA/$l,$d,$i $l $d 	&>> ../results/rawPMS8-$l,$d
