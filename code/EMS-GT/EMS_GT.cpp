@@ -24,6 +24,8 @@ public:
 
 	void start() {
     	high_resolution_clock::time_point t1 = high_resolution_clock::now();
+    	// steady_clock::time_point begin = std::chrono::steady_clock::now();
+
 
 		cout << "======================================================" << endl;
 		cout << " EMS_GT v2.0" << endl;
@@ -72,6 +74,10 @@ public:
 		float sec = (float) duration / 1000000;
     	cout << "Duration: " << duration << endl;
     	cout << "Duration (s): " <<  sec << endl;
+
+		// steady_clock::time_point end= std::chrono::steady_clock::now();
+		// std::cout << "Time difference = " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() <<std::endl;
+		// std::cout << "Time difference = " << std::chrono::duration_cast<std::chrono::nanoseconds> (end - begin).count() <<std::endl;
 	}
 
 private:
