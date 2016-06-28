@@ -37,7 +37,7 @@ do
 		# java -cp ../bin EMS_GT $l,$d,$i 	>> ../results/EMS_GT-$l,$d
 		#java -cp ../bin EMS_GT_32 $l,$d,$i 	>> ../results/EMS_GT_32-$l,$d
 		for((n=5; n <= 10; n++)) do
-			../bin/EMS_GT_NEW $l,$d,$i 	&>> ../results/EMS_GT_NEW-$l,$d
+			../bin/EMS_GT_NEW $l,$d,$i $n	&>> ../results/EMS_GT_NEW-$l,$d
 		done
 		# java -cp ../bin EMS_GT_64 $l,$d,$i 	>> ../results/EMS_GT_64-$l,$d
 		# ../bin/PMS8 FASTA/$l,$d,$i $l $d 	&>> ../results/rawPMS8-$l,$d

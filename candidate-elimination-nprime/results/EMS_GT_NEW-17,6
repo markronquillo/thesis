@@ -2,7 +2,7 @@
  EMS_GT v2.0
 ======================================================
  CONFIGURATION
- tPrime:		 6
+ tPrime:		 5
  tPrime_2:		 15
  l:		 17
  d:		 6
@@ -12,553 +12,24 @@
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
+     >    (1) Duration (s): 13
      >    (2) Duration (s): 14
      >    (3) Duration (s): 14
      >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
+     >    (5) Duration (s): 16
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
 ------------------------------------------------------
    > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 27 (s)
+   > Search Motif is done: 338 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: CCATGCCGAAGGCCGGC
-   > Found Motifs:  CCATGCCGAAGGCCGGC CCCGACGCATCCCGGCA
+   > Planted Motif: CGTACCGAACCTCTCGG
+   > Found Motifs:  AGGTACGAACTGGGGAC CGAGGGCCGCTACCCAT CGTACCGAACCTCTCGG
 -------------------------------------------------------
-Duration: 114742562
-Duration (s): 114.743
-======================================================
- EMS_GT v2.0
-======================================================
- CONFIGURATION
- tPrime:		 6
- tPrime_2:		 15
- l:		 17
- d:		 6
-======================================================
-
- GENERATE CANDIDATE MOTIFS
-------------------------------------------------------
-   > Hamming Distance count generated
-   > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
-   > Candidate Motifs generated
-
- TEST CANDIDATE MOTIFS
-------------------------------------------------------
-   > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 29 (s)
---------------------------------------------------------
- RESULTS: 
-   > Planted Motif: AACCAATCTATTCATAC
-   > Found Motifs:  AACCAATCTATTCATAC CATTAAGTCGGTTAGAG CTCGTACGAGCGATAAG
--------------------------------------------------------
-Duration: 116604669
-Duration (s): 116.605
-======================================================
- EMS_GT v2.0
-======================================================
- CONFIGURATION
- tPrime:		 6
- tPrime_2:		 15
- l:		 17
- d:		 6
-======================================================
-
- GENERATE CANDIDATE MOTIFS
-------------------------------------------------------
-   > Hamming Distance count generated
-   > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 15
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
-   > Candidate Motifs generated
-
- TEST CANDIDATE MOTIFS
-------------------------------------------------------
-   > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 28 (s)
---------------------------------------------------------
- RESULTS: 
-   > Planted Motif: AAGAACATGGAATTCAG
-   > Found Motifs:  AAGAACATGGAATTCAG AATACGCATGCAGATTT
--------------------------------------------------------
-Duration: 116210647
-Duration (s): 116.211
-======================================================
- EMS_GT v2.0
-======================================================
- CONFIGURATION
- tPrime:		 6
- tPrime_2:		 15
- l:		 17
- d:		 6
-======================================================
-
- GENERATE CANDIDATE MOTIFS
-------------------------------------------------------
-   > Hamming Distance count generated
-   > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
-   > Candidate Motifs generated
-
- TEST CANDIDATE MOTIFS
-------------------------------------------------------
-   > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 28 (s)
---------------------------------------------------------
- RESULTS: 
-   > Planted Motif: GCACACGCGCCGGGTTG
-   > Found Motifs:  ACGTGGGAGCAAAACTT GCACACGCGCCGGGTTG GGTGGTTCCAGAGTGCG
--------------------------------------------------------
-Duration: 116095640
-Duration (s): 116.096
-======================================================
- EMS_GT v2.0
-======================================================
- CONFIGURATION
- tPrime:		 6
- tPrime_2:		 15
- l:		 17
- d:		 6
-======================================================
-
- GENERATE CANDIDATE MOTIFS
-------------------------------------------------------
-   > Hamming Distance count generated
-   > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
-   > Candidate Motifs generated
-
- TEST CANDIDATE MOTIFS
-------------------------------------------------------
-   > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 28 (s)
---------------------------------------------------------
- RESULTS: 
-   > Planted Motif: AGGGTAATACATCCATG
-   > Found Motifs:  AGGGTAATACATCCATG CTCGACAGCCTTGTAAA
--------------------------------------------------------
-Duration: 115614613
-Duration (s): 115.615
-======================================================
- EMS_GT v2.0
-======================================================
- CONFIGURATION
- tPrime:		 6
- tPrime_2:		 15
- l:		 17
- d:		 6
-======================================================
-
- GENERATE CANDIDATE MOTIFS
-------------------------------------------------------
-   > Hamming Distance count generated
-   > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
-   > Candidate Motifs generated
-
- TEST CANDIDATE MOTIFS
-------------------------------------------------------
-   > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 28 (s)
---------------------------------------------------------
- RESULTS: 
-   > Planted Motif: GAACCGGTTACCAATAC
-   > Found Motifs:  ACCTGGGGGCTAGTCAT AGGCAGCTGTTGCCCCA CTCTGACCTGCTGCCGG GAACCGGTTACCAATAC
--------------------------------------------------------
-Duration: 116169645
-Duration (s): 116.17
-======================================================
- EMS_GT v2.0
-======================================================
- CONFIGURATION
- tPrime:		 6
- tPrime_2:		 15
- l:		 17
- d:		 6
-======================================================
-
- GENERATE CANDIDATE MOTIFS
-------------------------------------------------------
-   > Hamming Distance count generated
-   > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
-   > Candidate Motifs generated
-
- TEST CANDIDATE MOTIFS
-------------------------------------------------------
-   > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 29 (s)
---------------------------------------------------------
- RESULTS: 
-   > Planted Motif: ATATAACGGTTACGTGG
-   > Found Motifs:  AATTTCATGTGTGACAT AGGTTCTGTGCCAATTG ATATAACGGTTACGTGG GGTGCGAGTTACTTGCG TAGGTGCGAATCTGCCC
--------------------------------------------------------
-Duration: 116921688
-Duration (s): 116.922
-======================================================
- EMS_GT v2.0
-======================================================
- CONFIGURATION
- tPrime:		 6
- tPrime_2:		 15
- l:		 17
- d:		 6
-======================================================
-
- GENERATE CANDIDATE MOTIFS
-------------------------------------------------------
-   > Hamming Distance count generated
-   > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
-   > Candidate Motifs generated
-
- TEST CANDIDATE MOTIFS
-------------------------------------------------------
-   > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 26 (s)
---------------------------------------------------------
- RESULTS: 
-   > Planted Motif: CTCTAATCCCCGAAAAT
-   > Found Motifs:  ATCCGCGATGTAGGGGT CGTAAGAGAAAAGAATA CTCTAATCCCCGAAAAT
--------------------------------------------------------
-Duration: 114307538
-Duration (s): 114.308
-======================================================
- EMS_GT v2.0
-======================================================
- CONFIGURATION
- tPrime:		 6
- tPrime_2:		 15
- l:		 17
- d:		 6
-======================================================
-
- GENERATE CANDIDATE MOTIFS
-------------------------------------------------------
-   > Hamming Distance count generated
-   > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
-   > Candidate Motifs generated
-
- TEST CANDIDATE MOTIFS
-------------------------------------------------------
-   > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 29 (s)
---------------------------------------------------------
- RESULTS: 
-   > Planted Motif: CCCTGTCCTATGTATCC
-   > Found Motifs:  AATGACATCCCTTCATA ACATCGTGCCATACGGA CCCTGTCCTATGTATCC TCTGAAAATCTCGAAAA TTGCCCCCCTTCAGATT
--------------------------------------------------------
-Duration: 117082697
-Duration (s): 117.083
-======================================================
- EMS_GT v2.0
-======================================================
- CONFIGURATION
- tPrime:		 6
- tPrime_2:		 15
- l:		 17
- d:		 6
-======================================================
-
- GENERATE CANDIDATE MOTIFS
-------------------------------------------------------
-   > Hamming Distance count generated
-   > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
-   > Candidate Motifs generated
-
- TEST CANDIDATE MOTIFS
-------------------------------------------------------
-   > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 28 (s)
---------------------------------------------------------
- RESULTS: 
-   > Planted Motif: TAAGACCAGACGATCCG
-   > Found Motifs:  TAAGACCAGACGATCCG
--------------------------------------------------------
-Duration: 115755621
-Duration (s): 115.756
-======================================================
- EMS_GT v2.0
-======================================================
- CONFIGURATION
- tPrime:		 6
- tPrime_2:		 15
- l:		 17
- d:		 6
-======================================================
-
- GENERATE CANDIDATE MOTIFS
-------------------------------------------------------
-   > Hamming Distance count generated
-   > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
-   > Candidate Motifs generated
-
- TEST CANDIDATE MOTIFS
-------------------------------------------------------
-   > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 27 (s)
---------------------------------------------------------
- RESULTS: 
-   > Planted Motif: GAAGCAATGATGATCCT
-   > Found Motifs:  GAAGCAATGATGATCCT TCCACCTAAAATAGGTT TTAAACGAAGATATGAT
--------------------------------------------------------
-Duration: 114598554
-Duration (s): 114.599
-======================================================
- EMS_GT v2.0
-======================================================
- CONFIGURATION
- tPrime:		 6
- tPrime_2:		 15
- l:		 17
- d:		 6
-======================================================
-
- GENERATE CANDIDATE MOTIFS
-------------------------------------------------------
-   > Hamming Distance count generated
-   > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
-   > Candidate Motifs generated
-
- TEST CANDIDATE MOTIFS
-------------------------------------------------------
-   > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 30 (s)
---------------------------------------------------------
- RESULTS: 
-   > Planted Motif: CTGTATAATCCAGCAAG
-   > Found Motifs:  CAATTCAATTTTGATTA CTGTATAATCCAGCAAG
--------------------------------------------------------
-Duration: 118452775
-Duration (s): 118.453
-======================================================
- EMS_GT v2.0
-======================================================
- CONFIGURATION
- tPrime:		 6
- tPrime_2:		 15
- l:		 17
- d:		 6
-======================================================
-
- GENERATE CANDIDATE MOTIFS
-------------------------------------------------------
-   > Hamming Distance count generated
-   > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
-   > Candidate Motifs generated
-
- TEST CANDIDATE MOTIFS
-------------------------------------------------------
-   > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 28 (s)
---------------------------------------------------------
- RESULTS: 
-   > Planted Motif: TATTCGTTCAGATGAAC
-   > Found Motifs:  TATTCGTTCAGATGAAC
--------------------------------------------------------
-Duration: 115451604
-Duration (s): 115.452
-======================================================
- EMS_GT v2.0
-======================================================
- CONFIGURATION
- tPrime:		 6
- tPrime_2:		 15
- l:		 17
- d:		 6
-======================================================
-
- GENERATE CANDIDATE MOTIFS
-------------------------------------------------------
-   > Hamming Distance count generated
-   > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
-   > Candidate Motifs generated
-
- TEST CANDIDATE MOTIFS
-------------------------------------------------------
-   > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 30 (s)
---------------------------------------------------------
- RESULTS: 
-   > Planted Motif: CAAAATATATTACGGCA
-   > Found Motifs:  CAAAATATATTACGGCA CACGACATGATGCTTTG
--------------------------------------------------------
-Duration: 118024751
-Duration (s): 118.025
-======================================================
- EMS_GT v2.0
-======================================================
- CONFIGURATION
- tPrime:		 6
- tPrime_2:		 15
- l:		 17
- d:		 6
-======================================================
-
- GENERATE CANDIDATE MOTIFS
-------------------------------------------------------
-   > Hamming Distance count generated
-   > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
-   > Candidate Motifs generated
-
- TEST CANDIDATE MOTIFS
-------------------------------------------------------
-   > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 27 (s)
---------------------------------------------------------
- RESULTS: 
-   > Planted Motif: GTCATCTTAGTGCGATA
-   > Found Motifs:  CTTTTAGATCGCAACGG GTCATCTTAGTGCGATA
--------------------------------------------------------
-Duration: 114603555
-Duration (s): 114.604
-======================================================
- EMS_GT v2.0
-======================================================
- CONFIGURATION
- tPrime:		 6
- tPrime_2:		 15
- l:		 17
- d:		 6
-======================================================
-
- GENERATE CANDIDATE MOTIFS
-------------------------------------------------------
-   > Hamming Distance count generated
-   > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
-   > Candidate Motifs generated
-
- TEST CANDIDATE MOTIFS
-------------------------------------------------------
-   > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 29 (s)
---------------------------------------------------------
- RESULTS: 
-   > Planted Motif: ATTCATGACGCTTTAAC
-   > Found Motifs:  AACTTACGAGCTGAACA ATTCATGACGCTTTAAC
--------------------------------------------------------
-Duration: 116845683
-Duration (s): 116.846
-======================================================
- EMS_GT v2.0
-======================================================
- CONFIGURATION
- tPrime:		 6
- tPrime_2:		 15
- l:		 17
- d:		 6
-======================================================
-
- GENERATE CANDIDATE MOTIFS
-------------------------------------------------------
-   > Hamming Distance count generated
-   > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 15
-   > Candidate Motifs generated
-
- TEST CANDIDATE MOTIFS
-------------------------------------------------------
-   > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 29 (s)
---------------------------------------------------------
- RESULTS: 
-   > Planted Motif: CTGACCGAATAGAATCG
-   > Found Motifs:  CTGACCGAATAGAATCG
--------------------------------------------------------
-Duration: 116787680
-Duration (s): 116.788
+Duration: 412434525
+Duration (s): 412.435
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -584,14 +55,395 @@ Duration (s): 116.788
  TEST CANDIDATE MOTIFS
 ------------------------------------------------------
    > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 27 (s)
+   > Search Motif is done: 118 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: TCCGTCAGGTTCCTTTT
-   > Found Motifs:  TCCGTCAGGTTCCTTTT
+   > Planted Motif: CGTACCGAACCTCTCGG
+   > Found Motifs:  CGAGGGCCGCTACCCAT CGTACCGAACCTCTCGG
 -------------------------------------------------------
-Duration: 114696560
-Duration (s): 114.697
+Duration: 206216762
+Duration (s): 206.217
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 7
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 40 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CGTACCGAACCTCTCGG
+   > Found Motifs:  CGAGGGCCGCTACCCAT CGTACCGAACCTCTCGG
+-------------------------------------------------------
+Duration: 141008648
+Duration (s): 141.009
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 8
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+     >    (8) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 14 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CGTACCGAACCTCTCGG
+   > Found Motifs:  CGAGGGCCGCTACCCAT CGTACCGAACCTCTCGG
+-------------------------------------------------------
+Duration: 130041828
+Duration (s): 130.042
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 9
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+     >    (8) Duration (s): 14
+     >    (9) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 5 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CGTACCGAACCTCTCGG
+   > Found Motifs:  CGAGGGCCGCTACCCAT CGTACCGAACCTCTCGG
+-------------------------------------------------------
+Duration: 135299038
+Duration (s): 135.299
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 10
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 14
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+     >    (8) Duration (s): 14
+     >    (9) Duration (s): 14
+     >    (10) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 3 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CGTACCGAACCTCTCGG
+   > Found Motifs:  CGAGGGCCGCTACCCAT CGTACCGAACCTCTCGG
+-------------------------------------------------------
+Duration: 147186258
+Duration (s): 147.186
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 5
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 16
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 361 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CTATCAGGGGTGGCTCA
+   > Found Motifs:  AAGCCGGAGCACAACAC CTATCAGGGGTGGCTCA GAAGTCCTCACCTCTCA
+-------------------------------------------------------
+Duration: 435459164
+Duration (s): 435.459
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 6
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 15
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 123 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CTATCAGGGGTGGCTCA
+   > Found Motifs:  AAGCCGGAGCACAACAC CTATCAGGGGTGGCTCA
+-------------------------------------------------------
+Duration: 210101169
+Duration (s): 210.101
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 7
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 40 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CTATCAGGGGTGGCTCA
+   > Found Motifs:  AAGCCGGAGCACAACAC CACCATTAAGTGTTGAT CTATCAGGGGTGGCTCA
+-------------------------------------------------------
+Duration: 141367448
+Duration (s): 141.367
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 8
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+     >    (8) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 15 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CTATCAGGGGTGGCTCA
+   > Found Motifs:  AAGCCGGAGCACAACAC CACCATTAAGTGTTGAT CTATCAGGGGTGGCTCA
+-------------------------------------------------------
+Duration: 131119230
+Duration (s): 131.119
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 9
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+     >    (8) Duration (s): 14
+     >    (9) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 6 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CTATCAGGGGTGGCTCA
+   > Found Motifs:  AAGCCGGAGCACAACAC CACCATTAAGTGTTGAT CTATCAGGGGTGGCTCA
+-------------------------------------------------------
+Duration: 136001039
+Duration (s): 136.001
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 10
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+     >    (8) Duration (s): 14
+     >    (9) Duration (s): 14
+     >    (10) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 3 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CTATCAGGGGTGGCTCA
+   > Found Motifs:  AAGCCGGAGCACAACAC CTATCAGGGGTGGCTCA
+-------------------------------------------------------
+Duration: 147545059
+Duration (s): 147.545
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 5
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 16
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 348 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: AGACGCTTACTATTACG
+   > Found Motifs:  AGACGCTTACTATTACG CAACGCTTAACACTCCT CATTTACGAGTGGTAGA
+-------------------------------------------------------
+Duration: 422323941
+Duration (s): 422.324
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -617,14 +469,188 @@ Duration (s): 114.697
  TEST CANDIDATE MOTIFS
 ------------------------------------------------------
    > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 25 (s)
+   > Search Motif is done: 120 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: TGAACCGGCCGCTGGAC
-   > Found Motifs:  TGAACCGGCCGCTGGAC
+   > Planted Motif: AGACGCTTACTATTACG
+   > Found Motifs:  AGACGCTTACTATTACG CAACGCTTAACACTCCT
 -------------------------------------------------------
-Duration: 112916458
-Duration (s): 112.916
+Duration: 208338366
+Duration (s): 208.338
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 7
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 42 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: AGACGCTTACTATTACG
+   > Found Motifs:  AGACGCTTACTATTACG CAACGCTTAACACTCCT
+-------------------------------------------------------
+Duration: 142631051
+Duration (s): 142.631
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 8
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+     >    (8) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 14 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: AGACGCTTACTATTACG
+   > Found Motifs:  AGACGCTTACTATTACG CAACGCTTAACACTCCT
+-------------------------------------------------------
+Duration: 130619029
+Duration (s): 130.619
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 9
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+     >    (8) Duration (s): 14
+     >    (9) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 6 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: AGACGCTTACTATTACG
+   > Found Motifs:  AGACGCTTACTATTACG CAACGCTTAACACTCCT
+-------------------------------------------------------
+Duration: 136001039
+Duration (s): 136.001
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 10
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+     >    (8) Duration (s): 14
+     >    (9) Duration (s): 14
+     >    (10) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 3 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: AGACGCTTACTATTACG
+   > Found Motifs:  AGACGCTTACTATTACG CAACGCTTAACACTCCT
+-------------------------------------------------------
+Duration: 148559061
+Duration (s): 148.559
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 5
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 16
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 391 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GGGGTGGTATGCGATAT
+   > Found Motifs:  AGTGTGAAATGATCGAC GGGGTGGTATGCGATAT
+-------------------------------------------------------
+Duration: 465473618
+Duration (s): 465.474
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -639,7 +665,7 @@ Duration (s): 112.916
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
+     >    (1) Duration (s): 13
      >    (2) Duration (s): 14
      >    (3) Duration (s): 14
      >    (4) Duration (s): 14
@@ -650,11 +676,360 @@ Duration (s): 112.916
  TEST CANDIDATE MOTIFS
 ------------------------------------------------------
    > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 26 (s)
+   > Search Motif is done: 144 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: GGCAGGAGTCCAGATGC
-   > Found Motifs:  GGCAGGAGTCCAGATGC
+   > Planted Motif: GGGGTGGTATGCGATAT
+   > Found Motifs:  AGTGTGAAATGATCGAC GGGGTGGTATGCGATAT
 -------------------------------------------------------
-Duration: 114207532
-Duration (s): 114.208
+Duration: 231536607
+Duration (s): 231.537
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 7
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 15
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 51 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GGGGTGGTATGCGATAT
+   > Found Motifs:  AGTGTGAAATGATCGAC GGGGTGGTATGCGATAT
+-------------------------------------------------------
+Duration: 152568268
+Duration (s): 152.568
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 8
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+     >    (8) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 17 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GGGGTGGTATGCGATAT
+   > Found Motifs:  AGTGTGAAATGATCGAC GGGGTGGTATGCGATAT
+-------------------------------------------------------
+Duration: 133364634
+Duration (s): 133.365
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 9
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+     >    (8) Duration (s): 14
+     >    (9) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 6 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GGGGTGGTATGCGATAT
+   > Found Motifs:  AGTGTGAAATGATCGAC GGGGTGGTATGCGATAT
+-------------------------------------------------------
+Duration: 136219439
+Duration (s): 136.219
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 10
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 14
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+     >    (8) Duration (s): 14
+     >    (9) Duration (s): 14
+     >    (10) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 3 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GGGGTGGTATGCGATAT
+   > Found Motifs:  AGTGTGAAATGATCGAC GGGGTGGTATGCGATAT
+-------------------------------------------------------
+Duration: 147903860
+Duration (s): 147.904
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 5
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 16
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 330 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: TTTTACTGACGTGTGCA
+   > Found Motifs:  GGGTGAGCTTAGCGGGG TTTTACTGACGTGTGCA
+-------------------------------------------------------
+Duration: 403759909
+Duration (s): 403.76
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 6
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 15
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 109 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: TTTTACTGACGTGTGCA
+   > Found Motifs:  TTTTACTGACGTGTGCA
+-------------------------------------------------------
+Duration: 197075146
+Duration (s): 197.075
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 7
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 14
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 38 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: TTTTACTGACGTGTGCA
+   > Found Motifs:  TTTTACTGACGTGTGCA
+-------------------------------------------------------
+Duration: 138341043
+Duration (s): 138.341
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 8
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 13
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+     >    (8) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 13 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: TTTTACTGACGTGTGCA
+   > Found Motifs:  TTTTACTGACGTGTGCA
+-------------------------------------------------------
+Duration: 130026229
+Duration (s): 130.026
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 9
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 14
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+     >    (8) Duration (s): 14
+     >    (9) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 5 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: TTTTACTGACGTGTGCA
+   > Found Motifs:  AATTGCGCGCTAGACTT TTTTACTGACGTGTGCA
+-------------------------------------------------------
+Duration: 135361438
+Duration (s): 135.361
+======================================================
+ EMS_GT v2.0
+======================================================
+ CONFIGURATION
+ tPrime:		 10
+ tPrime_2:		 15
+ l:		 17
+ d:		 6
+======================================================
+
+ GENERATE CANDIDATE MOTIFS
+------------------------------------------------------
+   > Hamming Distance count generated
+   > BlockMasks generated
+     >    (1) Duration (s): 14
+     >    (2) Duration (s): 14
+     >    (3) Duration (s): 14
+     >    (4) Duration (s): 14
+     >    (5) Duration (s): 14
+     >    (6) Duration (s): 14
+     >    (7) Duration (s): 14
+     >    (8) Duration (s): 14
+     >    (9) Duration (s): 14
+     >    (10) Duration (s): 14
+   > Candidate Motifs generated
+
+ TEST CANDIDATE MOTIFS
+------------------------------------------------------
+   > Lmer Sequences generated: 0 (s)
+   > Search Motif is done: 3 (s)
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: TTTTACTGACGTGTGCA
+   > Found Motifs:  AATTGCGCGCTAGACTT TTTTACTGACGTGTGCA
+-------------------------------------------------------
+Duration: 147373458
+Duration (s): 147.373
