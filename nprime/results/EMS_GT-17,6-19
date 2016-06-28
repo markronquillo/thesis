@@ -5,3 +5,31 @@
 -------------------------------------------------------
 Duration: 287539705
 Duration (s): 287.54
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CCTTGGGCCGCTGCCAC
+   > Found Motifs:  CCTTGGGCCGCTGCCAC
+-------------------------------------------------------
+Duration: 265730867
+Duration (s): 265.731
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CACGGGCCTGCAAGGAC
+   > Found Motifs:  CACGGGCCTGCAAGGAC
+-------------------------------------------------------
+Duration: 267103669
+Duration (s): 267.104
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: ACTCCGTCATCAGTGTC
+   > Found Motifs:  ACTCCGTCATCAGTGTC GATGTGAGCGGTCACTG
+-------------------------------------------------------
+Duration: 267602870
+Duration (s): 267.603
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GGCGATGTGAGACAATT
+   > Found Motifs:  GGCGATGTGAGACAATT
+-------------------------------------------------------
+Duration: 268133271
+Duration (s): 268.133

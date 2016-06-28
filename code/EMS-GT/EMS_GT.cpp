@@ -1022,7 +1022,7 @@ private:
 	        	// current lmer for comparison
 	            long lmer = lmerMappings[i][j];
 	            // compute hammingdistance of current lmer vs the candidate motif
-	            int hammingDistance = computeHD(mapping, lmer);
+	            int hammingDistance = computeHammingDistance(mapping, lmer);
 
 	            if (hammingDistance <= ds->numberOfAllowedMutations) {
 	                found = true;

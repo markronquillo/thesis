@@ -38,7 +38,7 @@ public:
 	 *  The collection of candidate motifs will only 
 	 *  be done up to this value
 	 */
-	int tPrime = 5;
+	int tPrime = 6;
 
 	/**
 	 *	Usage of boolean flags in generation of neighborhood only starts
