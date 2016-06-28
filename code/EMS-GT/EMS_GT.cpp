@@ -914,7 +914,7 @@ private:
 	        	// current lmer for comparison
 	            long lmer = lmerMappings[i][j];
 	            // compute hammingdistance of current lmer vs the candidate motif
-	            int hammingDistance = computeHammingDistance(mapping, lmer);
+	            int hammingDistance = computeHD(mapping, lmer);
 
 	            // collect all lmers in the sequence that is within
 	            // d + blockDegree distance between the mapping
@@ -961,7 +961,7 @@ private:
 		// cout << filteredLmerMappings.size() << endl;
 		for (const auto &lmer : filteredLmerMappings)
 		{
-	        int hammingDistance = computeHammingDistance(mapping, lmer);
+	        int hammingDistance = computeHD(mapping, lmer);
 	        if (hammingDistance <= ds->numberOfAllowedMutations) {
 	        	found = true;
 	        	break;
@@ -987,7 +987,7 @@ private:
 	        	// current lmer for comparison
 	            long lmer = lmerMappings[i][j];
 	            // compute hammingdistance of current lmer vs the candidate motif
-	            int hammingDistance = computeHammingDistance(mapping, lmer);
+	            int hammingDistance = computeHD(mapping, lmer);
 
 	            if (hammingDistance <= ds->numberOfAllowedMutations) {
 	                found = true;
@@ -1022,7 +1022,7 @@ private:
 	        	// current lmer for comparison
 	            long lmer = lmerMappings[i][j];
 	            // compute hammingdistance of current lmer vs the candidate motif
-	            int hammingDistance = computeHammingDistance(mapping, lmer);
+	            int hammingDistance = computeHD(mapping, lmer);
 
 	            if (hammingDistance <= ds->numberOfAllowedMutations) {
 	                found = true;

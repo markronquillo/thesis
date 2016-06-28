@@ -1,0 +1,296 @@
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,1
+Time to preprocess pairs 686ms
+Motifs:
+ACCCGCGAGGG
+AGGCTCAGTCA
+ATGGTCACTCC
+CTACGATATTC
+GACCGGCCATA
+GTACGACGATA
+TATACCTTGGT
+Total motifs found: 7
+Time on processor 0: 1.575s; file FASTA/11,3,1
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,2
+Time to preprocess pairs 547ms
+Motifs:
+AATTACACAAT
+AATTACATAAT
+TAATTCAGCGC
+TAATTTAGGGC
+Total motifs found: 4
+Time on processor 0: 1.435s; file FASTA/11,3,2
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,3
+Time to preprocess pairs 593ms
+Motifs:
+CAACAAGACGT
+CTGCGAAAGCC
+GAAGCCGAAGA
+GACGCAATCCA
+GGTAGCTGGAT
+TAAGCTATACA
+TATCACGGGTT
+TTAGACATCAA
+Total motifs found: 8
+Time on processor 0: 1.403s; file FASTA/11,3,3
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,4
+Time to preprocess pairs 671ms
+Motifs:
+AAGCTAGCATC
+AGACTTATACA
+AGAGACCAGCC
+CGTCTCAGAGT
+CGTTCTGACTA
+GGTTCTCAACC
+TCCTTACGAGA
+Total motifs found: 7
+Time on processor 0: 1.653s; file FASTA/11,3,4
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,5
+Time to preprocess pairs 624ms
+Motifs:
+AATGTCCCTCG
+CACGCGGCGAT
+CCGGCGACACT
+CGCGTCCGAGA
+CGCTGCAAAGT
+CTTCACCCACG
+GGCATGGTCGG
+Total motifs found: 7
+Time on processor 0: 1.513s; file FASTA/11,3,5
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,6
+Time to preprocess pairs 546ms
+Motifs:
+ACCCATAATGA
+AGCGAGCCGGA
+AGGTCTCTCGG
+CCCATTCGGAA
+CTGAGGTTACC
+TATCAATCTCC
+TTAGGGGAAAC
+TTTCCCGAGCG
+Total motifs found: 8
+Time on processor 0: 1.357s; file FASTA/11,3,6
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,7
+Time to preprocess pairs 531ms
+Motifs:
+AGAACAAATAG
+AGAATAGATAT
+ATCAGATGATA
+CATAGTATTCC
+CCGTGGATTAA
+GAGAACGGATA
+TAGTAGGCGAT
+Total motifs found: 7
+Time on processor 0: 1.388s; file FASTA/11,3,7
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,8
+Time to preprocess pairs 608ms
+Motifs:
+CGTGGGTACCA
+GTGGTGATTTT
+Total motifs found: 2
+Time on processor 0: 1.388s; file FASTA/11,3,8
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,9
+Time to preprocess pairs 546ms
+Motifs:
+AATGACGATTA
+CACCAGGCGTC
+CGGTGGTAGGA
+GTAACCGACGA
+TACGCCTATCG
+TGAGTCAGTTG
+Total motifs found: 6
+Time on processor 0: 1.606s; file FASTA/11,3,9
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,10
+Time to preprocess pairs 561ms
+Motifs:
+ACGGATAAGAT
+GTGTCAGCTTT
+Total motifs found: 2
+Time on processor 0: 1.45s; file FASTA/11,3,10
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,11
+Time to preprocess pairs 561ms
+Motifs:
+AACAGTACGGG
+CAGCGTCTTGA
+CCACAGAACCT
+GAACCTTACGC
+GGATACCTTAC
+GGTGGCCCTAG
+TCCCAGGATCA
+Total motifs found: 7
+Time on processor 0: 1.357s; file FASTA/11,3,11
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,12
+Time to preprocess pairs 546ms
+Motifs:
+AAATTCTCACC
+Total motifs found: 1
+Time on processor 0: 1.529s; file FASTA/11,3,12
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,13
+Time to preprocess pairs 687ms
+Motifs:
+CCAATTCGCAG
+GTAGAAGTCCG
+TCGCAGTCGGA
+Total motifs found: 3
+Time on processor 0: 1.778s; file FASTA/11,3,13
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,14
+Time to preprocess pairs 561ms
+Motifs:
+AGGAATCATCG
+ATTAGTTCGCC
+CAAACCTGTTG
+CCCGCTGTCCC
+CTATCGTAATT
+GACGGGGTAAA
+GCGGGCTGCGG
+GGTATAACCGC
+TCCCTGGCGTT
+TGGGTACCTAC
+TTGCGAAGTAC
+Total motifs found: 11
+Time on processor 0: 1.528s; file FASTA/11,3,14
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,15
+Time to preprocess pairs 531ms
+Motifs:
+CTTGACATCCG
+GATGGTTCAGC
+TAACCGCGATC
+TCATCAAGGAG
+TCCAGCCGGGT
+TCCTGTCAGTT
+Total motifs found: 6
+Time on processor 0: 1.513s; file FASTA/11,3,15
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,16
+Time to preprocess pairs 546ms
+Motifs:
+AGACCGCTACA
+CCTTTCGCGTC
+GGTTAATGATA
+TCGCTGTCTCA
+TCTCGACAGGA
+Total motifs found: 5
+Time on processor 0: 1.31s; file FASTA/11,3,16
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,17
+Time to preprocess pairs 546ms
+Motifs:
+CAGAGCGGCAC
+CAGGTTCCAAC
+CGCGTCCGCAT
+CTCTAGCAGAC
+GATCACATGGC
+TTGAGATGAAG
+Total motifs found: 6
+Time on processor 0: 1.373s; file FASTA/11,3,17
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,18
+Time to preprocess pairs 624ms
+Motifs:
+AGGCAATTCTC
+CAACAGACACG
+CAGAAAGACAT
+CCCAGAGGCAA
+GAGATTGTCCG
+GGAACGCGGAT
+TGATGTCTAAT
+Total motifs found: 7
+Time on processor 0: 1.622s; file FASTA/11,3,18
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,19
+Time to preprocess pairs 578ms
+Motifs:
+AAGCTTGAGAG
+AAGGCCCCTCT
+AATAAGGGTGG
+GGAGGCGAAGG
+GGGCGTGAAGT
+TCGTAAGGGCG
+TGAACTACAGA
+Total motifs found: 7
+Time on processor 0: 1.404s; file FASTA/11,3,19
+Number of procs 1 my id 0
+n=20 L=11 d=3 totalStringLength=12000
+Alphabet ACGT
+t=2 n'=6
+Read 12000 chars from file FASTA/11,3,20
+Time to preprocess pairs 545ms
+Motifs:
+AAGGACGCAAG
+AAGTGCGGAAT
+CATAGATGTGT
+CATCGATCCTA
+GGATGAAAGTG
+Total motifs found: 5
+Time on processor 0: 1.466s; file FASTA/11,3,20
