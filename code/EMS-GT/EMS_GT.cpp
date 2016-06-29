@@ -916,6 +916,7 @@ private:
 	            // compute hammingdistance of current lmer vs the candidate motif
 	            int hammingDistance = computeHD(mapping, lmer);
 
+
 	            // collect all lmers in the sequence that is within
 	            // d + blockDegree distance between the mapping
 	            if (hammingDistance <= (config->blockDegree + ds->numberOfAllowedMutations)) 
