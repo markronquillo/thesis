@@ -169,7 +169,7 @@ private:
 
 		    for (int row=0; row < config->numberOfRowsInBlock; row++) {
 		        for (int col=31; col > -1; col--) {
-		            int distance = computeHD(i, row*config->TABLE_WIDTH+col);
+		            int distance = computeHammingDistance(i, row*config->TABLE_WIDTH+col);
 		
 		            for (int k=0; k < config->blockDegree - 1; k++) {
 		                if (distance <= k+1) {
@@ -769,7 +769,7 @@ private:
 	        p = (p << 2) + base;
 	    }
 
-	    int hd = computeHD(mapping, p);
+	    int hd = computeHammingDistance(mapping, p);
 	    if (hd < ds->numberOfAllowedMutations) { 
 	    	pruneLmers[hd].push_back(p);
 	    }
@@ -788,7 +788,7 @@ private:
 	            case 'T': p+= 3; break;
 	        }
 
-		    int hd = computeHD(mapping, p);
+		    int hd = computeHammingDistance(mapping, p);
 		    if (hd < ds->numberOfAllowedMutations) { 
 		    	pruneLmers[hd].push_back(p);
 		    }
@@ -915,7 +915,7 @@ private:
 	        	// current lmer for comparison
 	            long lmer = lmerMappings[i][j];
 	            // compute hammingdistance of current lmer vs the candidate motif
-	            int hammingDistance = computeHD(mapping, lmer);
+	            int hammingDistance = computeHammingDistance(mapping, lmer);
 
 	            // collect all lmers in the sequence that is within
 	            // d + blockDegree distance between the mapping
@@ -962,7 +962,7 @@ private:
 		// cout << filteredLmerMappings.size() << endl;
 		for (const auto &lmer : filteredLmerMappings)
 		{
-	        int hammingDistance = computeHD(mapping, lmer);
+	        int hammingDistance = computeHammingDistance(mapping, lmer);
 	        if (hammingDistance <= ds->numberOfAllowedMutations) {
 	        	found = true;
 	        	break;
@@ -988,7 +988,7 @@ private:
 	        	// current lmer for comparison
 	            long lmer = lmerMappings[i][j];
 	            // compute hammingdistance of current lmer vs the candidate motif
-	            int hammingDistance = computeHD(mapping, lmer);
+	            int hammingDistance = computeHammingDistance(mapping, lmer);
 
 	            if (hammingDistance <= ds->numberOfAllowedMutations) {
 	                found = true;
@@ -1023,7 +1023,7 @@ private:
 	        	// current lmer for comparison
 	            long lmer = lmerMappings[i][j];
 	            // compute hammingdistance of current lmer vs the candidate motif
-	            int hammingDistance = computeHD(mapping, lmer);
+	            int hammingDistance = computeHammingDistance(mapping, lmer);
 
 	            if (hammingDistance <= ds->numberOfAllowedMutations) {
 	                found = true;
