@@ -2,7 +2,7 @@
 #include <vector>
 #include "DataSetParams.cpp"
 #include "Config.cpp"
-#include "EMS_GT_CLEAN.cpp"
+#include "EMS_GT_CLEAN_REAL.cpp"
 #include "utils.cpp"
 
 using namespace std;
@@ -14,6 +14,7 @@ int main(int argc, char* argv[]) {
     // string inputFileHeader = "../datasets/";
     string inputFileName;
     int tPrime = -1;
+    string plantedMotif = "";
 
     DataSetParams dsParams;
 
@@ -46,7 +47,10 @@ int main(int argc, char* argv[]) {
     if (argc > 2)
         config.tPrime = atoi(argv[2]);
 
-    EMS_GT ems = EMS_GT(&dsParams, &config);
+    if (argc > 5)
+        plantedMotif = argv[5];
+
+    EMS_GT ems = EMS_GT(&dsParams, &config, plantedMotif);
     ems.start();
 
     return 0;
