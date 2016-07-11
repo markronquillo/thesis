@@ -2,7 +2,7 @@
 #include <vector>
 #include "DataSetParams.cpp"
 #include "Config.cpp"
-#include "EMS_GT.cpp"
+#include "EMS_GT_CLEAN.cpp"
 #include "utils.cpp"
 
 using namespace std;
@@ -24,6 +24,11 @@ int main(int argc, char* argv[]) {
 
     // put the dataset config and put it in the dsConfig struct
     readInput(inputFileName, &dsParams);
+
+    if (argc > 3)
+        dsParams.lengthOfMotif = atoi(argv[3]);
+    if (argc > 4)
+        dsParams.numberOfAllowedMutations = atoi(argv[4]);
 
     // other config details are based on the dataset parameters
     // so we need to pass it to

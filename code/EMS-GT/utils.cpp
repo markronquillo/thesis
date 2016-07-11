@@ -8,7 +8,7 @@
 using namespace std;
 
 
-/** 
+/**
  *	Stores the data in the DataSetConfig
  */
 int readInput(string filename, DataSetParams *ds) {
@@ -21,8 +21,8 @@ int readInput(string filename, DataSetParams *ds) {
     }
 
     string line;
-    
-    // read number of sequences 
+
+    // read number of sequences
     getline(inputFile, line);
     ds->numberOfSequences = atoi(line.c_str());
 
@@ -46,7 +46,7 @@ int readInput(string filename, DataSetParams *ds) {
         ds->plantedAlignments.push_back(n);
     }
 
-    // planted motif 
+    // planted motif
     getline(inputFile, ds->plantedMotif);
 
     // read the sequences

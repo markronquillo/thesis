@@ -1,239 +1,0 @@
-Reading file FASTA/13,4,1
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 169 out of 588; current time 2s; projected 7s       [P0] Index 485 out of 588; current time 4s; projected 4s       CTTCTTTCGCGAT
-CTTGGTACGCGCT
-GGCAACACAACGA
-GTTGGTTCAGGCC
-TTTCCTTCGGGGT
-Total motifs found: 5
-Time on processor 0: 4.789s; file FASTA/13,4,1
-Reading file FASTA/13,4,2
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 201 out of 588; current time 2s; projected 5s       [P0] Index 464 out of 588; current time 4s; projected 5s       AAGCTCTCTCGGA
-ATACACTGGGGTT
-CCCCGCCGTTGGA
-CCTTGCCTAACCA
-GCAATACTTGCCA
-Total motifs found: 5
-Time on processor 0: 4.96s; file FASTA/13,4,2
-Reading file FASTA/13,4,3
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 153 out of 588; current time 2s; projected 7s       [P0] Index 396 out of 588; current time 4s; projected 5s       AGTCCGCAAGTCC
-ATTCCCTCCTGGG
-ATTCCGTGCGCCT
-CAGTATGGCCCAA
-CCCTCAACTCGTG
-CCTCTCACAACGT
-CTTTCGGCAAGAA
-GACCTTCTCTTAA
-GCCCGCAACTTAT
-GTTTGCGCCAGTA
-TATGGGATTCGAT
-TCCTGAGACCTCA
-TCTCGTGATTGAT
-TTGGTCGTACGTG
-Total motifs found: 14
-Time on processor 0: 5.491s; file FASTA/13,4,3
-Reading file FASTA/13,4,4
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 151 out of 588; current time 2s; projected 7s       [P0] Index 442 out of 588; current time 4s; projected 5s       AAGAGCAGCTTCT
-ACTCCTTCTTCGA
-CCTCTTCATCGCA
-GATGCGGACACCC
-GTTAGGTACATGG
-TAATTAAATGACA
-TCAGGTCCGTCCC
-Total motifs found: 7
-Time on processor 0: 4.897s; file FASTA/13,4,4
-Reading file FASTA/13,4,5
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 167 out of 588; current time 2s; projected 7s       [P0] Index 443 out of 588; current time 4s; projected 5s       AAAATAGCCTTGA
-AGCGGCTACATGA
-AGTAGCCCATGGG
-ATGAAGTGCTAGG
-CAACAAGCGTTGT
-CAACAGGCGTTTT
-CAATCCATCATTT
-GCAAGACTTCATC
-GTTTTAAGAACAA
-TAGCTGCGTCAGA
-Total motifs found: 10
-Time on processor 0: 4.882s; file FASTA/13,4,5
-Reading file FASTA/13,4,6
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 150 out of 588; current time 2s; projected 7s       [P0] Index 430 out of 588; current time 4s; projected 5s       AAACCCAAGATAG
-AATCACCCTGTAG
-CAGCCCGCTAGTG
-CCGAAACTGCGGA
-CGATCGCCGGGCT
-CTAGAACCTCGGA
-CTCATACAAAAAC
-GAAAGTGGTGCAG
-GAAGTTGCCGCAG
-Total motifs found: 9
-Time on processor 0: 5.272s; file FASTA/13,4,6
-Reading file FASTA/13,4,7
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 174 out of 588; current time 2s; projected 6s       [P0] Index 470 out of 588; current time 4s; projected 5s       CTGAACGATGTAT
-GGCCCGATAGCAT
-GGCGTGTGAAAAA
-TAGCGGCGGCGTA
-TAGTTCTACGTTT
-TCACCATAATGAG
-Total motifs found: 6
-Time on processor 0: 4.773s; file FASTA/13,4,7
-Reading file FASTA/13,4,8
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 202 out of 588; current time 2s; projected 5s       [P0] Index 494 out of 588; current time 4s; projected 4s       ACAGATAATACCC
-ACCCTTCTATCAC
-ACGCTTCTATCGC
-AGCACCGCGGCCC
-CGCCTCTAGCCCC
-CTGCTGTACCTCT
-TCTGGTAATACTT
-TTTTAATGCTAAT
-Total motifs found: 8
-Time on processor 0: 4.773s; file FASTA/13,4,8
-Reading file FASTA/13,4,9
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 187 out of 588; current time 2s; projected 6s       [P0] Index 478 out of 588; current time 4s; projected 4s       ACTTTCAATCGTG
-AGTTTTGTGTGCT
-ATAAAGGAGGTCT
-CCGTGTTATGGAT
-GACGCGTGGTTAC
-GAGGACGTGACTA
-GGCCCTACTACCG
-GTTATAAATGACT
-TCCTTAGCGTGCT
-TGCTGTCCGTGCT
-TGCTGTGCTAGCC
-TTCTAACCGGCGT
-TTGGTTAGGGCTG
-TTTTAAGCTTTGC
-Total motifs found: 14
-Time on processor 0: 4.695s; file FASTA/13,4,9
-Reading file FASTA/13,4,10
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 144 out of 588; current time 2s; projected 8s       [P0] Index 414 out of 588; current time 4s; projected 5s       ACTTAAGGTCATG
-ATCTACTTTTATT
-CACCTTTATTGGC
-CCATTTGCCAGCC
-Total motifs found: 4
-Time on processor 0: 5.194s; file FASTA/13,4,10
-Reading file FASTA/13,4,11
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 193 out of 588; current time 2s; projected 6s       [P0] Index 480 out of 588; current time 4s; projected 4s       AATTCACCGTCTC
-ACATCAGCCGCTT
-CAACGGTGCCACA
-CTTAGGTCAACTA
-GATGTTTTACTGT
-GCCCATGCCTACA
-TAGGACGGCGGTG
-TAGTTCGTCGTTG
-Total motifs found: 8
-Time on processor 0: 4.68s; file FASTA/13,4,11
-Reading file FASTA/13,4,12
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 160 out of 588; current time 2s; projected 7s       [P0] Index 449 out of 588; current time 4s; projected 5s       AGCTTAAATCCTA
-CGCGTATGAGAGA
-CGGACGATGAGGG
-GAGAGGGACCATG
-TAGACTTTGAGGG
-TGGTCGGGGCGGT
-Total motifs found: 6
-Time on processor 0: 5.053s; file FASTA/13,4,12
-Reading file FASTA/13,4,13
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 188 out of 588; current time 2s; projected 6s       [P0] Index 477 out of 588; current time 4s; projected 4s       ACAACGTTGCGGA
-ATTTGTCTACGAT
-CTAAGGATTTTTC
-GGCTCAAGTATTA
-Total motifs found: 4
-Time on processor 0: 4.71s; file FASTA/13,4,13
-Reading file FASTA/13,4,14
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 141 out of 588; current time 2s; projected 8s       [P0] Index 458 out of 588; current time 4s; projected 5s       AGATTCTATCTTT
-ATACGTATGATGG
-CACTGTCCGCCAT
-CTTACGCATGAGC
-GTTATGAAGTCGG
-TCTACTCACCGCT
-TTATCTTTCCGCT
-TTCTCTCTCTGCC
-Total motifs found: 8
-Time on processor 0: 5.131s; file FASTA/13,4,14
-Reading file FASTA/13,4,15
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 205 out of 588; current time 2s; projected 5s       [P0] Index 489 out of 588; current time 4s; projected 4s       AGCCCACTGTGTT
-GATTTCATGTCGC
-TCGCTGAGCCGGG
-Total motifs found: 3
-Time on processor 0: 4.773s; file FASTA/13,4,15
-Reading file FASTA/13,4,16
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 116 out of 588; current time 2s; projected 10s       [P0] Index 364 out of 588; current time 4s; projected 6s       ACCGATTTTACGA
-CAACACTGTTCGA
-CAGTATGTAAGGT
-CCTTATTGCCCCA
-CGGGGCACCTGAT
-CTCCATGTACTGT
-TGTATGGTTTTTT
-TTTGTTTTTCCCA
-TTTTTTTTCAACT
-Total motifs found: 9
-Time on processor 0: 5.428s; file FASTA/13,4,16
-Reading file FASTA/13,4,17
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 135 out of 588; current time 2s; projected 8s       [P0] Index 434 out of 588; current time 4s; projected 5s       AAGGAATCCGCAT
-ATTTCGTCTGTAG
-CGTTAGGTCGAAT
-TTGTGTATAGACT
-Total motifs found: 4
-Time on processor 0: 5.226s; file FASTA/13,4,17
-Reading file FASTA/13,4,18
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 189 out of 588; current time 2s; projected 6s       [P0] Index 464 out of 588; current time 4s; projected 5s       AATCGGTAGTCCG
-AGGCTCGGCCGTC
-GGACAATCGTTTT
-GGTCGTTAATTAG
-Total motifs found: 4
-Time on processor 0: 4.773s; file FASTA/13,4,18
-Reading file FASTA/13,4,19
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 180 out of 588; current time 2s; projected 6s       [P0] Index 425 out of 588; current time 4s; projected 5s       CATGGCAATGAGC
-CCCCCAATGCCCT
-CGTAGTTTAGCAC
-GATTACAAACGCA
-GCGTCACTTAATG
-TTTCCTGTCGGCA
-Total motifs found: 6
-Time on processor 0: 5.085s; file FASTA/13,4,19
-Reading file FASTA/13,4,20
-n=20 q=100% L=13 d=4 totalStringLength=12000 alphabet=ACGT of size=4
-s=3 n'=6
-[P0] Index 126 out of 588; current time 2s; projected 9s       [P0] Index 426 out of 588; current time 4s; projected 5s       ACCCTCAGCCTCG
-CATGCTCACAGTC
-CCACTAGTCCACC
-GTGTCTGCTCGCA
-TGGGCAGAACATG
-Total motifs found: 5
-Time on processor 0: 5.038s; file FASTA/13,4,20

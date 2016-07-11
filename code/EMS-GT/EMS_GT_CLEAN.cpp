@@ -31,10 +31,10 @@ public:
 		// cout << " EMS_GT v2.0" << endl;
 		// cout << "======================================================" << endl;
 		// cout << " CONFIGURATION" << endl;
-		// cout << " tPrime:\t\t " << config->tPrime << endl;
+		cout << " tPrime:\t\t " << config->tPrime << endl;
 		// cout << " tPrime_2:\t\t " << config->tPrime_2 << endl;
-		// cout << " l:\t\t " << ds->lengthOfMotif << endl;
-		// cout << " d:\t\t " << ds->numberOfAllowedMutations << endl;
+		cout << " l:\t\t " << ds->lengthOfMotif << endl;
+		cout << " d:\t\t " << ds->numberOfAllowedMutations << endl;
 		// cout << "======================================================" << endl;
 
 		// cout << "" << endl;
@@ -183,7 +183,6 @@ private:
         	for (int j=0; j < config->numberOfCandidateMotifsRows; j++) {
         	    candidateMotifs[j] &= currentNeighborhood[j];
         	    currentNeighborhood[j] = 0;
-
         	}
 
         	high_resolution_clock::time_point te = high_resolution_clock::now();
