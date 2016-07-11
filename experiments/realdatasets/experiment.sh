@@ -8,7 +8,7 @@
 # @author Aia Sia
 # @version 1.0 9/09/2015
 
-r=20 # number of experimental runs
+r=1 # number of experimental runs
 # javac -d bin src/*.java # compile java source files
 
 # cd src/PMS8; make; mv Debug/PMS8  ../../bin/PMS8;  # uncomment these lines to compile PMS8 and qPMS9 from scratch.
