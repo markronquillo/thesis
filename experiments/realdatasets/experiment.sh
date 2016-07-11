@@ -63,13 +63,13 @@ for((i=1; i <= r; i++)) do
 	../bin/EMS_GT real_metallothionein.txt 13 9 3 GTACATTGT &>> ../results/real_metallothionein-9,3-GTACATTGT
 	../bin/EMS_GT real_metallothionein.txt 13 8 3 GCTATAAA &>> ../results/real_metallothionein-8,3-GCTATAAA
 
-	../bin/EMS_GT yeast_hse_hstf.txt 3 8 3 &>> ../results/yeast_hse_hstf-8,3
-	../bin/EMS_GT yeast_hse_hstf.txt 3 8 2 &>> ../results/yeast_hse_hstf-8,2
+	#../bin/EMS_GT yeast_hse_hstf.txt 3 8 3 &>> ../results/yeast_hse_hstf-8,3
+	#../bin/EMS_GT yeast_hse_hstf.txt 3 8 2 &>> ../results/yeast_hse_hstf-8,2
 
-	../bin/EMS_GT yeast_mcb.txt 3 6 2 &>> ../results/yeast_mcb-6,2
+	#../bin/EMS_GT yeast_mcb.txt 3 6 2 &>> ../results/yeast_mcb-6,2
 
-	../bin/EMS_GT yeast_pdr3.txt 4 8 2 &>> ../results/yeast_pdr3-8,2
+	#../bin/EMS_GT yeast_pdr3.txt 4 8 2 &>> ../results/yeast_pdr3-8,2
 
-	../bin/EMS_GT yeast_pho4.txt 2 6 2 &>> ../results/yeast_pho4-6,2
+	#../bin/EMS_GT yeast_pho4.txt 2 6 2 &>> ../results/yeast_pho4-6,2
 done
 cd ..

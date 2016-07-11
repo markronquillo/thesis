@@ -1,0 +1,10 @@
+ tPrime:		 2
+ l:		 10
+ d:		 3
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CAATCACCAC;AAACAAAAGT
+   > Found Motifs:  CAATCACCAC
+-------------------------------------------------------
+Duration: 62400
+Duration (s): 0.0624

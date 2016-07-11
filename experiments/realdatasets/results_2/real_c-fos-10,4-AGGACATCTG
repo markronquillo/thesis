@@ -1,0 +1,10 @@
+ tPrime:		 3
+ l:		 10
+ d:		 4
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: motif
+   > Found Motifs:  AGGACATCTG
+-------------------------------------------------------
+Duration: 78000
+Duration (s): 0.078
