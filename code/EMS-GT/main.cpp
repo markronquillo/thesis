@@ -2,7 +2,7 @@
 #include <vector>
 #include "DataSetParams.cpp"
 #include "Config.cpp"
-#include "EMS_GT_CLEAN_REAL.cpp"
+#include "EMS_GT_PriorityQ.cpp"
 #include "utils.cpp"
 
 using namespace std;
@@ -50,7 +50,8 @@ int main(int argc, char* argv[]) {
     if (argc > 5)
         plantedMotif = argv[5];
 
-    EMS_GT ems = EMS_GT(&dsParams, &config, plantedMotif);
+    // EMS_GT ems = EMS_GT(&dsParams, &config, plantedMotif);
+    EMS_GT ems = EMS_GT(&dsParams, &config);
     ems.start();
 
     return 0;
