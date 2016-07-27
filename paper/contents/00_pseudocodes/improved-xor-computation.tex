@@ -1,0 +1,17 @@
+\begin{figure}[h]
+	\noindent \hspace*{6pt}{\bf Algorithm 4} \textsc{Hamming Distance Computation using Pre-Computed Mismatch Values}
+	\begin{algorithmic}[1]
+		\label{alg:upd-hamming-distance-comp}
+		\Require $l$-mer mappings $u$ and $v$ and\newline
+			\hspace*{8pt} MC \Comment{array of pre-computed count of mismatch positions}
+		\Ensure Hamming distance $d_H(u,v)$ \vspace*{6pt}
+		\State $d_H(u, v) \leftarrow 0$
+		\State $z \leftarrow u \oplus v$
+		\While{$z > 0$}
+			\State $l \leftarrow z \& ((1 << 18) - 1)$
+			\State $d_H(u, v) \leftarrow d_H(u, v) + MC[l]$ 
+			\State $z \leftarrow z >>> 18$ \Comment{shift 18 bits to the right}
+		\EndWhile
+		\State\Return $d_H(u, v)$
+	\end{algorithmic}
+\end{figure}

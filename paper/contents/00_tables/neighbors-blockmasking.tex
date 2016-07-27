@@ -1,0 +1,19 @@
+\begin{table}[h] %neighbors_blockmasking
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Number of individual neighbors generated}
+	\label{tbl:neighbors_blockmasking}
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+	\hline 
+	\bfseries\boldmath $(l,d)$ & \bfseries\boldmath $N(x,d)$ & \bfseries\boldmath $N(y,d)$, $k$=5 & \bfseries \% reduction\\
+	\bfseries & \bfseries\boldmath $\sum_{i=0}^{l} \binom{l}{i} 3^{i}$ & \bfseries\boldmath $\sum_{i=0}^{l-k} \binom{l-k}{i} 3^{i}$ & \\
+	\hline
+	 9,2 &         351  &       66 & 81.2\%\\
+	11,3 &       4,983  &      693 & 86.1\%\\
+	13,4 &      66,378  &    7,458 & 88.8\%\\
+	% 14,4 &      91,770  &   12,825 & 86.0\%\\
+	15,5 &     853,569  &   81,921 & 90.4\%\\
+	% 16,5 &   1,225,092  &  143,979 & 88.2\%\\
+	17,6 &  10,738,203  &  912,717 & 91.5\%\\
+	\hline\end{tabular}
+\end{table}

@@ -1025,22 +1025,6 @@ private:
 	        distance += mismatches[i];
 	        result = result >> 18;
 	    }
-
-	  //   if (computeHD(lmer1, lmer2) != distance) {
-	  //   	long result = lmer1 ^ lmer2;
-			// std::bitset<34> lm1(lmer1);
-			// std::bitset<34> lm2(lmer2);
-			// std::bitset<34> lm3(result);
-		 //    cout << lm1 << " ^ " << lm2 << " = " << lm3 << endl;
-		 //    cout << "\t Distance " << distance << " vs " << computeHD(lmer1, lmer2) << endl;
-		 //    while (result > 0) {
-		 //        int i = (result & ((1 << 18)-1));
-			// 	std::bitset<34> lm4(i);
-
-		 //    	cout << "\t Part " << lm4 << " " << result << endl;
-		 //        result = result >> 18;
-		 //    }
-	  //   }
 	    return distance;
 	}
 

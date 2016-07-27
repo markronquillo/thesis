@@ -378,17 +378,8 @@ private:
 	    }
 	}
 
-	/**
-	 *  Given a mapping, check the rest of the sequences if that mapping
-	 *  exists in all of it.
-	 *
-	 *	This isMotif function assumes that the filteredLmerMappings is already initialized 
-	 *	and uses it.
-	 */
 	bool isMotif(long mapping) {
 
-		// if there is a d-distance lmer in the filtered set, 
-		// check if there is for the rest of the string sequences
 	    for (int i=0; i < lmerMappings.size(); i++) {
 	        bool found = false;
 
@@ -403,7 +394,6 @@ private:
 	                break;
 	            }
 	        }
-
 	        // if there is a sequence where the mapping is not present
 	        // return false
 	        if ( !found ) {

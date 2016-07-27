@@ -1,0 +1,35 @@
+\section{Introduction}
+
+	% Significance of the study
+	DNA motif finding is a well studied topic in computational biology. Motif is a short patterns of interests that occurs in large amount of biological data. Detection of these motifs often leads to new biological discoveries. These may lead to finding transcription factor-binding sites that helps biologists understand gene functions, understand human diseases, identify potential therapeutic drug target and conclude commonalities from different species.
+
+	% Definition of PMS
+	There are many variations of the motif search problem such as Simple Motif Search (SMS), Edit-distance-based Motif Search (EMS) and Planted Motif Search (PMS) also known as $(l, d)$-motif search. This study focuses on the exact enumerative algorithm for the PMS problem. Planted Motif Search is formally defined in \cite{ExactAlgorithmsPMS} as \emph{Input are $t$ sequences of length $n$ each. Input also are two integers $l$ and $d$. The problem is to find a motif (i.e., a sequence) $M$ of length $l$. It is given that each input sequence contains a variant of $M$ . The variants of interest are sequences that are at a hamming distance of $d$ from $M$}. In solving the PMS problem, traditional string matching won't be efficient since these biological motifs are not typically exact but are subject to mutations. As a matter of fact, PMS has already been proven to be NP-hard, which means that it is very unlikely to have an algorithm that solves it in polynomial time \cite{Evans2003407}.
+
+
+	% Preliminaries
+	Some of the terms used in this study are defined below:
+	\begin{itemize}
+		\item An \textbf{\boldmath $l$-mer} is a string of length $l$ in a DNA sequence of length $m$ where $l < m$.
+
+		\item The \textbf{\boldmath Hamming distance $d_H$} between two $l$-mers, of equal length, is equal to the number of positions where they have mismatches. Ex. $d_H(\texttt{acttgca}, \texttt{actaaga}) = 3$. 
+
+		\item An $l$-mer $x$ is considered a \textbf{\boldmath $d-$neighbor} of another $l$-mer $y$ if the Hamming distance between the two is at most $d$.
+
+		\item The \textbf{\boldmath $d$-neighborhood of an $l$-mer $x$} is the set {\boldmath $N(x, d)$} of all $l$-mers with at most $d$ Hamming distance from $x$. i.e., {\boldmath $d_H (x, x') \leq d$}.
+		\newline 
+		Ex. \texttt{ccgga}, \texttt{ccaaa}, and \texttt{gctta} are all in $N(\texttt{cctta}, 2)$. \newline
+		where $l = 5$
+
+		\item The \textbf{\boldmath $d$-neighborhood of a sequence $S$}
+		is the set {\boldmath $\mathcal{N}(S, d)$} of all $d$-neighbors of all $l$-mers in sequence $S$.
+		\newline {\small
+		$\mathcal{N}(\texttt{aattacg}, 2) 
+				= N(\texttt{aatta}, 2) \cup 
+					N(\texttt{attac}, 2) \cup
+					N(\texttt{ttacg}, 2)$} \newline
+					where $l = 5$ \newline
+	\end{itemize} 
+
+	% Introduction of EMS-GT
+	In this study we introduce EMS-GT2 an improvement of EMS-GT an exact enumerative algorithm for the planted motif problem. The EMS-GT2 algorithm leverages on the block-processing of candidate motifs during Test phase. The previous EMS-GT algorithm was evaluated using $(l, d)$-challenge instances such as $(9, 2)$, $(11, 3)$, $(13, 4)$, $(15, 5)$ and $(17, 6)$. It has already showed in \cite{EMSGTJournal} that the current implementation of EMS-GT is faster than the state-of-the-art algorithms PMS8 and qPMS9 for all $(l, d)$-challenge instances mentioned except $(17, 6)$. Even though that EMS-GT2 algorithm can only solve $(l, d)$-instances when $l \leq 17$, studies has shown that DNA motifs' length are usually around 10 bp in eukaryotes and 16bp in prokaryotes \cite{stewart2012transcription} thus it is still significant in practice.

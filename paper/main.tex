@@ -1,0 +1,50 @@
+\documentclass[oneside,12pt]{discsthesis}
+	\usepackage{graphicx}
+	\usepackage{multirow}
+	\usepackage{fancyvrb}
+	% \usepackage{rotating}
+	\usepackage{longtable}
+	\usepackage{pdflscape}
+	\usepackage{enumerate}
+	\usepackage[justification=centering]{caption}
+	\usepackage[titletoc]{appendix}
+	\graphicspath{ {images/} }
+
+\begin{document}
+
+	% ------------ Header ------------
+	\ThesisAuthor{\textbf{Mark Joseph D. Ronquillo}}
+	\ThesisTitle{\textbf{An Improved Exact Solution for Planted Motif Search Problem}}
+	\ThesisArea{Computer Science}
+	\ThesisDefenseYear{2016}
+
+	\DepartmentHead{MARLENE M. DE LEON, Ph.D.}
+	\SchoolHead{EVANGELINE P. BAUTISTA, Ph.D.}
+	\ThesisAdviser{PROCESO L. FERNANDEZ, JR., Ph.D.}
+	% \FirstPanelMember{\hspace{1 mm} JOHN PAUL C. VERGARA, Ph.D.}
+	% \SecondPanelMember{WILLIAM EMMANUEL S. YU, Ph.D.}
+	% \ThirdPanelMember{\hspace{1 mm} MA. REGINA E. ESTUAR, Ph.D. \hspace{1 mm}}
+	% \FourthPanelMember{PABLO R. MANALASTAS, JR., Ph.D.}
+
+	\ThesisStyle{MS}{FinalWithCorner}{-10pt}{15pt}
+
+	% ------------ Paper's Content ------------ 
+	\FrontMatter
+		\input{frontmatter/acknowledgements}
+
+	\MainMatter
+		\input{contents/abstract}
+		\input{contents/introduction}
+
+		\input{contents/related_literatures/related-literature}
+		\input{contents/related_literatures/ems-gt}
+
+		\input{contents/methodology}
+
+		\input{contents/results}
+
+
+	\bibliographystyle{plain}
+	\bibliography{others/bibliography}
+  
+\end{document}

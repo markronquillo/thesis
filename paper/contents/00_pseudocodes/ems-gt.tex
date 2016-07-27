@@ -1,0 +1,48 @@
+\begin{figure}[h]
+	\label{alg:EMS-GT}
+	\noindent \hspace*{6pt}{\bf Algorithm 1} EMS-GT
+	\begin{algorithmic}[1]
+		\Require set $\mathcal{S} = \{S_{1},S_{2},...,S_{n}\}$ of $L$-length sequences, \newline \hspace*{25pt}motif length $l$, allowable mismatches $d$
+		\Ensure set M of candidate motifs\vspace*{6pt}
+		\State \Comment{generate candidates}
+		\State $C \leftarrow \{\}$
+		\State $\mathcal{N}(S_{1},d) \leftarrow \{\}$
+			\For{$j \leftarrow 1$ to $L-l+1$}
+				\State $x \leftarrow j^{th} l$-mer in $S_{1}$
+				\State $\mathcal{N}(S_{1},d) \leftarrow \mathcal{N}(S_{1},d) \cup N(x,d)$
+			\EndFor
+		\State $C \leftarrow \mathcal{N}(S_{1},d)$
+			\For{$i \leftarrow 2$ to $n'$}
+				\State $\mathcal{N}(S_{i}, d) \leftarrow \{\}$
+				\For{$j \leftarrow 1$ to $L-l+1$}
+					\State $x \leftarrow j^{th} l$-mer in $S_{1}$
+					\State $\mathcal{N}(S_{i},d) \leftarrow \mathcal{N}(S_{i},d) \cup N(x,d)$
+				\EndFor
+				\State $C \leftarrow C \cap \mathcal{N}(S_{i},d)$
+			\EndFor
+			\State \Comment{test candidates}
+			\State $M \leftarrow \{\}$
+			\For{each $l$-mer $c$ in $C$}
+				\State $isMotif \leftarrow$ true
+				\For{$i \leftarrow (n'+1)$ to $n$}
+					\State $found \leftarrow$ false
+					\For{$j \leftarrow 1$ to $L-l+1$}
+						\State $x \leftarrow j^{th} l-$mer in $S_{i}$
+						% \State compute $dH(x,u)$
+						\If{$dH(x,c) \leq d$}
+							\State $found \leftarrow$ true
+							\State break
+						\EndIf
+					\EndFor
+					\If{!$found$}
+						\State $isMotif \leftarrow$ false
+						\State break
+					\EndIf
+				\EndFor
+				\If{$isMotif$}
+					\State $M \leftarrow M \cup c$
+				\EndIf
+			\EndFor
+		\State \Return $M$
+	\end{algorithmic}
+\end{figure}

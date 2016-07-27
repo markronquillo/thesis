@@ -1,0 +1,28 @@
+\begin{figure}[b]
+	\noindent \hspace*{6pt}{\bf Algorithm 2} \textsc{Generate Neighborhood}
+	\begin{algorithmic}[1]
+		\label{alg:recursive-nbr-gen}
+		\Require DNA sequence $S$, motif length $l$, mismatches $d$
+		\Ensure bit-array $\mathcal{N}$ representing $\mathcal{N}(S,d)$ \vspace*{6pt}
+		% \For{$i \leftarrow$ 1 to $4^{l}$}
+		\State $\mathcal{N}[i] \leftarrow 0,\ \ \forall i < 4^{l}$ 
+		% \EndFor
+		\For{each $l$-mer $x$ in $S$}
+			\State \textsc{AddNeighbors}($x$, 0, $d$) \hspace*{9pt}\Comment{recursive procedure}
+		\EndFor
+		\State \Comment{make $d$ changes in $l$-mer $x$, from position $s$ onward}
+		\Procedure{AddNeighbors}{$x$, $s$, $d$}
+			\For{$i \leftarrow s$ to $l$}
+				\State $\Sigma \leftarrow$ \{\texttt{a}, \texttt{g}, \texttt{c}, \texttt{t}\} $- x_{i}$ \hspace*{6pt}\Comment{$i^{th}$ character in $x$}
+				\For{$j \leftarrow 1$ to $|\Sigma|$}
+					\State $neighbor \leftarrow\ ${\em\small concatenate}$(x_{1...i-1},\Sigma_{j},x_{i+1...l})$
+					\State $\mathcal{N}[neighbor] \leftarrow 1$
+					\If{$d > 1$ and $i < l$}
+						\State \textsc{AddNeighbors}($neighbor$, $i+1$, $d-1$)
+					\EndIf
+				\EndFor
+			\EndFor
+		\EndProcedure
+		\State\Return $\mathcal{N}$
+	\end{algorithmic}
+\end{figure}

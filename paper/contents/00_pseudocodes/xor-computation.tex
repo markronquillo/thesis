@@ -1,0 +1,17 @@
+\begin{figure}[h]
+	\noindent \hspace*{6pt}{\bf Algorithm 3} \textsc{Hamming Distance Computation}
+	\begin{algorithmic}[1]
+		\label{alg:hamming-distance-comp}
+		\Require $l$-mer mappings $u$ and $v$
+		\Ensure Hamming distance $d_H(u,v)$ \vspace*{6pt}
+		\State $d_H(u, v) \leftarrow 0$
+		\State $z \leftarrow u \oplus v$
+		\For{$i \leftarrow 1$ to $l$}
+			\If{$z \land 3 \neq 0$}
+				\State increment $d_H(u, v)$
+			\EndIf
+			\State $z \leftarrow z >>> 2$ \Comment{shift 2 bits to the right}
+		\EndFor
+		\State\Return $d_H(u, v)$
+	\end{algorithmic}
+\end{figure}

@@ -1,0 +1,17 @@
+
+
+\subsection{Pre-computation of Mismatch Values}
+The EMS-GT2 uses the hamming distance computation heavily on the Test phase. To compute the hamming distance of two binary represented $l$-mers, the algorithm uses the boolean operator XOR between the two $l$-mers and results an integer with nonzero pair of bits at every mismatch position. Counting these pair of bits will result to the hamming distance value. The total number of pairs of bits is equal to the length of the motif and is also equal to the total number of comparisons it has to do in the hamming distance computation. 
+
+Instead of repeatedly counting this nonzero pairs of bits everytime we compute the hamming distance, using a lookup table of nonzero pair of bits count for all possible integer values will help save computational time. Although, pre-computing these nonzero pair counts for all possible 32 bit values will introduce an overhead computation problem. A more efficient approach is to pre-compute only up to $b$ number of bits where $b < 32$ and $b$ is an even number. Then we count for the hamming distance by looking up the nonzero counts $b$ number of bits at a time as shown in \ref{alg:upd-hamming-distance-comp}. In our implementation, we pre-compute up to 18 bit values only.
+
+\input{contents/pseudocode/improved-xor-computation} 
+
+
+
+
+
+
+
+
+

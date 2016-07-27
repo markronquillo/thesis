@@ -129,7 +129,7 @@ private:
 	// that is within d-1 distance versus the current lmer processing
 	vector< vector<long> > pruneLmers;
 
-	vector< vector< vector<long> > blockCollections;
+	vector< vector< vector<long> > > blockCollections;
 
 
 	// -----------------------------------------------------------------------------
@@ -269,8 +269,11 @@ private:
 
 	void generateNeighborhood(int s) {
 	    string currentSequence = ds->stringSequences[s];
-	    vector< vector< vector<int> > > > blockCollections (5, 
-	    	vector<vector<int> >(config->numberOfBlockRows));
+	    blockCollections.resize(5);
+	    for(int x=0; x < 5; x++) {
+	    	vector< vector<long> > v (config->numberOfBlockRows);
+	    	blockCollections[x] = v;
+	    }
 
 	    // get the mapping for the first l characters
 	    prefix = 0;
@@ -296,17 +299,17 @@ private:
 	    currentBlockMasks = blockMasks[(int)suffix];
 	    long blockStart = (int) (prefix * config->numberOfRowsInBlock);
 
-	    // for(int offset=0; offset < config->numberOfRowsInBlock; offset++) {
-	        // if(ds->numberOfAllowedMutations >= config->blockDegree)
-	            // currentNeighborhood[blockStart+offset] = INT_MAX;
-	        // else
-	            // currentNeighborhood[blockStart+offset] 
-	                // |= currentBlockMasks[ds->numberOfAllowedMutations - 1][offset];
-	    // }
+	    for(int offset=0; offset < config->numberOfRowsInBlock; offset++) {
+	        if(ds->numberOfAllowedMutations >= config->blockDegree)
+	            currentNeighborhood[blockStart+offset] = INT_MAX;
+	        else
+	            currentNeighborhood[blockStart+offset] 
+	                |= currentBlockMasks[ds->numberOfAllowedMutations - 1][offset];
+	    }
 	    addNeighbors(prefix, 0, ds->numberOfAllowedMutations);
 
 	    // add to to apply block collection
-		blockCollections[4][blockStart].push_back(suffix);
+		blockCollections[4][prefix].push_back(suffix);
 
 	    // adjust one character at a time and get the mapping
 	    for (int i=ds->lengthOfMotif; i < ds->lengthOfSequence; i++) {
@@ -336,18 +339,15 @@ private:
 		        currentBlockMasks = blockMasks[(int)suffix];
 		        long blockStart = (int) (prefix * config->numberOfRowsInBlock);
 
-				blockCollections[4][blockStart].push_back(suffix);
+				blockCollections[4][prefix].push_back(suffix);
 
-		        // for(int offset=0; offset < config->numberOfRowsInBlock; offset++) {
-		            // if(ds->numberOfAllowedMutations >= config->blockDegree)
-		                // currentNeighborhood[blockStart+offset] = INT_MAX;
-		            // else
-		                // currentNeighborhood[blockStart+offset] 
-		                    // |= currentBlockMasks[ds->numberOfAllowedMutations - 1][offset];
-		        // }
-
-		        // it is possible to create a new addNeighbor function that checks if 
-		        // rather than comparing all the time
+		        for(int offset=0; offset < config->numberOfRowsInBlock; offset++) {
+		            if(ds->numberOfAllowedMutations >= config->blockDegree)
+		                currentNeighborhood[blockStart+offset] = INT_MAX;
+		            else
+		                currentNeighborhood[blockStart+offset] 
+		                    |= currentBlockMasks[ds->numberOfAllowedMutations - 1][offset];
+		        }
 		        addNeighbors(prefix, 0, ds->numberOfAllowedMutations);
 	        // }
 	    }
@@ -374,12 +374,22 @@ private:
 		    int blockStart3 =  (int) alt3 << config->prefixShift;
 
 		    int allow_d = allowedMutations - 1;
-		    if (allow_d >= config->blockDegree)
-				blockCollections[4][blockStart].push_back(suffix);
-			else if (allow_d > 0)
-				blockCollections[allow_d][blockStart].push_back(suffix);
-			else
-				blockCollections[0][blockStart].push_back(suffix);
+		    
+		    if (allow_d >= config->blockDegree) {
+				blockCollections[4][alt1].push_back(suffix);
+				blockCollections[4][alt2].push_back(suffix);
+				blockCollections[4][alt3].push_back(suffix);
+		    }
+			else if (allow_d > 0) {
+				blockCollections[allow_d][alt1].push_back(suffix);
+				blockCollections[allow_d][alt2].push_back(suffix);
+				blockCollections[allow_d][alt3].push_back(suffix);
+			}
+			else {
+				    currentNeighborhood[blockStart1 + currentBlockRow]  |= 1 << (currentBlockCol);
+				    currentNeighborhood[blockStart2 + currentBlockRow]  |= 1 << (currentBlockCol);
+				    currentNeighborhood[blockStart3 + currentBlockRow]  |= 1 << (currentBlockCol);
+			}
 
 		    // if (allow_d >= config->blockDegree)  {
 		    //     for (int offset=0; offset < config->numberOfRowsInBlock; offset++) {
