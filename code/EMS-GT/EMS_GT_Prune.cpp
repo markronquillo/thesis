@@ -4,6 +4,7 @@
 #include <vector>
 #include <bitset>
 #include <climits>
+#include <algorithm>
 
 
 using namespace std;
