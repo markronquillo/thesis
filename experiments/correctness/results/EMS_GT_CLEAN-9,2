@@ -1,0 +1,220 @@
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GGAGTCGCA
+   > Found Motifs:  GAACGAAAC GGAGTCGCA TCCATCGCA
+-------------------------------------------------------
+Duration: 27679
+Duration (s): 0.027679
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: TCAACGTAA
+   > Found Motifs:  ACGGAGAAA ATATTTAAA CAGCCTTCT GACCTCGGG TCAACGTAA
+-------------------------------------------------------
+Duration: 28782
+Duration (s): 0.028782
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CGTAACTTC
+   > Found Motifs:  CGGTAATAC CGTAACTTC GACGTAACT GCAGTAGTT
+-------------------------------------------------------
+Duration: 31101
+Duration (s): 0.031101
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: AGTATTGTC
+   > Found Motifs:  ACAGTGCTC AGTATTGTC
+-------------------------------------------------------
+Duration: 29740
+Duration (s): 0.02974
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: AACATACAT
+   > Found Motifs:  AACATACAT GAACTGATA TTTGTACTA
+-------------------------------------------------------
+Duration: 33024
+Duration (s): 0.033024
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GTCTCGACA
+   > Found Motifs:  CGCCTACTA GGCTCGACA GTCTCGACA GTGGACAAA TTAGCCCAC
+-------------------------------------------------------
+Duration: 30100
+Duration (s): 0.0301
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GAGACTTTA
+   > Found Motifs:  GAGACTTTA
+-------------------------------------------------------
+Duration: 28713
+Duration (s): 0.028713
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GATCTGATT
+   > Found Motifs:  GATCTGATT GTAGTAACG
+-------------------------------------------------------
+Duration: 26481
+Duration (s): 0.026481
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CTCCCCCAG
+   > Found Motifs:  AATTTCTGT CTCCCCCAG
+-------------------------------------------------------
+Duration: 29092
+Duration (s): 0.029092
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GAGAGGGGG
+   > Found Motifs:  AGAAGGGGG AGTAGGGGA GAGAGGGGG GGCGTTGAT GGGGCTGCC
+-------------------------------------------------------
+Duration: 28791
+Duration (s): 0.028791
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: AGATAACTC
+   > Found Motifs:  AGATAACTC
+-------------------------------------------------------
+Duration: 26974
+Duration (s): 0.026974
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CTGATATTG
+   > Found Motifs:  CGCTATTAG CTGATATTG
+-------------------------------------------------------
+Duration: 32215
+Duration (s): 0.032215
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GCGAGGCTT
+   > Found Motifs:  CTCGTCGTG GCGAGGCTT
+-------------------------------------------------------
+Duration: 35282
+Duration (s): 0.035282
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CCCGGGACT
+   > Found Motifs:  CCCGGGACT TAGTTAGCG
+-------------------------------------------------------
+Duration: 39231
+Duration (s): 0.039231
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GAGTCTGAA
+   > Found Motifs:  GAAAAGTAC GAGTCTGAA
+-------------------------------------------------------
+Duration: 34967
+Duration (s): 0.034967
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GGGCTCTTT
+   > Found Motifs:  CCATACGTA GGGCTCTTT
+-------------------------------------------------------
+Duration: 26392
+Duration (s): 0.026392
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: ACATCATTA
+   > Found Motifs:  ACATCATTA CAATACGCT
+-------------------------------------------------------
+Duration: 25811
+Duration (s): 0.025811
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GAGGCGAAT
+   > Found Motifs:  GAGGCGAAT
+-------------------------------------------------------
+Duration: 26456
+Duration (s): 0.026456
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: ACAATCTAA
+   > Found Motifs:  ACAATCTAA GGATACATA TCCTCTTTC TGTTCCCGT TGTTTCCTA
+-------------------------------------------------------
+Duration: 27658
+Duration (s): 0.027658
+ EMS_GT v1.0
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: TCGGGAATC
+   > Found Motifs:  TCGGGAATC
+-------------------------------------------------------
+Duration: 29836
+Duration (s): 0.029836

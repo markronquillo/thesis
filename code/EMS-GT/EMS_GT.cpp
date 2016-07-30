@@ -28,7 +28,7 @@ public:
 
 
 		cout << "======================================================" << endl;
-		cout << " EMS_GT v2.0" << endl;
+		cout << " EMS_GT v2.0: FAST CANDIDATE ELIMINATION" << endl;
 		cout << "======================================================" << endl;
 		cout << " CONFIGURATION" << endl;
 		cout << " tPrime:\t\t " << config->tPrime << endl;
@@ -808,7 +808,10 @@ private:
 	    for (int i=0; i < config->numberOfCandidateMotifsRows; i++) {
 	    	// if this is the start of the block
 	    	// initialize/clear the filtered lmer mappings
-	    	if (i % (1 << config->blockDegree) == 0) {
+	    	// chang
+	    	// if (i % (1 << config->blockDegree) == 0) {
+	    	// 32 since we only 32 bits
+	    	if (i % (32) == 0) {
 	    		filteredLmerMappings.clear();
 	    		filteredLmerSequence = -1;
 	    	}

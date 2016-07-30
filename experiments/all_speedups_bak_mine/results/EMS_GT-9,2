@@ -1,0 +1,193 @@
+ tPrime:		 10
+ l:		 9
+ d:		 2
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CCTTCCTCT
+   > Found Motifs:  ACGAAGGGA CCTTCCTCT CTTAAAACG GAGTATGAC
+-------------------------------------------------------
+Duration: 29507
+Duration (s): 0.029507
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GTACTTTTA
+   > Found Motifs:  ACGTTTGCT CGACGAGCT GTACGTTAA GTACTTTTA
+-------------------------------------------------------
+Duration: 25232
+Duration (s): 0.025232
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CGAGCGTGA
+   > Found Motifs:  CGAGCGTGA
+-------------------------------------------------------
+Duration: 26078
+Duration (s): 0.026078
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: TGAAAATTA
+   > Found Motifs:  ACGTCGGAG TAGATGGCT TGAAAATTA
+-------------------------------------------------------
+Duration: 26195
+Duration (s): 0.026195
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: TTTAGAGAC
+   > Found Motifs:  ATTGTTTAG TGGTTTACC TTTAGAGAC
+-------------------------------------------------------
+Duration: 25254
+Duration (s): 0.025254
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: ACCCGCGGT
+   > Found Motifs:  ACCCGCGGT AGCGGCTTT
+-------------------------------------------------------
+Duration: 26006
+Duration (s): 0.026006
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GTAGAGTTG
+   > Found Motifs:  GCGGTACGT GTAGAGTTG TCAGTGGCT
+-------------------------------------------------------
+Duration: 23219
+Duration (s): 0.023219
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CTTTAGGAA
+   > Found Motifs:  CTTTAGGAA TAAGCTCCC
+-------------------------------------------------------
+Duration: 26206
+Duration (s): 0.026206
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GATGCCGTG
+   > Found Motifs:  ACGCAAGAC GATGCCGTG GGCCGTGTG
+-------------------------------------------------------
+Duration: 23449
+Duration (s): 0.023449
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: AAGCCACTA
+   > Found Motifs:  AAGCCACTA TAGTCCCCC
+-------------------------------------------------------
+Duration: 26274
+Duration (s): 0.026274
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: TTACCAGCT
+   > Found Motifs:  GTCGCTGTC TTACCAGCT
+-------------------------------------------------------
+Duration: 25185
+Duration (s): 0.025185
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: TTCTCGCCT
+   > Found Motifs:  TTCTCGCCT
+-------------------------------------------------------
+Duration: 25641
+Duration (s): 0.025641
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: TCTACTCTG
+   > Found Motifs:  GCTCGCCCG TAGATACTC TCTACTCTG
+-------------------------------------------------------
+Duration: 23101
+Duration (s): 0.023101
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: AGTTAGTCT
+   > Found Motifs:  AGTTAGTCT GTGAGTCAT
+-------------------------------------------------------
+Duration: 23389
+Duration (s): 0.023389
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: CAGTATGGA
+   > Found Motifs:  CAATTATTT CAGTATGGA
+-------------------------------------------------------
+Duration: 26515
+Duration (s): 0.026515
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GCATAGGGA
+   > Found Motifs:  AGAGGAGTG GCATAGGGA GCTGTGGGG TAGGCTCAT
+-------------------------------------------------------
+Duration: 25784
+Duration (s): 0.025784
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: AGTTGACAA
+   > Found Motifs:  AGTTGACAA TAACCACCT TTAGCCACC
+-------------------------------------------------------
+Duration: 25188
+Duration (s): 0.025188
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GACTTATTT
+   > Found Motifs:  ACTCGGCTA GACTTATTT
+-------------------------------------------------------
+Duration: 23030
+Duration (s): 0.02303
+ tPrime:		 10
+ l:		 9
+ d:		 2
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: GCGAACCCG
+   > Found Motifs:  AAGCGCGAA GAATGGCGC GCGAACCCG
+-------------------------------------------------------
+Duration: 25695
+Duration (s): 0.025695
