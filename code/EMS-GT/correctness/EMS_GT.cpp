@@ -26,6 +26,12 @@ public:
     	high_resolution_clock::time_point t1 = high_resolution_clock::now();
     	// steady_clock::time_point begin = std::chrono::steady_clock::now();
 
+    	cout << endl;
+		cout << " EMS_GT v2.0: FAST CANDIDATE ELIMINATION" << endl;
+		cout << " tPrime:\t\t " << config->tPrime << endl;
+		cout << " l:\t\t " << ds->lengthOfMotif << endl;
+		cout << " d:\t\t " << ds->numberOfAllowedMutations << endl;
+
 		generateMismatchesCount();
 
 		generateBlockMasks();
@@ -47,6 +53,9 @@ public:
     	high_resolution_clock::time_point t2 = high_resolution_clock::now();
     	duration = duration_cast<microseconds>( t2 - t1 ).count();
 		float sec = (float) duration / 1000000;
+    	cout << "Duration: " << duration << endl;
+    	cout << "Duration (s): " <<  sec << endl;
+
     	cout << "Motif Found: " << motifFound << endl;
 
 		// steady_clock::time_point end= std::chrono::steady_clock::now();
@@ -231,7 +240,7 @@ private:
 
 	    	high_resolution_clock::time_point te = high_resolution_clock::now();
 	    	long  duration = duration_cast<microseconds>( te - ts ).count();
-	    	// cout << "     >    (" << i+1 << ") Duration (s): " << duration / 1000000 << endl;
+	    	cout << "     >    (" << i+1 << ") Duration (s): " << duration / 1000000 << endl;
 		}
 	}
 
