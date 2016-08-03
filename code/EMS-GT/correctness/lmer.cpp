@@ -60,13 +60,20 @@ int computeHD(long lmer1, long lmer2) {
 int computeHammingDistance(long lmer1, long lmer2) {
     int distance = 0;
     long result = lmer1 ^ lmer2;
+    int bitsInLmer = 30;
 
     int c = 2;
-    while (c--) {
-        int i = (result & ((1 << 18)-1));
+    while (c--) { 
+        int use = 0;
+        if (bitsInLmer > 18) {
+            bitsInLmer -= 18;
+            use = 18;
+        } else {
+            use = bitsInLmer;
+        }
+        int i = (result & ((1 << use)-1));
         distance += mismatches[i];
-        cout << mismatches[i] << endl;
-        result = result >> 18;
+        result = result >> use;
     }
     return distance;
 }
