@@ -43,7 +43,7 @@ do
 		# pruning technique
 		../bin/EMS_GT_Prune $l,$d,$i 	&>> ../results/EMS_GT_Prune-$l,$d
 		# block flags + pruning technique; 
-		../bin/EMS_GT_BF_Prune $l,$d,$i 	&>> ../results/EMS_GT_Prune-$l,$d
+		../bin/EMS_GT_BF_Prune $l,$d,$i 	&>> ../results/EMS_GT_BF_Prune-$l,$d
 
 		# candidate elimination only
 		../bin/EMS_GT_NEW $l,$d,$i 	&>> ../results/EMS_GT_NEW-$l,$d
