@@ -10,13 +10,13 @@ using namespace std;
 using namespace std::chrono;
 
 // #if defined(INT_MAX)
-// #else 
+// #else
 //     #define INT_MAX 32767
 // #endif
 
 class EMS_GT {
 public:
-	EMS_GT(const DataSetParams *ds, const Config *c): 
+	EMS_GT(const DataSetParams *ds, const Config *c):
 		ds(ds), config(c)
 	{
     	currentNeighborhood = new int[config->numberOfCandidateMotifsRows];
@@ -76,7 +76,7 @@ private:
 	long prefix, suffix;
 	long currentMapping;
 
-	long currentBlockCol; 
+	long currentBlockCol;
 	long currentBlockRow;
 
 	string foundMotifs;
@@ -89,12 +89,12 @@ private:
 	// that contains all the filteredLmerMappings
 	int filteredLmerSequence;
 
-	// holds the filtered lmers that will 
+	// holds the filtered lmers that will
 	// be used in further testing
 	// the other bits in a block
 	vector<long> filteredLmerMappings;
 
-	// flags that tells if a block has at least 
+	// flags that tells if a block has at least
 	// one bit set in it.
 	int* blockFlags;
 
@@ -154,11 +154,11 @@ private:
 		    for (int row=0; row < config->numberOfRowsInBlock; row++) {
 		        for (int col=31; col > -1; col--) {
 		            int distance = computeHammingDistance(i, row*config->TABLE_WIDTH+col);
-		
+
 		            for (int k=0; k < config->blockDegree - 1; k++) {
 		                if (distance <= k+1) {
 		                    blockMasks[i][k][row]++;
-		                } 
+		                }
 		                if (col > 0) {
 		                    blockMasks[i][k][row] = blockMasks[i][k][row] << 1;
 		                }
@@ -167,7 +167,7 @@ private:
 		    }
 		}
 	}
-	
+
 	void collectCandidateMotifs() {
 
 		// Tracks the 1-bits in each block
@@ -189,7 +189,7 @@ private:
     	high_resolution_clock::time_point te = high_resolution_clock::now();
     	long  duration = duration_cast<microseconds>( te - ts ).count();
         // cout << "     >    (1) Duration (s): " << duration / 1000000 << endl;
- 	
+
 		blockFlags = new int[config->numberOfBlockRows];
 
 		int middle_T = config->tPrime_2;
@@ -205,7 +205,7 @@ private:
 
         	    if (i == middle_T-1) {
 		    	    if (candidateMotifs[j] != 0) {
-		    	    	// count bits, 
+		    	    	// count bits,
 		    	    	int val = candidateMotifs[j];
 		    	    	for (int k=0; k < 32; k++) {
 		    	    	    if ((val & 1) != 0) {
@@ -274,7 +274,7 @@ private:
 	        if(ds->numberOfAllowedMutations >= config->blockDegree)
 	            currentNeighborhood[blockStart+offset] = INT_MAX;
 	        else
-	            currentNeighborhood[blockStart+offset] 
+	            currentNeighborhood[blockStart+offset]
 	                |= currentBlockMasks[ds->numberOfAllowedMutations - 1][offset];
 	    }
 	    addNeighbors(prefix, 0, ds->numberOfAllowedMutations);
@@ -311,11 +311,11 @@ private:
 		            if(ds->numberOfAllowedMutations >= config->blockDegree)
 		                currentNeighborhood[blockStart+offset] = INT_MAX;
 		            else
-		                currentNeighborhood[blockStart+offset] 
+		                currentNeighborhood[blockStart+offset]
 		                    |= currentBlockMasks[ds->numberOfAllowedMutations - 1][offset];
 		        }
 
-		        // it is possible to create a new addNeighbor function that checks if 
+		        // it is possible to create a new addNeighbor function that checks if
 		        // rather than comparing all the time
 		        addNeighbors(prefix, 0, ds->numberOfAllowedMutations);
 	        // }
@@ -326,7 +326,7 @@ private:
 
 		int shift = (ds->lengthOfMotif - config->blockDegree- start) * 2;
 
-		for (int k=start; k < ds->lengthOfMotif-config->blockDegree; ++k) 
+		for (int k=start; k < ds->lengthOfMotif-config->blockDegree; ++k)
 		{
 		    shift -= 2;
 
@@ -371,7 +371,7 @@ private:
 			            currentNeighborhood[blockStart3 + offset] = INT_MAX;
 			        }
 		    	// }
-		    } 
+		    }
 		    else if (allow_d > 0) {
 		        for (int offset=0; offset < config->numberOfRowsInBlock; offset++) {
 		            currentNeighborhood[blockStart1 + offset] |= currentBlockMasks[allow_d - 1][offset];
@@ -427,7 +427,7 @@ private:
 	        if(ds->numberOfAllowedMutations >= config->blockDegree)
 	            currentNeighborhood[blockStart+offset] = INT_MAX;
 	        else
-	            currentNeighborhood[blockStart+offset] 
+	            currentNeighborhood[blockStart+offset]
 	                |= currentBlockMasks[ds->numberOfAllowedMutations - 1][offset];
 	    }
 	    addNeighborsB(prefix, 0, ds->numberOfAllowedMutations);
@@ -463,7 +463,7 @@ private:
 		            if(ds->numberOfAllowedMutations >= config->blockDegree)
 		                currentNeighborhood[blockStart+offset] = INT_MAX;
 		            else
-		                currentNeighborhood[blockStart+offset] 
+		                currentNeighborhood[blockStart+offset]
 		                    |= currentBlockMasks[ds->numberOfAllowedMutations - 1][offset];
 		        }
 		        addNeighborsB(prefix, 0, ds->numberOfAllowedMutations);
@@ -519,7 +519,7 @@ private:
 		            for (int offset=0; offset < config->numberOfRowsInBlock; offset++) {
 		                currentNeighborhood[blockStart3 + offset] = INT_MAX;
 		            }
-	        } 
+	        }
 	        else if (allow_d > 0) {
 	        	if (isSetBlockFlag(blockStart1) )
 		            for (int offset=0; offset < config->numberOfRowsInBlock; offset++) {
@@ -608,7 +608,7 @@ private:
 		                    for (int offset=0; offset < config->numberOfRowsInBlock; offset++) {
 		                        currentNeighborhood[blockStart33 + offset] = INT_MAX;
 		                    }
-	                } 
+	                }
 	                else if (allow_d2 > 0) {
 	                    int allow_d2_prime = allow_d2 - 1;
 	                	if (isSetBlockFlag(blockStart11))
@@ -707,7 +707,7 @@ private:
 	    }
 
 	    int hd = computeHammingDistance(mapping, p);
-	    if (hd < ds->numberOfAllowedMutations) { 
+	    if (hd < ds->numberOfAllowedMutations) {
 	    	pruneLmers[hd].push_back(p);
 	    }
 	    if (min > hd) {
@@ -726,7 +726,7 @@ private:
 	        }
 
 		    int hd = computeHammingDistance(mapping, p);
-		    if (hd < ds->numberOfAllowedMutations) { 
+		    if (hd < ds->numberOfAllowedMutations) {
 		    	pruneLmers[hd].push_back(p);
 		    }
 		    if (min > hd)
@@ -746,7 +746,7 @@ private:
 	        mappings.clear();
 
 	        string currentSequence = ds->stringSequences[i];
-	        long mapping; 
+	        long mapping;
 
 	        for (int j=0; j < ds->lengthOfMotif; j++) {
 	            char c = currentSequence[j];
@@ -782,18 +782,20 @@ private:
 
 	    // cout << trimmedRows.size() << endl;
 
+	    int track = 0;
+
 	    // for (int i=0; i < trimmedRows.size(); i++) {
 	    for (int i=0; i < config->numberOfCandidateMotifsRows; i++) {
 	    	// if this is the start of the block
 	    	// initialize/clear the filtered lmer mappings
-	    	// TODO: change this to i % 32 -- since this is dependent 
+	    	// TODO: change this to i % 32 -- since this is dependent
 	    	// on the number of bits in the INTEGER
 	    	if (i % 32) {
 	    		filteredLmerMappings.clear();
 	    		filteredLmerSequence = -1;
 	    	}
 
-	    	// if value is zero then proceed to the next row	
+	    	// if value is zero then proceed to the next row
 	        if ( (value = candidateMotifs[i]) == 0 ) {
 	            continue;
 	        }
@@ -803,10 +805,17 @@ private:
 	        // int row = trimmedRows[i];
 	        // value = candidateMotifs[row];
 	        // long base = ((long) row) << 5;
+            //
+            //
 
 	        for (int j=0; j < 32; j++) {
 	            if ((value & 1) != 0) {
 	                long candidate = base + j;
+
+                    if (candidate == 602465862) {
+                    	cout << "here" << endl;
+                    	track = 1;
+                    }
 
 	                // if there are less than `2` lmers to be tested in a block
 	                // theres no need for the filtering speedup since, it won't be used anyway
@@ -815,6 +824,8 @@ private:
 	                    	foundMotifs += " " + decode(candidate, ds->lengthOfMotif);
 	                        numMotifs++;
 		                }
+
+		                if (track == 1) cout << "isMotif" << endl;
 	                }
 
 	                // if this is the first lmer in the block to be tested
@@ -823,6 +834,7 @@ private:
 	                    	foundMotifs += " " + decode(candidate, ds->lengthOfMotif);
 	                    	numMotifs++;
 		                }
+		                if (track == 1) cout << "isMotifInitializeFilter" << endl;
 	                }
 
 	                // else if there exists a filtered lmers and a sequences, use that
@@ -831,7 +843,10 @@ private:
 	                        foundMotifs += " " + decode(candidate, ds->lengthOfMotif);
 	                        numMotifs++;
 		                }
+		                if (track == 1) cout << "isMotifUseFilter" << endl;
 	                }
+
+	                track = 0;
 	            }
 	            value = value >> 1;
 	        }
@@ -849,7 +864,7 @@ private:
 	        bool found = false;
 
 	        filteredLmerSequence = i;
-	    	filteredLmerMappings.clear(); 
+	    	filteredLmerMappings.clear();
 	        for (int j=0; j < config->numberOfPossibleLmersInSequence; j++) {
 	        	// current lmer for comparison
 	            long lmer = lmerMappings[i][j];
@@ -858,12 +873,12 @@ private:
 
 	            // collect all lmers in the sequence that is within
 	            // d + blockDegree distance between the mapping
-	            if (hammingDistance <= (config->blockDegree + ds->numberOfAllowedMutations)) 
+	            if (hammingDistance <= (config->blockDegree + ds->numberOfAllowedMutations))
 	            {
 	            	// if our current min is beaten
 	            	// then clear the list, and add the current champ
 	            	filteredLmerMappings.push_back(lmer);
-	            } 
+	            }
 
 	            if (hammingDistance <= ds->numberOfAllowedMutations) {
 	                found = true;
@@ -880,9 +895,9 @@ private:
 
 	    // if the mapping is a motif we can disregard
 	    // the collected filter lmer mappings
-	    filteredLmerMappings.clear(); 
+	    filteredLmerMappings.clear();
 	    filteredLmerSequence = -1;
-	    
+
 	    return true;
 	}
 
@@ -890,14 +905,14 @@ private:
 	 *  Given a mapping, check the rest of the sequences if that mapping
 	 *  exists in all of it.
 	 *
-	 *	This isMotif function assumes that the filteredLmerMappings is already initialized 
+	 *	This isMotif function assumes that the filteredLmerMappings is already initialized
 	 *	and uses it.
 	 */
 	bool isMotifUseFilter(long mapping) {
-		// check if there is a d-distance between the mapping versus all the lmers 
+		// check if there is a d-distance between the mapping versus all the lmers
 		// in the filtered lmer mappings set
 		bool found = false;
-		
+
 		// cout << filteredLmerMappings.size() << endl;
 		for (const auto &lmer : filteredLmerMappings)
 		{
@@ -910,12 +925,12 @@ private:
 
 		// if there are no d-distance lmer in the filtered set
 		// we can say that the mapping is not a motif.
-		if (found == false) 
+		if (found == false)
 		{
 			return false;
 		}
 
-		// if there is a d-distance lmer in the filtered set, 
+		// if there is a d-distance lmer in the filtered set,
 		// check if there is for the rest of the string sequences
 	    for (int i=0; i < lmerMappings.size(); i++) {
 	        bool found = false;
@@ -948,12 +963,12 @@ private:
 	 *  Given a mapping, check the rest of the sequences if that mapping
 	 *  exists in all of it.
 	 *
-	 *	This isMotif function assumes that the filteredLmerMappings is already initialized 
+	 *	This isMotif function assumes that the filteredLmerMappings is already initialized
 	 *	and uses it.
 	 */
 	bool isMotif(long mapping) {
 
-		// if there is a d-distance lmer in the filtered set, 
+		// if there is a d-distance lmer in the filtered set,
 		// check if there is for the rest of the string sequences
 	    for (int i=0; i < lmerMappings.size(); i++) {
 	        bool found = false;
