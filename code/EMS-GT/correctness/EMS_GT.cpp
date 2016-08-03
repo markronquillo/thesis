@@ -834,7 +834,13 @@ private:
 	                    	foundMotifs += " " + decode(candidate, ds->lengthOfMotif);
 	                    	numMotifs++;
 		                }
-		                if (track == 1) cout << "isMotifInitializeFilter" << endl;
+		                if (track == 1) {
+    		                if (isMotif(candidate)) {
+    	                    	foundMotifs += " " + decode(candidate, ds->lengthOfMotif);
+    	                    	numMotifs++;
+    		                }
+		                	cout << "isMotifInitializeFilter" << endl;
+		                }
 	                }
 
 	                // else if there exists a filtered lmers and a sequences, use that
