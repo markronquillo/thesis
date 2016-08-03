@@ -11,6 +11,7 @@ public:
 			return;
 		}
 
+		// basically the number of prefixes possible l - k - 5 (for 32 bit)
     	numberOfBlockRows = 1 << ( (2*(ds->lengthOfMotif)) - blockDegree - TABLE_WIDTH_LOG_2 );
 
     	// compute the preliminary values needed by the program
