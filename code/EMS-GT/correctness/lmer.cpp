@@ -3,6 +3,30 @@
 #include <iostream>
 
 using namespace std;
+
+int* mismatches;
+
+
+/**
+ *	Precomputes the nonzero-bits(per 2 bits)
+ *	for the mismatches
+ */
+void generateMismatchesCount() {
+    long size =  (1 << 18);
+    mismatches = new int[size];
+    for (int i=0; i < size; i++) {
+        int result = i;
+        int distance = 0;
+        for (int k=0; k < 15; k++) {
+            if ((result & 3) != 0) {
+                distance++;
+            }
+            result = result >> 2;
+        }
+        mismatches[i] = distance;
+    }
+}
+
 string decode(long mapping, int strlen) {
     string decoding = "";
 
@@ -33,6 +57,20 @@ int computeHD(long lmer1, long lmer2) {
     return distance;
 }
 
+int computeHammingDistance(long lmer1, long lmer2) {
+    int distance = 0;
+    long result = lmer1 ^ lmer2;
+
+    int c = 2;
+    while (c--) {
+        int i = (result & ((1 << 18)-1));
+        distance += mismatches[i];
+        cout << mismatches[i] << endl;
+        result = result >> 18;
+    }
+    return distance;
+}
+
 long encode(string lmer, int strlen) {
 	long mapping = 0;
 	for (int x=0; x< strlen; x++) {
@@ -51,6 +89,8 @@ long encode(string lmer, int strlen) {
 
 
 int main() {
+	generateMismatchesCount();
+
 	string l1 = "GACTGGACCTGCACA";
 	string l2 = "GATTGGATGCGCACG";
 	cout << encode(l1, 15) << endl;
@@ -59,6 +99,6 @@ int main() {
 	cout << decode(568876612, 15) << endl;
 	cout << decode(602465862, 15) << endl;
 
-	cout << computeHD(568876612, 602465862) << endl;
+	cout << computeHammingDistance(568876612, 602465862) << endl;
 	// cout << decode(540682650946920004, 15) << endl;
 }
