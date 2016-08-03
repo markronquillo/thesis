@@ -1013,20 +1013,21 @@ private:
 	    int distance = 0;
 	    long result = lmer1 ^ lmer2;
 
-	    int bitsInLmer = ds->lengthOfMotif * 2;
-
-	    int c = 2;
-	    while (c--) { 
-	        int use = 0;
-	        if (bitsInLmer > 18) {
-	            bitsInLmer -= 18;
-	            use = 18;
+	    // instead of counting per pair of bits,
+	    // we count by a fix number (18) 
+	    int remainingBitsInLmer = ds->lengthOfMotif * 2;
+	    while (remainingBitsInLmer > 0) { 
+	        int bitsToUse = 0;
+	        if (remainingBitsInLmer > 18) {
+	            remainingBitsInLmer -= 18;
+	            bitsToUse = 18;
 	        } else {
-	            use = bitsInLmer;
+	            bitsToUse = remainingBitsInLmer;
+	            remainingBitsInLmer = 0;
 	        }
-	        int i = (result & ((1 << use)-1));
+	        int i = (result & ((1 << bitsToUse)-1));
 	        distance += mismatches[i];
-	        result = result >> use;
+	        result = result >> bitsToUse;
 	    }
 	    return distance;
 	}
