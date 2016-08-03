@@ -56,7 +56,6 @@ public:
     	cout << "Duration: " << duration << endl;
     	cout << "Duration (s): " <<  sec << endl;
 
-    	cout << "Motif Found: " << motifFound << endl;
 
 		// steady_clock::time_point end= std::chrono::steady_clock::now();
 		// std::cout << "Time difference = " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() <<std::endl;
@@ -789,7 +788,7 @@ private:
 	    	// initialize/clear the filtered lmer mappings
 	    	// TODO: change this to i % 32 -- since this is dependent 
 	    	// on the number of bits in the INTEGER
-	    	if (i % (1 << config->blockDegree) == 0) {
+	    	if (i % 32) {
 	    		filteredLmerMappings.clear();
 	    		filteredLmerSequence = -1;
 	    	}
