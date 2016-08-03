@@ -56,6 +56,8 @@ public:
     	cout << "Duration: " << duration << endl;
     	cout << "Duration (s): " <<  sec << endl;
 
+    	cout << "Motif Found: " << motifFound << endl;
+
 		// steady_clock::time_point end= std::chrono::steady_clock::now();
 		// std::cout << "Time difference = " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() <<std::endl;
 		// std::cout << "Time difference = " << std::chrono::duration_cast<std::chrono::nanoseconds> (end - begin).count() <<std::endl;
@@ -109,6 +111,8 @@ private:
 	// these are the processed lmers in sequence (generation phase)
 	// that is within d-1 distance versus the current lmer processing
 	vector< vector<long> > pruneLmers;
+
+	int motifFound = 0;
 
 
 	// -----------------------------------------------------------------------------
@@ -185,8 +189,8 @@ private:
 
     	high_resolution_clock::time_point te = high_resolution_clock::now();
     	long  duration = duration_cast<microseconds>( te - ts ).count();
-        cout << "     >    (1) Duration (s): " << duration / 1000000 << endl;
-
+        // cout << "     >    (1) Duration (s): " << duration / 1000000 << endl;
+ 	
 		blockFlags = new int[config->numberOfBlockRows];
 
 		int middle_T = config->tPrime_2;
@@ -217,7 +221,7 @@ private:
 
         	high_resolution_clock::time_point te = high_resolution_clock::now();
         	long  duration = duration_cast<microseconds>( te - ts ).count();
-        	cout << "     >    (" << i+1 << ") Duration (s): " << duration / 1000000 << endl;
+        	// cout << "     >    (" << i+1 << ") Duration (s): " << duration / 1000000 << endl;
     	}
 
 		for(int i=middle_T; i < config->tPrime; i++) {
@@ -809,24 +813,33 @@ private:
 	                // theres no need for the filtering speedup since, it won't be used anyway
 	                if (numberOfBitsPerBlock[(int)(i/32)] <= 1) {
 	                	if (isMotif(candidate)) {
-		                    foundMotifs += " " + decode(candidate, ds->lengthOfMotif);
-		                    numMotifs++;
+	                    	string motif = decode(candidate, ds->lengthOfMotif);
+	                        foundMotifs += " " + motif;
+	                        numMotifs++;
+
+	                        if (motif == ds->plantedMotif) motifFound = 1;
 		                }
 	                }
 
 	                // if this is the first lmer in the block to be tested
 	                else if (filteredLmerSequence == -1) {
 		                if (isMotifInitializeFilter(candidate)) {
-		                    foundMotifs += " " + decode(candidate, ds->lengthOfMotif);
-		                    numMotifs++;
+	                    	string motif = decode(candidate, ds->lengthOfMotif);
+	                        foundMotifs += " " + motif;
+	                        numMotifs++;
+
+	                        if (motif == ds->plantedMotif) motifFound = 1;
 		                }
 	                }
 
 	                // else if there exists a filtered lmers and a sequences, use that
 	                else {
 	                	if (isMotifUseFilter(candidate)) {
-		                    foundMotifs += " " + decode(candidate, ds->lengthOfMotif);
-		                    numMotifs++;
+	                    	string motif = decode(candidate, ds->lengthOfMotif);
+	                        foundMotifs += " " + motif;
+	                        numMotifs++;
+
+	                        if (motif == ds->plantedMotif) motifFound = 1;
 		                }
 	                }
 	            }

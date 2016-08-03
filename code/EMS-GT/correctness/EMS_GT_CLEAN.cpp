@@ -65,6 +65,9 @@ public:
     	cout << "Duration: " << duration << endl;
     	cout << "Duration (s): " <<  sec << endl;
 
+
+    	cout << "Motif Found: " << motifFound << endl;
+
 		// steady_clock::time_point end= std::chrono::steady_clock::now();
 		// std::cout << "Time difference = " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() <<std::endl;
 		// std::cout << "Time difference = " << std::chrono::duration_cast<std::chrono::nanoseconds> (end - begin).count() <<std::endl;
@@ -118,6 +121,9 @@ private:
 	// these are the processed lmers in sequence (generation phase)
 	// that is within d-1 distance versus the current lmer processing
 	vector< vector<long> > pruneLmers;
+
+
+	int motifFound = 0;
 
 
 	// -----------------------------------------------------------------------------
@@ -361,8 +367,11 @@ private:
 	            if ((value & 1) != 0) {
 	                long candidate = base + j;
 	                if (isMotif(candidate)) {
-	                    foundMotifs += " " + decode(candidate, ds->lengthOfMotif);
+	                	string motif = decode(candidate, ds->lengthOfMotif);
+	                    foundMotifs += " " + motif;
 	                    numMotifs++;
+
+	                    if (motif == ds->plantedMotif) motifFound = 1;
 	                } 
 	            }
 	            value = value >> 1;

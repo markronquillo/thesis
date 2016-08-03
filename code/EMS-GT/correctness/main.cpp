@@ -50,8 +50,10 @@ int main(int argc, char* argv[]) {
     if (argc > 5)
         plantedMotif = argv[5];
 
-    // EMS_GT ems = EMS_GT(&dsParams, &config, plantedMotif);
+    cout << inputFileName << endl;
+
     EMS_GT ems = EMS_GT(&dsParams, &config);
+    
     ems.start();
 
     return 0;
