@@ -790,7 +790,7 @@ private:
 	    	// initialize/clear the filtered lmer mappings
 	    	// TODO: change this to i % 32 -- since this is dependent
 	    	// on the number of bits in the INTEGER
-	    	if (i % 32) {
+	    	if (i % 32 == 0) {
 	    		filteredLmerMappings.clear();
 	    		filteredLmerSequence = -1;
 	    	}
