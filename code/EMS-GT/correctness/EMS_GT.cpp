@@ -1047,7 +1047,12 @@ private:
 	}
 
 	void printResults() {
-	    
+	    cout << "--------------------------------------------------------" << endl;
+	    cout << " RESULTS: " << endl;
+	    // cout << "Dataset: " << inputFileHeader << inputFileName << endl;
+	    cout << "   > Planted Motif: " << ds->plantedMotif << endl;
+	    cout << "   > Found Motifs: " << foundMotifs << endl;
+	    cout << "-------------------------------------------------------" << endl;
 	}
 
 	void countSurvivingCandidateMotifs() {
