@@ -973,11 +973,18 @@ private:
 	 *	and uses it.
 	 */
 	bool isMotif(long mapping) {
+		int track = 0;
+		if (mapping == 602465862) track = 1;
 
 		// if there is a d-distance lmer in the filtered set,
 		// check if there is for the rest of the string sequences
 	    for (int i=0; i < lmerMappings.size(); i++) {
 	        bool found = false;
+
+	        if (i == 2) {
+	        	cout << lmerMappings[2][0] << endl;
+	        	// cout << decode(568876612, ds->lengthOfMotif) << endl;
+	        }
 
 	        for (int j=0; j < config->numberOfPossibleLmersInSequence; j++) {
 	        	// current lmer for comparison
@@ -987,6 +994,7 @@ private:
 
 	            if (hammingDistance <= ds->numberOfAllowedMutations) {
 	                found = true;
+	                if (track == 1) cout << i << " " << j << endl;
 	                break;
 	            }
 	        }
