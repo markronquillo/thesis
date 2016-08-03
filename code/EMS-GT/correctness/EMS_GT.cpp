@@ -812,33 +812,24 @@ private:
 	                // theres no need for the filtering speedup since, it won't be used anyway
 	                if (numberOfBitsPerBlock[(int)(i/32)] <= 1) {
 	                	if (isMotif(candidate)) {
-	                    	string motif = decode(candidate, ds->lengthOfMotif);
-	                        foundMotifs += " " + motif;
+	                    	foundMotifs += " " + decode(candidate, ds->lengthOfMotif);
 	                        numMotifs++;
-
-	                        if (motif == ds->plantedMotif) motifFound = 1;
 		                }
 	                }
 
 	                // if this is the first lmer in the block to be tested
 	                else if (filteredLmerSequence == -1) {
 		                if (isMotifInitializeFilter(candidate)) {
-	                    	string motif = decode(candidate, ds->lengthOfMotif);
-	                        foundMotifs += " " + motif;
-	                        numMotifs++;
-
-	                        if (motif == ds->plantedMotif) motifFound = 1;
+	                    	foundMotifs += " " + decode(candidate, ds->lengthOfMotif);
+	                    	numMotifs++;
 		                }
 	                }
 
 	                // else if there exists a filtered lmers and a sequences, use that
 	                else {
 	                	if (isMotifUseFilter(candidate)) {
-	                    	string motif = decode(candidate, ds->lengthOfMotif);
-	                        foundMotifs += " " + motif;
+	                        foundMotifs += " " + decode(candidate, ds->lengthOfMotif);
 	                        numMotifs++;
-
-	                        if (motif == ds->plantedMotif) motifFound = 1;
 		                }
 	                }
 	            }
