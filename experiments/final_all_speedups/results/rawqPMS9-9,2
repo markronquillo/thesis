@@ -1,0 +1,161 @@
+Reading file FASTA/9,2,1
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+AACAGATTT
+CACGTGTGC
+TTAAGATTG
+TTGAAATTG
+Total motifs found: 4
+Time on processor 0: 0.607s; file FASTA/9,2,1
+Reading file FASTA/9,2,2
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+AGGTTCTCA
+ATACGTATG
+ATAGTCCTT
+CGGACTTGT
+Total motifs found: 4
+Time on processor 0: 0.623s; file FASTA/9,2,2
+Reading file FASTA/9,2,3
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+CGTAAGCGG
+GCTGTGGTC
+TCCCTTTCG
+TTCGCTTCG
+Total motifs found: 4
+Time on processor 0: 0.732s; file FASTA/9,2,3
+Reading file FASTA/9,2,4
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+CATTGATGG
+Total motifs found: 1
+Time on processor 0: 0.732s; file FASTA/9,2,4
+Reading file FASTA/9,2,5
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+CCTATTCTG
+TAGAGCTCT
+TGTTTGTTT
+TTGCCTGTT
+Total motifs found: 4
+Time on processor 0: 0.608s; file FASTA/9,2,5
+Reading file FASTA/9,2,6
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+AAGCGGGCA
+CAGCGTGCA
+CCGAAATCC
+CCGCTGAAA
+Total motifs found: 4
+Time on processor 0: 0.577s; file FASTA/9,2,6
+Reading file FASTA/9,2,7
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+ACCGTCATA
+TCATTTACC
+Total motifs found: 2
+Time on processor 0: 0.592s; file FASTA/9,2,7
+Reading file FASTA/9,2,8
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+AACCGTGAG
+CAAAAATGT
+GAATGCGGG
+GCCACGCTC
+TTCCACACG
+Total motifs found: 5
+Time on processor 0: 0.624s; file FASTA/9,2,8
+Reading file FASTA/9,2,9
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+ACAGCCGGT
+CACGCGCCT
+Total motifs found: 2
+Time on processor 0: 0.639s; file FASTA/9,2,9
+Reading file FASTA/9,2,10
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+ACGCGAGCT
+CATTCCAAG
+Total motifs found: 2
+Time on processor 0: 0.654s; file FASTA/9,2,10
+Reading file FASTA/9,2,11
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+CCACCGGGC
+CCGCCCGCA
+Total motifs found: 2
+Time on processor 0: 0.623s; file FASTA/9,2,11
+Reading file FASTA/9,2,12
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+TCCCGCAGC
+Total motifs found: 1
+Time on processor 0: 0.701s; file FASTA/9,2,12
+Reading file FASTA/9,2,13
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+ACTTGCTAC
+CTTTGCCTT
+Total motifs found: 2
+Time on processor 0: 0.624s; file FASTA/9,2,13
+Reading file FASTA/9,2,14
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+AGGCGAGAT
+AGTTACTAG
+CACGTCCAC
+CCAAGGCCG
+GCGTCGATA
+Total motifs found: 5
+Time on processor 0: 0.685s; file FASTA/9,2,14
+Reading file FASTA/9,2,15
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+ACGCGAGGC
+ACTACCCTG
+CAGCTGTGT
+CCCTGCGGG
+GGGAAGTCC
+TGTGACGAG
+Total motifs found: 6
+Time on processor 0: 0.67s; file FASTA/9,2,15
+Reading file FASTA/9,2,16
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+TCCGGATCT
+Total motifs found: 1
+Time on processor 0: 0.607s; file FASTA/9,2,16
+Reading file FASTA/9,2,17
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+CGGTTTTTA
+TTATTTAGC
+Total motifs found: 2
+Time on processor 0: 0.67s; file FASTA/9,2,17
+Reading file FASTA/9,2,18
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+AAATTGGCC
+CTTGTCTCC
+Total motifs found: 2
+Time on processor 0: 0.655s; file FASTA/9,2,18
+Reading file FASTA/9,2,19
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+AAGCAGGGC
+AAGTCGATT
+CTGACATGG
+CTTGTCCGG
+GCGCTGAGG
+TGCGCGGAG
+Total motifs found: 6
+Time on processor 0: 0.67s; file FASTA/9,2,19
+Reading file FASTA/9,2,20
+n=20 q=100% L=9 d=2 totalStringLength=12000 alphabet=ACGT of size=4
+s=3 n'=6
+CTATTTGCG
+GAACAATCA
+Total motifs found: 2
+Time on processor 0: 0.577s; file FASTA/9,2,20
