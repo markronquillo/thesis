@@ -1,7 +1,16 @@
 ## TODO:
-. Results - Blockflag
-. Results -
+. Include Algorithm XOR -- Done
+. Figure - cite the neighborhood tree -- Done
+. Upload and cite dataset - researchgate -- DONE
+. Filename -conference ID - MNE-586-105
+. Progress Report - Cha
 
+. Italicize variables
+. Bold Neighborhood sequences
+. sequence subscript
+
+. Update final paper based on the changes in conference paper
+. Block Flags + Faster Candidate Motif elimination
 -------------------------------------------------
 ## Targets: Task - Deadline
 
