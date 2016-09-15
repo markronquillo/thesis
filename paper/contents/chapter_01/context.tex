@@ -1,0 +1,39 @@
+\section{Context of the Study}
+
+This section formally defines the $(l, d)$-planted motif search problem and some related terms that are commonly used in this study. \newline
+
+% l-mer
+\noindent{\bf\boldmath DEFINITION 1. $l$-mer} \newline
+\noindent An \textbf{\boldmath $l$-mer} is a string of length $l$ in the alphabet $\Sigma$. In this study, $\Sigma$ = \{\texttt{a}, \texttt{c}, \texttt{g}, \texttt{t}\} since we are dealing with DNA sequences. Formally, an $l$-mer is an element of the set $\Sigma^l$. 
+
+\noindent \hspace*{35pt} Ex. \texttt{agagt} is a $5$-mer and \texttt{agagtca} is a $7$-mer.  \newline
+
+% Hamming distance
+\noindent{\bf\boldmath DEFINITION 2. Hamming distance $d_H$} \newline
+\noindent The \textbf{\boldmath Hamming distance $d_H$} between two $l$-mers, of equal length, is equal to the number of positions where the $l$-mers have mismatches. 
+
+\noindent \hspace*{35pt} Ex. $d_H(\texttt{\uline{a}ct\uline{tg}ca}, \texttt{\uline{t}ct\uline{aa}ca}) = 3$.\newline
+\noindent \hspace*{55pt} the underlined characters represents the mismatch positions. \newline
+
+% d-neighbor
+\noindent{\bf\boldmath DEFINITION 3. $d$-neighbor} \newline
+\noindent An $l$-mer $x$ is considered a \textbf{\boldmath $d$-neighbor} of another $l$-mer $y$ if the Hamming distance between the two is at most $d$.
+
+\noindent \hspace*{35pt} Ex. Given two $7$-mers, $\texttt{\uline{a}tta\uline{g}ct}$ and $\texttt{\uline{g}tta\uline{c}ct}$ are $d$-neighbors, \newline
+\noindent \hspace*{55pt} where $d \geq 2$. \newline
+
+% d-neighborhood of an l-mer
+\noindent{\bf\boldmath DEFINITION 4. $d$-neighborhood of an $l$-mer $x$} \newline
+\noindent The \textbf{\boldmath $d$-neighborhood of an $l$-mer $x$} is the set {\boldmath $N(x, d)$} of all $l$-mers with at most $d$ Hamming distance from $x$. i.e., {\boldmath $d_H (x, x') \leq d$}.
+
+\noindent \hspace*{35pt} Ex. \texttt{ccgga}, \texttt{ccaaa}, and \texttt{gctta} are all in $N(\texttt{cctta}, 2)$ where $l = 5$. \newline
+
+% d-neighborhood of a sequence
+\noindent{\bf\boldmath DEFINITION 5. $d$-neighborhood of a sequence $S$} \newline
+\noindent The \textbf{\boldmath $d$-neighborhood of a sequence $S$} is the set {\boldmath $\mathcal{N}(S, d)$} of all $d$-neighbors of all $l$-mers in sequence $S$. 
+	
+\noindent \hspace*{35pt} Ex. {\small $\mathcal{N}(\texttt{aattacg}, 2) = N(\texttt{aatta}, 2) \cup N(\texttt{attac}, 2) \cup N(\texttt{ttacg}, 2)$} \newline
+\noindent \hspace*{55pt} where $l = 5$. \newline
+
+\noindent{\bf\boldmath DEFINITION 6. $(l, d)$ Planted Motif Problem} \newline
+\noindent Given a set of $n$ sequences, where each sequence is of length $m$, an $l$ and $d$ integer values, the goal is to find a motif of length $l$. It is also given that a $d$-neighbor of the motif is planted in each of the $n$ sequence exactly once at a random position.

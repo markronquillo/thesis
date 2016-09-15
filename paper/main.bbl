@@ -1,0 +1,150 @@
+\begin{thebibliography}{10}
+
+\bibitem{Bailey2006}
+Timothy~L. Bailey, Nadya Williams, Chris Misleh, and Wilfred~W. Li.
+\newblock Meme: discovering and analyzing dna and protein sequence motifs.
+\newblock {\em Nucleic Acids Research.}, pages 369--373, 2006.
+
+\bibitem{Shibdas2014}
+Shibdas Bandyopadhyay, Sartaj Sahni, and Sanguthevar Rajasekaran.
+\newblock Pms6: a fast algorithm for motif discovery.
+\newblock {\em International Journal of Bioinformatics Research and
+  Applications}, 10(4-5):369--383, 2014.
+\newblock PMID: 62990.
+
+\bibitem{Buhler2001Tompa}
+Jeremy Buhler and Martin Tompa.
+\newblock Finding motifs using random projections.
+\newblock In {\em Proceedings of the Fifth Annual International Conference on
+  Computational Biology}, RECOMB '01, pages 69--76, New York, NY, USA, 2001.
+  ACM.
+
+\bibitem{Carvalho05ahighly}
+Alexandra~M. Carvalho, Ana~T. Freitas, Arlindo~L. Oliveira, Inria Rhone-alpes,
+  Université~Claude Bernard, and Lyon I.
+\newblock A highly scalable algorithm for the extraction of cis-regulatory
+  regions.
+\newblock In {\em In Proc. APBC’05}, pages 273--282. Imperial College Press,
+  2005.
+
+\bibitem{Chin2005}
+Francis~Y.L. Chin and Henry~C.M. Leung.
+\newblock Voting algorithms for discovering long motifs.
+\newblock In {\em Proceedings of the Third Asia-Pacific Bioinformatics
+  Conference (APBC)}, pages 261--271, 2005.
+
+\bibitem{dasari2010efficient}
+Naga~Shailaja Dasari, Ranjan Desh, and Mohammad Zubair.
+\newblock An efficient multicore implementation of planted motif problem.
+\newblock In {\em High Performance Computing and Simulation (HPCS), 2010
+  International Conference on}, pages 9--15. IEEE, 2010.
+
+\bibitem{Davila2006}
+Jaime Davila, Sudha Balla, and Sanguthevar Rajasekaran.
+\newblock {\em Space and Time Efficient Algorithms for Planted Motif Search},
+  pages 822--829.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2006.
+
+\bibitem{pms2007}
+Jaime Davila, Sudha Balla, and Sanguthevar Rajasekaran.
+\newblock Fast and practical algorithms for planted (l, d) motif search.
+\newblock {\em Computational Biology and Bioinformatics, IEEE/ACM Transactions
+  on}, 4(4):544--552, 2007.
+
+\bibitem{Dinh2012}
+Hieu Dinh, Sanguthevar Rajasekaran, and Jaime Davila.
+\newblock qpms7: A fast algorithm for finding (ℓ, d)-motifs in dna and
+  protein sequences.
+\newblock {\em PLoS ONE}, 7(7):1--8, 07 2012.
+
+\bibitem{Dinh2011}
+Hieu Dinh, Sanguthevar Rajasekaran, and Vamsi~K. Kundeti.
+\newblock Pms5: an efficient exact algorithm for the (ℓ, d)-motif finding
+  problem.
+\newblock {\em BMC Bioinformatics}, 12(1):1--10, 2011.
+
+\bibitem{eskin2002finding}
+Eleazar Eskin and Pavel~A Pevzner.
+\newblock Finding composite regulatory patterns in dna sequences.
+\newblock {\em Bioinformatics}, 18(suppl 1):S354--S363, 2002.
+
+\bibitem{Evans2003407}
+Patricia~A. Evans, Andrew~D. Smith, and H.Todd Wareham.
+\newblock On the complexity of finding common approximate substrings.
+\newblock {\em Theoretical Computer Science}, 306(1-3):407 -- 430, 2003.
+
+\bibitem{hertz1999identifying}
+Gerald~Z Hertz and Gary~D. Stormo.
+\newblock Identifying dna and protein patterns with statistically significant
+  alignments of multiple sequences.
+\newblock {\em Bioinformatics}, 15(7):563--577, 1999.
+
+\bibitem{huo2009combining}
+Hongwei Huo, Zhenhua Zhao, Vojislav Stojkovic, and Lifang Liu.
+\newblock Combining genetic algorithm and random projection strategy for (l,
+  d)-motif discovery.
+\newblock In {\em Bio-Inspired Computing, 2009. BIC-TA'09}, pages 1--6. IEEE,
+  2009.
+
+\bibitem{Keich01102002}
+U.~Keich and P.A. Pevzner.
+\newblock Finding motifs in the twilight zone.
+\newblock {\em Bioinformatics}, 18(10):1374--1381, 2002.
+
+\bibitem{lawrence1993detecting}
+Charles~E Lawrence, Stephen~F Altschul, Mark~S Boguski, Jun~S Liu, Andrew~F
+  Neuwald, and John~C Wootton.
+\newblock Detecting subtle sequence signals: a gibbs sampling strategy for
+  multiple alignment.
+\newblock {\em science}, 262(5131):208--214, 1993.
+
+\bibitem{pms2014}
+Marius Nicolae and Sanguthevar Rajasekaran.
+\newblock Efficient sequential and parallel algorithms for planted motif
+  search.
+\newblock {\em BMC bioinformatics}, 15(1):34, 2014.
+
+\bibitem{pms2015}
+Marius Nicolae and Sanguthevar Rajasekaran.
+\newblock qpms9: An efficient algorithm for quorum planted motif search.
+\newblock {\em Scientific reports}, 5, 2015.
+
+\bibitem{pevzner2000combinatorial}
+Pavel~A Pevzner, Sing-Hoi Sze, et~al.
+\newblock Combinatorial approaches to finding subtle signals in dna sequences.
+\newblock In {\em ISMB}, volume~8, pages 269--278, 2000.
+
+\bibitem{Pisanti06risotto}
+Nadia Pisanti, Alexandra~M. Carvalho, Ra~M. Carvalho, Marie-France Sagot, and
+  Laurent Marsan.
+\newblock Risotto: Fast extraction of motifs with mismatches.
+\newblock In {\em Proceedings of the 7th Latin American Theoretical Informatics
+  Symposium, 3887 of LNCS:757-768}, pages 757--768. Springer-Verlag, 2006.
+
+\bibitem{Price27092003}
+Alkes Price, Sriram Ramabhadran, and Pavel~A. Pevzner.
+\newblock Finding subtle motifs by branching from sample strings.
+\newblock {\em Bioinformatics}, 19(suppl 2):ii149--ii155, 2003.
+
+\bibitem{ExactAlgorithmsPMS}
+S.~Rajasekaran, S.~Balla, and C.H. Huang.
+\newblock Exact algorithms for planted motif challenge problems.
+\newblock {\em Journal of Computational Biology}, pages 1117--1128, 2005.
+
+\bibitem{Sagot98spellingapproximate}
+Marie-France Sagot.
+\newblock Spelling approximate repeated or common motifs using a suffix tree,
+  1998.
+
+\bibitem{sia2015}
+Aia Sia, Julieta Nabos, and Proceso Fernandez~Jr.
+\newblock An efficient exact solution to the (l,d)-planted motif problem.
+\newblock {\em 8th AUN/SEED-Net Regional Conference on Electrical and
+  Electronics Engineering}, 2015.
+
+\bibitem{stewart2012transcription}
+Alexander~J Stewart, Sridhar Hannenhalli, and Joshua~B Plotkin.
+\newblock Why transcription factor binding sites are ten nucleotides long.
+\newblock {\em Genetics}, 192(3):973--985, 2012.
+
+\end{thebibliography}

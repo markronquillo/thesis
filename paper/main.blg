@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: plain.bst
+Database file #1: sources.bib
+Name 1 in "Francis Y.L. Chin, AND Henry C.M. Leung" has a comma at the end for entry Chin2005
+while executing---line 1049 of file plain.bst
+Name 1 in "Francis Y.L. Chin, AND Henry C.M. Leung" has a comma at the end for entry Chin2005
+while executing---line 1090 of file plain.bst
+Warning--can't use both author and editor fields in Davila2006
+You've used 25 entries,
+            2118 wiz_defined-function locations,
+            675 strings with 8935 characters,
+and the built_in function-call counts, 9833 in all, are:
+= -- 989
+> -- 454
+< -- 11
++ -- 180
+- -- 152
+* -- 704
+:= -- 1565
+add.period$ -- 80
+call.type$ -- 25
+change.case$ -- 149
+chr.to.int$ -- 0
+cite$ -- 26
+duplicate$ -- 374
+empty$ -- 755
+format.name$ -- 152
+if$ -- 2117
+int.to.chr$ -- 0
+int.to.str$ -- 25
+missing$ -- 25
+newline$ -- 128
+num.names$ -- 50
+pop$ -- 146
+preamble$ -- 1
+purify$ -- 125
+quote$ -- 0
+skip$ -- 292
+stack$ -- 0
+substring$ -- 677
+swap$ -- 115
+text.length$ -- 11
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 98
+warning$ -- 1
+while$ -- 95
+width$ -- 27
+write$ -- 284
+(There were 2 error messages)

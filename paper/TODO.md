@@ -1,18 +1,34 @@
 ## TODO:
-. Include Algorithm XOR -- Done
-. Figure - cite the neighborhood tree -- Done
-. Upload and cite dataset - researchgate -- DONE
-. Filename -conference ID - MNE-586-105
-. Progress Report - Cha
+. Update final paper based on the changes in conference paper .docx
+. Review Sia's Thesis for formatting
+. qPMS9 - challenging instance
+. Review the block mask algorithm
 
-. Italicize variables
-. Bold Neighborhood sequences
-. sequence subscript
 
-. Update final paper based on the changes in conference paper
-. Block Flags + Faster Candidate Motif elimination
+. Manuscript
+	. Title page -- LAST
+	. Abstract -- last
+	. Table of Contents -- last
+	. Chapter 1 -- Tuesday
+		. Introduction -- DONE
+		. Context:  -- DONE
+		. Objectives: -- DONE 
+		. Research questions: -- DONE
+		. Significance:  -- 
+		. Scope:  -- DONE
+	. Related Literature
+	. Methodology -- Tuesday
+		. 	
+	. Structure Results
+		. Pruning
+		. Blockflag
+		. Faster Candidate Motif Elimination
+		. Pre-computation
+		. Results
+
 -------------------------------------------------
 ## Targets: Task - Deadline
+
 
 --------------------------------------------------
 ## Notes

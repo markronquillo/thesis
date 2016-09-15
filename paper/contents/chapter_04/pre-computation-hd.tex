@@ -5,7 +5,7 @@ The EMS-GT2 uses the hamming distance computation heavily on the Test phase. To 
 
 Instead of repeatedly counting this nonzero pairs of bits everytime we compute the hamming distance, using a lookup table of nonzero pair of bits count for all possible integer values will help save computational time. Although, pre-computing these nonzero pair counts for all possible 32 bit values will introduce an overhead computation problem. A more efficient approach is to pre-compute only up to $b$ number of bits where $b < 32$ and $b$ is an even number. Then we count for the hamming distance by looking up the nonzero counts $b$ number of bits at a time as shown in \ref{alg:upd-hamming-distance-comp}. In our implementation, we pre-compute up to 18 bit values only.
 
-\input{contents/pseudocode/improved-xor-computation} 
+\input{contents/00_pseudocodes/improved-xor-computation} 
 
 
 

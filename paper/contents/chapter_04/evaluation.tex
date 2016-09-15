@@ -3,11 +3,11 @@
 
 The EMS-GT2, EMS-GT and qPMS9 was evaluated using Intel Xeon, 2.10 Ghz machine. The performance of each algorithm was averaged over 20 synthetic datasets for each $(l, d)$-challenge instance where $l \leq 17$. Table \ref{tbl:final-results-ems} shows the runtime results between EMS-GT2 vs EMS-GT while table \ref{tbl:final-results} shows the runtime results between EMS-GT2 vs the state-of-the-art algorithm qPMS9.
 
-\input{contents/table/final-results-ems}
+\input{contents/00_tables/final-results-ems}
 % Explanation for Table final-results-ems
 The additional speedup techniques become more efficient as the $l$ value in the $(l, d)$-instance grows. For every $(l, d)$-challenge instances mentioned where $l \geq 13$, EMS-GT2 has improved the runtime over the EMS-GT for at least 15\%. Unfortunately, the speedup techniques in EMS-GT2 failed to compensate for their additional overhead computations in both $(9, 2)$ and $(11, 3)$ challenge instances and failed to improve the overall runtime of the implementation.
 
-\input{contents/table/final-results}
+\input{contents/00_tables/final-results}
 % Explanation for Table final-results
 Previous implementations of EMS-GT2 failed to beat qPMS9 in $(17, 6)$-challenge instance. EMS-GT2 not only improved the runtime of the implementation but also succeed in beating the qPMS9 in this challenge instance. The implementation of EMS-GT now is faster than the state-of-the-art qPMS9 in all of the $(l, d)$-challenge instances where $l \leq 17$. Even though the implementation of EMS-GT can only run in $(l, d)$-challenge instances where $l \leq 17$ because of memory constraint, studies shown that the typical length of motifs is around 10 base pairs (bp) \cite{stewart2012transcription}
 

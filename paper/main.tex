@@ -1,4 +1,4 @@
-\documentclass[oneside,12pt]{discsthesis}
+\documentclass[oneside,12pt]{DISCSthesis}
 	\usepackage{graphicx}
 	\usepackage{multirow}
 	\usepackage{fancyvrb}
@@ -6,9 +6,21 @@
 	\usepackage{longtable}
 	\usepackage{pdflscape}
 	\usepackage{enumerate}
-	\usepackage[justification=centering]{caption}
-	\usepackage[titletoc]{appendix}
-	\graphicspath{ {images/} }
+	\usepackage{amsmath}
+	\usepackage{amsthm}
+	\usepackage[normalem]{ulem}
+
+	\usepackage{algpseudocode}
+		\renewcommand{\algorithmiccomment}[1]{\hskip0em$\triangleright$ \emph{#1}}
+		\renewcommand{\algorithmicrequire}{\hspace*{6pt}\textbf{Input:}}
+		\renewcommand{\algorithmicensure}{\hspace*{6pt}\textbf{Output:}}
+
+	\theoremstyle{plain}
+	\newtheorem{thm}{Theorem}
+
+	% \usepackage[justification=centering]{caption}
+	% \usepackage[titletoc]{appendix}
+	% \graphicspath{ {./contents/img/} }
 
 \begin{document}
 
@@ -30,21 +42,40 @@
 
 	% ------------ Paper's Content ------------ 
 	\FrontMatter
-		\input{frontmatter/acknowledgements}
+		% \input{frontmatter/acknowledgements}
+		\input{contents/abstract}
+
+		\tableofcontents
 
 	\MainMatter
-		\input{contents/abstract}
-		\input{contents/introduction}
+		% CHAPTER 1
+		\chapter{Introduction}
+			\input{contents/chapter_01/introduction}
+				\input{contents/chapter_01/context}
+				\input{contents/chapter_01/objectives}
+				\input{contents/chapter_01/research-questions}
+				\input{contents/chapter_01/significance}
+				\input{contents/chapter_01/scope-limitations}
 
-		\input{contents/related_literatures/related-literature}
-		\input{contents/related_literatures/ems-gt}
+		% CHAPTER 2
+		\chapter{Review of Related Literature}
+			\input{contents/chapter_02/related-literature}
+			% \input{contents/chapter_02/ems-gt}
 
-		\input{contents/methodology}
+		% CHAPTER 3
+		\chapter{Methodology}
+			\input{contents/chapter_03/methodology}
 
-		\input{contents/results}
+		% CHAPTER 4
+		\chapter{Results and Analysis}
+			\input{contents/chapter_04/results}
 
+		% CHAPTER 5
+		\chapter{Conclusions}
+			\input{contents/chapter_05/conclusions}
 
-	\bibliographystyle{plain}
-	\bibliography{others/bibliography}
+	\BackMatter
+		\bibliographystyle{plain}
+		\bibliography{sources}
   
 \end{document}
