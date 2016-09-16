@@ -10,12 +10,12 @@
 \contentsline {chapter}{\hspace *{30pt}\numberline {III} Methodology}{11}
 \contentsline {section}{\numberline {3.1}Methodology}{11}
 \contentsline {subsection}{\numberline {3.1.1}Improving the EMS-GT}{12}
-\contentsline {chapter}{\hspace *{30pt}\numberline {IV} Results and Analysis}{13}
-\contentsline {section}{\numberline {4.1}Results}{13}
-\contentsline {subsection}{\numberline {4.1.1}Faster Candidate Motif Elimination through Block Processing}{13}
-\contentsline {subsection}{\numberline {4.1.2}Pre-computation of Mismatch Values}{15}
-\contentsline {subsection}{\numberline {4.1.3}Performance of EMS-GT with speedup techniques}{16}
-\contentsline {chapter}{\hspace *{30pt}\numberline {V} Conclusions}{18}
-\contentsline {section}{\numberline {5.1}Conclusions}{18}
+\contentsline {chapter}{\hspace *{30pt}\numberline {IV} Results and Analysis}{14}
+\contentsline {section}{\numberline {4.1}Results}{14}
+\contentsline {subsection}{\numberline {4.1.1}Faster Candidate Motif Elimination through Block Processing}{14}
+\contentsline {subsection}{\numberline {4.1.2}Pre-computation of Mismatch Values}{16}
+\contentsline {subsection}{\numberline {4.1.3}Performance of EMS-GT with speedup techniques}{17}
+\contentsline {chapter}{\hspace *{30pt}\numberline {V} Conclusions}{19}
+\contentsline {section}{\numberline {5.1}Conclusions}{19}
 \vspace *{-15pt}\contentsline {part}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \textnormal {APPENDIX}}{}
-\contentsline {chapter}{\MakeUppercase {Bibliography}}{19}
+\contentsline {chapter}{\MakeUppercase {Bibliography}}{20}

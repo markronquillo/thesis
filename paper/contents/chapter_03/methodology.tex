@@ -1,24 +1,27 @@
-\section{Methodology}
 This section describes how the speedup-techniques was explored and implemented. Each algorithm was evaluated using the $(9, 2)$, $(11, 3)$, $(13, 4)$, $(15, 5)$ and $(17, 6)$ challenge instances. An $(l, d)$ problem instance is said to be challenging if $d$ is the largest integer value for which the expected number of motifs of lenght $L$ would occur in the input by random chance and does not exceed a constant value (500) \cite{pms2015}.
 
 \input{contents/00_figure/method}
 
-The study aims to improve the algorithm by pre-computation of values and exploring other usage of the block-processing technique. The speedup techniques was developed using the development cycle shown in Figure \ref{fig:methodology}.
+The study aims to improve the algorithm by pre-computation of values and exploring other usage of the block-processing technique. The speedup techniques were developed using the development cycle shown in Figure \ref{fig:methodology}.
 
-\subsection{Improving the EMS-GT}
+\section{Improving the EMS-GT}
 %  C++ implementation
 Originally, EMS-GT was implemented using Java, but for the purpose of eliminating variables that may affect the evaluation of the algorithms, it was converted to C++. 
 
 % block flags
-A previous study \cite{sia2015} improved the neighborhood generation by setting the search space by blocks instead of one bit at a time. The generation phase quickly filters the search space as it process the neighborhood of the sequence, leaving numerous empty blocks of $l$-mers in the candidate motifs array. It was observed that at some point in the generation phase, some of the block settings are not necessary anymore since that block is already empty in the candidate motifs array. We improved the algorithm by maintaining boolean flags for those empty blocks. Then we ignore all block bit settings for those empty blocks.
-
-% faster candidate motif elimination
-Additionally, the block-processing procedure was found useful in the testing of candidate motifs. Grouping the candidate motifs by blocks 
+A previous study \cite{sia2015} improved the neighborhood generation by setting the neighborhood array by blocks of bits instead of one bit at a time. The Generation phase quickly filters the candidate motifs array as it processes the first $n'$ sequences, leaving numerous empty blocks of $l$-mers in the candidate motifs array. It was observed that at some point in the Generation phase, some of the block settings are not necessary anymore since that block is already empty in the candidate motifs array. We improved the algorithm by maintaining boolean flags for those empty blocks and then we ignore all block bit settings for those blocks. Additionally, the block-processing procedure was found useful in testing of candidate motifs. The Test phase checks if a candidate motif $c$ is in the remaining $n - n'$ sequences by comparing if there is at least one $l$-mer in each sequence that is within $d$-distance from $c$. If a candidate motif $x$ is eliminated for failing to have a $d$-neighbor in some input sequence $S_i$, that it is possible to reduce the testing for another candidate motif $y$ on the same sequence $S_i$, if y is within the same $k$-block as x.
 
 % pre computation
+Hamming distance computation was also improved using a pre-computed lookup values. Given an XOR result, instead of counting nonzero pairs of bits, we use the lookup table to get the number of mismatches. Lastly, we explored a pruning strategy in generation of neighborhood of a sequence.
 
 % n' values then parameter fine tuning
 
+\section{Parameter Fine Tuning}
+The EMS-GT algorithm defines an integer value $n'$ ($1 < n' < n$) that divides the dataset into two smaller set of sequences. The first n' sequences are used in the Generate phase while the remaining is assigned to the Test phase. Previous experimentations \cite{sia2015} showed that it is efficient for the algorithm to set the value of $n'$ to 10. Technically, $n'$ dictates hwo big is the size of the set of candidate motifs \mathcal{C} to be evaluated if they are in the remaining $n - n'$ sequences. In line with this, we run an experimentation that records the average runtime of the algorith mwith the speedup techniques over 5 tests and having different values for $n'$. The values for $n'$ range from 5 to 10 in this experiment, since we only want to make the candidate motifs set large enough for our speedup technique to take effect.
 
+\section{Evaluation}
+
+
+\subsection{Datasets}
 
 

@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1473932486 "main.aux" "main.bbl" "main" 1473932982
+["bibtex main"] 1474017511 "main.aux" "main.bbl" "main" 1474017513
   "/usr/local/texlive/2014/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1473932982 5239 e03ddb76c7d85d8f55653d6b1c85ef9a ""
+  "main.aux" 1474017512 5258 595bf5e5e85820719bd5ccfb1e6daa1c ""
   "main.bcf" 0 -1 0 ""
   "sources.bib" 1473932266 12260 5b7ed106da9d058f3ffbe225d64df891 ""
   (generated)
-  "main.blg"
   "main.bbl"
-["pdflatex"] 1473932981 "main.tex" "main.pdf" "main" 1473932982
+  "main.blg"
+["pdflatex"] 1474017511 "main.tex" "main.pdf" "main" 1474017513
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2014/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -147,7 +147,7 @@
   "contents/chapter_01/scope-limitations.tex" 1473902262 530 f7fa0eda3f2c5fd05ea87c9436ff8874 ""
   "contents/chapter_01/significance.tex" 1473928370 1001 16fae93563a5e2702aa4f81d8248821f ""
   "contents/chapter_02/related-literature.tex" 1473137297 5754 e925c461acfcbb3c0bd1db889dcf5e2e ""
-  "contents/chapter_03/methodology.tex" 1473932706 883 45e587727ff9afa149cd15184b996079 ""
+  "contents/chapter_03/methodology.tex" 1474017507 2500 392437c277f05f1f21451fa0f2d95f6f ""
   "contents/chapter_04/block-flags.tex" 1469506734 0 d41d8cd98f00b204e9800998ecf8427e ""
   "contents/chapter_04/evaluation.tex" 1473773725 1732 4041bb7328bd9f9da0805b93bbbd9594 ""
   "contents/chapter_04/fast-candidate-elimination.tex" 1469507172 2287 018ab0c49a48c15a3d86ef0bdb748ede ""
@@ -155,12 +155,12 @@
   "contents/chapter_04/pruning-strategy.tex" 1469506709 0 d41d8cd98f00b204e9800998ecf8427e ""
   "contents/chapter_04/results.tex" 1473138275 407 7cc6ebb972528614d0bfc6fc37473ac5 ""
   "contents/chapter_05/conclusions.tex" 1468327787 666 70736982f8c0b3cff96a280ba397167c ""
-  "main.aux" 1473932982 5239 e03ddb76c7d85d8f55653d6b1c85ef9a ""
-  "main.bbl" 1473932487 5934 ff53400b81daee1dc7b76768c1d1771d "bibtex main"
+  "main.aux" 1474017512 5258 595bf5e5e85820719bd5ccfb1e6daa1c ""
+  "main.bbl" 1474017511 5934 ff53400b81daee1dc7b76768c1d1771d "bibtex main"
   "main.tex" 1473931507 2335 b342e184892ff69cf7b6fd8ee6cf1fbe ""
-  "main.toc" 1473932982 2424 2767be3295d843894d16fb672291292d ""
+  "main.toc" 1474017512 2424 4d07119628bf83410b45821d9c92a524 ""
   (generated)
-  "main.pdf"
   "main.log"
-  "main.aux"
   "main.toc"
+  "main.pdf"
+  "main.aux"
