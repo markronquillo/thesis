@@ -147,4 +147,9 @@ Alexander~J Stewart, Sridhar Hannenhalli, and Joshua~B Plotkin.
 \newblock Why transcription factor binding sites are ten nucleotides long.
 \newblock {\em Genetics}, 192(3):973--985, 2012.
 
+\bibitem{zhu1999scpd}
+Jian Zhu and Michael~Q. Zhang.
+\newblock Scpd: a promoter database of the yeast saccharomyces cerevisiae.
+\newblock {\em Bioinformatics}, 15(7):607--611, 1999.
+
 \end{thebibliography}

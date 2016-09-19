@@ -708,7 +708,8 @@ private:
 	        p = (p << 2) + base;
 	    }
 
-	    int hd = computeHammingDistance(mapping, p);
+	    prune_prefix = p >> (config->blockDegree*2);
+	    int hd = computeHammingDistancePrefix(mapping_prefix, prune_prefix);
 	    if (hd < ds->numberOfAllowedMutations) { 
 	    	pruneLmers[hd].push_back(p);
 	    }
@@ -727,7 +728,8 @@ private:
 	            case 'T': p+= 3; break;
 	        }
 
-		    int hd = computeHammingDistance(mapping, p);
+	    	prune_prefix = p >> (config->blockDegree*2);
+		    int hd = computeHammingDistancePrefix(mapping_prefix, prune_prefix);
 		    if (hd < ds->numberOfAllowedMutations) { 
 		    	pruneLmers[hd].push_back(p);
 		    }
@@ -993,34 +995,65 @@ private:
 	    return distance;
 	}
 
+	// int computeHammingDistance(long lmer1, long lmer2) {
+	//     int distance = 0;
+	//     long result = lmer1 ^ lmer2;
+
+	//     int c = 2;
+	//     while (c--) {
+	//         int i = (result & ((1 << 18)-1));
+	//         distance += mismatches[i];
+	//         result = result >> 18;
+	//     }
+	//     return distance;
+	// }
+
 	int computeHammingDistance(long lmer1, long lmer2) {
 	    int distance = 0;
 	    long result = lmer1 ^ lmer2;
 
-	    int c = 2;
-	    while (c--) {
-	        int i = (result & ((1 << 18)-1));
+	    // instead of counting per pair of bits,
+	    // we count by a fix number (18) 
+	    int remainingBitsInLmer = ds->lengthOfMotif * 2;
+	    while (remainingBitsInLmer > 0) { 
+	        int bitsToUse = 0;
+	        if (remainingBitsInLmer > 18) {
+	            remainingBitsInLmer -= 18;
+	            bitsToUse = 18;
+	        } else {
+	            bitsToUse = remainingBitsInLmer;
+	            remainingBitsInLmer = 0;
+	        }
+	        int i = (result & ((1 << bitsToUse)-1));
 	        distance += mismatches[i];
-	        result = result >> 18;
+	        result = result >> bitsToUse;
 	    }
-
-	  //   if (computeHD(lmer1, lmer2) != distance) {
-	  //   	long result = lmer1 ^ lmer2;
-			// std::bitset<34> lm1(lmer1);
-			// std::bitset<34> lm2(lmer2);
-			// std::bitset<34> lm3(result);
-		 //    cout << lm1 << " ^ " << lm2 << " = " << lm3 << endl;
-		 //    cout << "\t Distance " << distance << " vs " << computeHD(lmer1, lmer2) << endl;
-		 //    while (result > 0) {
-		 //        int i = (result & ((1 << 18)-1));
-			// 	std::bitset<34> lm4(i);
-
-		 //    	cout << "\t Part " << lm4 << " " << result << endl;
-		 //        result = result >> 18;
-		 //    }
-	  //   }
 	    return distance;
 	}
+
+	int computeHammingDistancePrefix(long lmer1, long lmer2) {
+	    int distance = 0;
+	    long result = lmer1 ^ lmer2;
+
+	    // instead of counting per pair of bits,
+	    // we count by a fix number (18) 
+	    int remainingBitsInLmer = (ds->lengthOfMotif - config->blockDegree) * 2;
+	    while (remainingBitsInLmer > 0) { 
+	        int bitsToUse = 0;
+	        if (remainingBitsInLmer > 18) {
+	            remainingBitsInLmer -= 18;
+	            bitsToUse = 18;
+	        } else {
+	            bitsToUse = remainingBitsInLmer;
+	            remainingBitsInLmer = 0;
+	        }
+	        int i = (result & ((1 << bitsToUse)-1));
+	        distance += mismatches[i];
+	        result = result >> bitsToUse;
+	    }
+	    return distance;
+	}
+
 
 
 	string decode(long mapping, int strlen) {

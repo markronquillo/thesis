@@ -2,7 +2,7 @@
 #include <vector>
 #include "DataSetParams.cpp"
 #include "Config.cpp"
-#include "EMS_GT_BF_HD.cpp"
+#include "EMS_GT_NEW_NO_HD.cpp"
 #include "utils.cpp"
 
 using namespace std;
@@ -38,9 +38,9 @@ int main(int argc, char* argv[]) {
     // adjust tPrime (nPrime) value depending on the dataset
     // hardcoded
     switch(dsParams.lengthOfMotif)  {
-        // case 13: config.tPrime = 9; break;
-        // case 15: config.tPrime = 8; break;
-        // case 17: config.tPrime = 7; break;
+        case 13: config.tPrime = 9; break;
+        case 15: config.tPrime = 8; break;
+        case 17: config.tPrime = 7; break;
     }
 
     // override change if argument is passed
@@ -49,8 +49,6 @@ int main(int argc, char* argv[]) {
 
     if (argc > 5)
         plantedMotif = argv[5];
-
-    config.tPrime_2 = 6;
 
     // EMS_GT ems = EMS_GT(&dsParams, &config, plantedMotif);
     EMS_GT ems = EMS_GT(&dsParams, &config);

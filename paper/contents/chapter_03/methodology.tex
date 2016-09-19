@@ -1,27 +1,51 @@
-This section describes how the speedup-techniques was explored and implemented. Each algorithm was evaluated using the $(9, 2)$, $(11, 3)$, $(13, 4)$, $(15, 5)$ and $(17, 6)$ challenge instances. An $(l, d)$ problem instance is said to be challenging if $d$ is the largest integer value for which the expected number of motifs of lenght $L$ would occur in the input by random chance and does not exceed a constant value (500) \cite{pms2015}.
+This section describes how the speedup-techniques was explored and implemented. Each algorithm was evaluated using the $(9, 2)$, $(11, 3)$, $(13, 4)$, $(15, 5)$ and $(17, 6)$ challenge instances. An $(l, d)$ problem instance is said to be challenging if $d$ is the largest integer value for which the expected number of motifs of length $L$ would occur in the input by random chance and does not exceed a constant value (500) \cite{pms2015}.
 
 \input{contents/00_figure/method}
 
 The study aims to improve the algorithm by pre-computation of values and exploring other usage of the block-processing technique. The speedup techniques were developed using the development cycle shown in Figure \ref{fig:methodology}.
 
-\section{Improving the EMS-GT}
+\section{Improving the EMS-GT algorithm}
 %  C++ implementation
 Originally, EMS-GT was implemented using Java, but for the purpose of eliminating variables that may affect the evaluation of the algorithms, it was converted to C++. 
 
 % block flags
-A previous study \cite{sia2015} improved the neighborhood generation by setting the neighborhood array by blocks of bits instead of one bit at a time. The Generation phase quickly filters the candidate motifs array as it processes the first $n'$ sequences, leaving numerous empty blocks of $l$-mers in the candidate motifs array. It was observed that at some point in the Generation phase, some of the block settings are not necessary anymore since that block is already empty in the candidate motifs array. We improved the algorithm by maintaining boolean flags for those empty blocks and then we ignore all block bit settings for those blocks. Additionally, the block-processing procedure was found useful in testing of candidate motifs. The Test phase checks if a candidate motif $c$ is in the remaining $n - n'$ sequences by comparing if there is at least one $l$-mer in each sequence that is within $d$-distance from $c$. If a candidate motif $x$ is eliminated for failing to have a $d$-neighbor in some input sequence $S_i$, that it is possible to reduce the testing for another candidate motif $y$ on the same sequence $S_i$, if y is within the same $k$-block as x.
+A previous study \cite{sia2015} improved the neighborhood generation by setting the neighborhood array by blocks of bits instead of one bit at a time. The Generation phase quickly filters the candidate motifs array as it processes the first $n'$ sequences, leaving numerous empty blocks of $l$-mers in the candidate motifs array. It was observed that at some point in the Generation phase, some of the block settings are not necessary anymore since that block is already empty in the candidate motifs array. We improved the algorithm by maintaining boolean flags for those empty blocks and then we ignore all block bit settings for those blocks. Additionally, the block-processing procedure was found useful in testing of candidate motifs. The Test phase checks if a candidate motif $c$ is in the remaining $n - n'$ sequences by comparing if there is at least one $l$-mer in each sequence that is within $d$-distance from $c$. If a candidate motif $x$ is eliminated for failing to have a $d$-neighbor in some input sequence $S_i$, that it is possible to reduce the testing for another candidate motif $y$ on the same sequence $S_i$, if $y$ is within the same $k$-block as $x$.
 
 % pre computation
-Hamming distance computation was also improved using a pre-computed lookup values. Given an XOR result, instead of counting nonzero pairs of bits, we use the lookup table to get the number of mismatches. Lastly, we explored a pruning strategy in generation of neighborhood of a sequence.
+Hamming distance computation was also improved using a pre-computed lookup values. Given an XOR result, instead of counting nonzero pairs of bits, we use the lookup table to get the number of mismatches. Lastly, we explored a pruning strategy in the neighborhood generation of a sequence.
 
 % n' values then parameter fine tuning
 
 \section{Parameter Fine Tuning}
-The EMS-GT algorithm defines an integer value $n'$ ($1 < n' < n$) that divides the dataset into two smaller set of sequences. The first n' sequences are used in the Generate phase while the remaining is assigned to the Test phase. Previous experimentations \cite{sia2015} showed that it is efficient for the algorithm to set the value of $n'$ to 10. Technically, $n'$ dictates hwo big is the size of the set of candidate motifs \mathcal{C} to be evaluated if they are in the remaining $n - n'$ sequences. In line with this, we run an experimentation that records the average runtime of the algorith mwith the speedup techniques over 5 tests and having different values for $n'$. The values for $n'$ range from 5 to 10 in this experiment, since we only want to make the candidate motifs set large enough for our speedup technique to take effect.
+The EMS-GT algorithm defines an integer value $n'$ ($1 < n' < n$) that divides the dataset into two smaller set of sequences. The first n' sequences are used in the Generate phase while the remaining sequences are assigned to the Test phase. Previous experimentations \cite{sia2015} showed that it is efficient for the algorithm to set the value of $n'$ to 10. Technically, $n'$ dictates how big is the size of the set of candidate motifs $\mathcal{C}$ to be evaluated if they are in the remaining $n - n'$ sequences. In this study, we re-evaluated the ideal value for $n'$ since two of the speedup techniques introduced here requires a sufficiently large candidate motifs set for them to take effect. We run an experimentation that records the average runtime of the algorithm with the speedup techniques over 5 tests and having different values for $n'$. The values for $n'$ ranges from 5 to 10 in this experiment.
+
+
+Table 3.1 shows the ideal $n'$ values for each ($l$, $d$)-challenge instances mentioned. For ($l$, $d$) instances where $l \leq 11$ the ideal value for $n'$ is still 10. This is true due to the efficiency of the Generate phase in small instances of the problem. For (13, 4), (15, 5) and (17, 6), different $n'$ values were used in the evaluation which are 9, 8, and 7 respectively.
+
+\input{contents/00_tables/nprime-speedup}
+
+Additionally, the block flags speedup technique also defines another parameter $n''$ where $1 < n'' < n'$. This parameter represents the sequence number where the algorithm will start using the block flags. We also run an experimentation to assess the best value for the parameter $n''$. Table 3.2 shows the runtime performance of EMS-GT with the block flags speedup technique using different $n''$ values. The experiments show that the ideal value for the $n''$ parameter is 6.
+
+% nprime_prime-speedup
+
 
 \section{Evaluation}
+We first assess different combinations of speedup techniques for EMS-GT. The combination with the fastest runtime performance will become the proposed EMS-GT2. The different combinations are composed of the following: (1) EMS-GT with pruning technique, (2) EMS-GT with block flags, (3) EMS-GT with block flags and improved Hamming distance computation, (4) EMS-GT with faster candidate motif elimination, (5) EMS-GT with faster candidate motif elimination and improved Hamming distance computation and (6) EMS-GT with block flags, faster candidate motif elimination and improved Hamming distance computation. 
+
+We compared EMS-GT2 to its predecessor EMS-GT and the algorithm qPMS9. We used the challenging ($l$, $d$) instances defined in \cite{pms2015}. The instances used in the evaluation are the following: (9, 2), (11, 3), (13, 4), (15, 5) and (17, 6).
+
+\section{Datasets}
+
+The algorithm EMS-GT2 was evaluated using both synthetic data sets and real data sets.
+
+\subsection{Synthetic Datasets}
+Algorithms that solve PMS \cite{pevzner2000combinatorial, pms2014, pms2015} use a dataset containing $20$ string sequences where each nucleotide is in $\Sigma = \{a, c, g, t\}$. Each string sequence is $600$ base pairs (bp) long and each nucleotide is randomly generated with equal chance of being selected. A motif is then generated and for each string sequence in the dataset, a $d$-neighbor is planted at a random position. In this study, a generator was run to produce a dataset of PMS problem instances with this configuration, and this dataset was then used to evaluate the algorithms. Furthermore, a converter program was used to translate the dataset into FASTA format in order to execute qPMS9.
 
 
-\subsection{Datasets}
+\subsection{Real Datasets}
+% The EMS-GT algorithm was previously evaluated using real data sets. In the EMS-GT2 algorithm, we re-evaluated the runtime performance of the algorithm using the same real data sets. 
+
+The EMS-GT2 algorithm was also evaluated using real data sets that were previously used in the earlier implementation of EMS-GT. The real data sets are the sets of promoter sequences of yeast (\textit{Saccharomyces cervisiae}) \cite{zhu1999scpd} and sets of orthologous sequences of different gene families of eukaryotes.
+
 
 

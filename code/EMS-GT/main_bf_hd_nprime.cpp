@@ -48,9 +48,10 @@ int main(int argc, char* argv[]) {
         config.tPrime = atoi(argv[2]);
 
     if (argc > 5)
-        plantedMotif = argv[5];
+        config.tPrime_2 = atoi(argv[5])
 
-    config.tPrime_2 = 6;
+
+    // config.tPrime_2 = 6;
 
     // EMS_GT ems = EMS_GT(&dsParams, &config, plantedMotif);
     EMS_GT ems = EMS_GT(&dsParams, &config);

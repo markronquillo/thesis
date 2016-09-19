@@ -3,7 +3,8 @@
 . Review Sia's Thesis for formatting
 . qPMS9 - challenging instance
 . Review the block mask algorithm
-
+. Monday: Final Experimentation
+	. Include the parameter fine tuning
 
 . Manuscript
 	. Title page -- LAST
@@ -20,8 +21,8 @@
 	. Methodology -- Tuesday
 		. 	
 	. Structure Results
-		. Pruning
-		. Blockflag
+		. Pruning - explain pruning
+		. Blockflag - explain blockflag
 		. Faster Candidate Motif Elimination
 		. Pre-computation
 		. Results

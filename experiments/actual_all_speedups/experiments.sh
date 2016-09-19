@@ -40,14 +40,21 @@ do
 
 		# block flags
 		../bin/EMS_GT_BF $l,$d,$i 	&>> ../results/EMS_GT_BF-$l,$d
+
+		# block flags + HD
+		../bin/EMS_GT_BF_HD $l,$d,$i 	&>> ../results/EMS_GT_BF_HD-$l,$d
+
 		# pruning technique
 		../bin/EMS_GT_Prune $l,$d,$i 	&>> ../results/EMS_GT_Prune-$l,$d
-		# block flags + pruning technique; 
-		../bin/EMS_GT_BF_Prune $l,$d,$i 	&>> ../results/EMS_GT_BF_Prune-$l,$d
 
 		# candidate elimination only
+		../bin/EMS_GT_NEW_NO_HD $l,$d,$i 	&>> ../results/EMS_GT_NEW_NO_HD-$l,$d
+
+		# candidate elimination + HDonly
 		../bin/EMS_GT_NEW $l,$d,$i 	&>> ../results/EMS_GT_NEW-$l,$d
 		
+		../bin/EMS_GT_NEW_WITH_BF $l,$d,$i 	&>> ../results/EMS_GT_NEW_WITH_BF-$l,$d
+
 		# java -cp ../bin EMS_GT_64 $l,$d,$i 	>> ../results/EMS_GT_64-$l,$d
 		../bin/PMS8 FASTA/$l,$d,$i $l $d 	&>> ../results/rawPMS8-$l,$d
 		../bin/qPMS9 -l $l -d $d FASTA/$l,$d,$i 	&>> ../results/rawqPMS9-$l,$d

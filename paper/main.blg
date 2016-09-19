@@ -8,45 +8,45 @@ while executing---line 1049 of file plain.bst
 Name 1 in "Francis Y.L. Chin, AND Henry C.M. Leung" has a comma at the end for entry Chin2005
 while executing---line 1090 of file plain.bst
 Warning--can't use both author and editor fields in Davila2006
-You've used 25 entries,
+You've used 26 entries,
             2118 wiz_defined-function locations,
-            675 strings with 8935 characters,
-and the built_in function-call counts, 9833 in all, are:
-= -- 989
-> -- 454
+            679 strings with 9049 characters,
+and the built_in function-call counts, 10166 in all, are:
+= -- 1024
+> -- 467
 < -- 11
-+ -- 180
-- -- 152
-* -- 704
-:= -- 1565
-add.period$ -- 80
-call.type$ -- 25
-change.case$ -- 149
++ -- 185
+- -- 156
+* -- 730
+:= -- 1620
+add.period$ -- 83
+call.type$ -- 26
+change.case$ -- 154
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 374
-empty$ -- 755
-format.name$ -- 152
-if$ -- 2117
+cite$ -- 27
+duplicate$ -- 385
+empty$ -- 782
+format.name$ -- 156
+if$ -- 2185
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 25
-newline$ -- 128
-num.names$ -- 50
-pop$ -- 146
+int.to.str$ -- 26
+missing$ -- 26
+newline$ -- 133
+num.names$ -- 52
+pop$ -- 149
 preamble$ -- 1
-purify$ -- 125
+purify$ -- 129
 quote$ -- 0
-skip$ -- 292
+skip$ -- 300
 stack$ -- 0
-substring$ -- 677
-swap$ -- 115
+substring$ -- 707
+swap$ -- 116
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 98
+type$ -- 102
 warning$ -- 1
-while$ -- 95
-width$ -- 27
-write$ -- 284
+while$ -- 99
+width$ -- 28
+write$ -- 295
 (There were 2 error messages)

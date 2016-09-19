@@ -8,14 +8,19 @@
 \contentsline {chapter}{\hspace *{30pt}\numberline {II} Review of Related Literature}{7}
 \contentsline {section}{\numberline {2.1}Review of Related Literature}{7}
 \contentsline {chapter}{\hspace *{30pt}\numberline {III} Methodology}{11}
-\contentsline {section}{\numberline {3.1}Methodology}{11}
-\contentsline {subsection}{\numberline {3.1.1}Improving the EMS-GT}{12}
-\contentsline {chapter}{\hspace *{30pt}\numberline {IV} Results and Analysis}{14}
-\contentsline {section}{\numberline {4.1}Results}{14}
-\contentsline {subsection}{\numberline {4.1.1}Faster Candidate Motif Elimination through Block Processing}{14}
-\contentsline {subsection}{\numberline {4.1.2}Pre-computation of Mismatch Values}{16}
-\contentsline {subsection}{\numberline {4.1.3}Performance of EMS-GT with speedup techniques}{17}
-\contentsline {chapter}{\hspace *{30pt}\numberline {V} Conclusions}{19}
-\contentsline {section}{\numberline {5.1}Conclusions}{19}
+\contentsline {section}{\numberline {3.1}Improving the EMS-GT algorithm}{12}
+\contentsline {section}{\numberline {3.2}Parameter Fine Tuning}{13}
+\contentsline {section}{\numberline {3.3}Evaluation}{14}
+\contentsline {section}{\numberline {3.4}Datasets}{15}
+\contentsline {subsection}{\numberline {3.4.1}Synthetic Datasets}{15}
+\contentsline {subsection}{\numberline {3.4.2}Real Datasets}{16}
+\contentsline {chapter}{\hspace *{30pt}\numberline {IV} Results and Analysis}{17}
+\contentsline {section}{\numberline {4.1}Pruning strategy in Neighborhood Generation of a Sequence}{17}
+\contentsline {section}{\numberline {4.2}Block flags implementation in Generate phase}{17}
+\contentsline {section}{\numberline {4.3}Faster Candidate Motif Elimination through Block Processing}{17}
+\contentsline {subsection}{\numberline {4.3.1}Pre-computation of Mismatch Values}{20}
+\contentsline {section}{\numberline {4.4}Performance of EMS-GT with speedup techniques}{21}
+\contentsline {chapter}{\hspace *{30pt}\numberline {V} Conclusions}{25}
+\contentsline {section}{\numberline {5.1}Conclusions}{25}
 \vspace *{-15pt}\contentsline {part}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \textnormal {APPENDIX}}{}
-\contentsline {chapter}{\MakeUppercase {Bibliography}}{20}
+\contentsline {chapter}{\MakeUppercase {Bibliography}}{26}

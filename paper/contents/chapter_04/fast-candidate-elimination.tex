@@ -1,14 +1,38 @@
+% TODO
+% . include figures
 
-\subsection{Faster Candidate Motif Elimination through Block Processing}
+\section{Faster Candidate Motif Elimination through Block Processing}
 
-The EMS-GT algorithm tests candidate motifs in a brute-force approach. A candidate motif is tested by checking if each of the remaining $(n - n')$ sequences contains an $l$-mer that has at most $d$ hamming distance value with the candidate motif. In testing a candidate motif $c$, if there is a sequence $S_i$ in $(n - n')$ that has no $l$-mer with hamming distance of at most $d$ with $c$, the candidate motif $c$ is automatically eliminated.
+The EMS-GT algorithm tests candidate motifs in a brute-force approach. A candidate motif is tested by checking if it has at least one $d$-neighbor in each of the remaining $n - n'$ sequences. In testing a candidate motif $c$, if there is a sequence $S_i$ in the remaining $n - n'$ sequences where $c$ doesn't have any $d$-neighbor, candidate motif $c$ is automatically eliminated.
 
-Since the search space is represented by a compressed bit array and the $l$-mers are enumerated alphabetically, $l$-mers that are near each other share the same $p$-length prefix string. We used this observation in improving the way the algorithm tests the candidate motifs. In EMS-GT, each testing of candidate motif is independent of each other. We proposed a speedup technique that processes these candidate motifs by block. Dividing the search space and grouping the $l$-mers by fix block $k$ will result into a group of $l$-mers that has the same $(l - k)$-length prefix where $k < l$. We can easily observe that increasing the value of $k$-block size will increase the number of $l$-mers in a group but decreases the length of the common prefix string they share. If candidate motifs $x$ and $y$ are within $k$-block and $x$ has been eliminated as a candidate motif in sequence $S_i$ $(n' \leq i \leq n)$, we can filter out $l$-mers $z \in S_i$ where $d_H(x,z) > d + k$. We collect the remaining $l$-mers in $S_i$ and use it for testing the remaining candidate motifs in the block along with the other $l$-mers in the remaining sequences. 
+In our implementation, the search space is represented by a compressed bit array and the $l$-mers are enumerated alphabetically. $L$-mers that are near each other do not differ that much. We used this observation in improving the way the algorithm tests the candidate motifs. Figure 1 illustrates a part of the search space's representation.
+
+% include search space, 
+\input{contents/00_figure/search_space}
+
+In EMS-GT, each testing of candidate motif is independent of each other. We proposed a speedup technique that processes these candidate motifs by blocks. We first partition the search space by blocks containing $4^k$ $l$-mers. This results into $l$-mers that share the same $(l-k)$-prefix characters where $2 < k < l$. Since every row in the search space represents exactly 32 $l$-mers (32-bit integers), the height of every block is computed using $(4^k / 32)$. Additionally, any two $l$-mers within a block has at most $k$ hamming distance value between them. Figure 2 shows an example of partitioned search space showing blocks of $l$-mers sharing a common prefix string. In our implementation we use $k = 5$ and every block has a height of 32.
+
+% include figure that shows how we partition the search space
+\input{contents/00_figure/block_search_space}
+
+We process the testing of candidate motifs now by blocks. If candidate motifs $x$ and $y$ are within a block and $x$ has been eliminated as a candidate motif in sequence $S_i$ $(n' \leq i \leq n)$, we can filter out $l$-mers $z \in S_i$ where $d_H(x,z) > d + k$. We collect the remaining $l$-mers in $S_i$ and use it for testing the remaining candidate motifs in the block along with the other $l$-mers in the remaining sequences in ${S_n', S_n'+1, ..., S_n} - {S_i}$. The theorem below formalized the main property used in this speedup technique.
 
 \begin{thm} \label{thm:triangle}
-	Let x and y be $l$-mers in a $k$-size block in the search space and $d_H(x, y) \leq k$. Let $d$ be the number of allowed mutations in the problem. Let z be another $l$-mer. If $d_H(x, z) > (d + k)$ then $d_H(y, z) > d$ and $z \not\in N(y, d)$
+	Let x and y be $l$-mers in a block in the search space containing $4^k$ $l$-mers and $d_H(x, y) \leq k$. Let $d$ be the number of allowed mutations in the problem. Let z be another $l$-mer. If $d_H(x, z) > (d + k)$ then $d_H(y, z) > d$ and $z \not\in N(y, d)$
 \end{thm}
 
 \begin{proof}[Proof of Theorem \ref{thm:triangle}]
 Using proof by contradiction, suppose that $d_H(y, z) \leq d$. We know that $d_H(x, z) < d_H(y, z) + d_H(x, y)$ from the triangle inequality. We can write this equation into $d_H(x, z) < d + k$ thus a contradiction to the previous assumption that $d_H(x, z) > (d + k)$.
 \end{proof}
+
+The $k$-value affects the number of $l$-mers that is filtered in a sequence. The lower its value, the larger the number of filtered $l$-mers and faster candidate motif testing will be. But since $k$ also affects the number of $l$-mers in a block, the lower its value, the fewer the candidate motifs that might benefit from the speedup technique.
+
+The Test phase now is executed as follows:
+
+\itemize{}
+
+1. Divide into blocks
+2. Will only apply on those blocks with 2 or more candidate motifs
+3. Will wait until one candidate motif is eliminated
+4. Will filter lmers in the sequence where it got eliminated
+5. will use the fileterd sequence instead of the original sequence.
