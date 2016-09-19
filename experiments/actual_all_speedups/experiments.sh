@@ -38,6 +38,10 @@ do
 		#java -cp ../bin EMS_GT_32 $l,$d,$i 	>> ../results/EMS_GT_32-$l,$d
 		../bin/EMS_GT $l,$d,$i 10	&>> ../results/EMS_GT-$l,$d
 
+		for n in 1 2 3 4 5 6 7 8 9 10 do 
+			../bin/EMS_GT_BF_HD_NPRIME $l,$d,$i $n	&>> ../results/EMS_GT_BF_HD_NPRIME-$l,$d-$n
+		end
+
 		# block flags
 		../bin/EMS_GT_BF $l,$d,$i 	&>> ../results/EMS_GT_BF-$l,$d
 
@@ -67,4 +71,6 @@ do
 	java -cp ../bin PMS8outputReader  ../results/rawPMS8-$l,$d  >> ../results/PMS8-$l,$d
 	java -cp ../bin qPMS9outputReader ../results/rawqPMS9-$l,$d >> ../results/qPMS9-$l,$d
 done
+
+
 cd ..
