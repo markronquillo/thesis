@@ -12,16 +12,16 @@
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 16
-     >    (3) Duration (s): 16
-     >    (4) Duration (s): 16
-     >    (5) Duration (s): 16
-     >    (6) Duration (s): 16
-     >    (7) Duration (s): 16
-     >    (8) Duration (s): 16
-     >    (9) Duration (s): 16
-     >    (10) Duration (s): 16
+     >    (1) Duration (s): 20
+     >    (2) Duration (s): 20
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -30,11 +30,11 @@
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: GGCATCTTCGCATCCAA
-   > Found Motifs:  CCAGCGATCCGCAGGTA GGCATCTTCGCATCCAA
+   > Planted Motif: AGATACTCCCCTCATGC
+   > Found Motifs:  AGATACTCCCCTCATGC GAATGGTAGAGGGGCGA TAAGCGTAATGGACAGA
 -------------------------------------------------------
-Duration: 165391491
-Duration (s): 165
+Duration: 208619167
+Duration (s): 208
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -49,16 +49,16 @@ Duration (s): 165
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 15
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 20
+     >    (2) Duration (s): 20
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -67,11 +67,11 @@ Duration (s): 165
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: TGTCACCAACGTCCAGT
-   > Found Motifs:  AGCAGTCTTCAGTGGGT TGTCACCAACGTCCAGT
+   > Planted Motif: GATTCCCCACACCAGAG
+   > Found Motifs:  GATTCCCCACACCAGAG
 -------------------------------------------------------
-Duration: 150087864
-Duration (s): 150
+Duration: 208587966
+Duration (s): 208
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -86,16 +86,16 @@ Duration (s): 150
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 15
-     >    (2) Duration (s): 15
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 20
+     >    (2) Duration (s): 20
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -104,11 +104,11 @@ Duration (s): 150
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: CGATGCGCTGCCTTGGG
-   > Found Motifs:  CGATGCGCTGCCTTGGG
+   > Planted Motif: GTCAAGGCCAAACACAG
+   > Found Motifs:  ACCCAGCCTCTGTCATC GTCAAGGCCAAACACAG
 -------------------------------------------------------
-Duration: 151554267
-Duration (s): 151
+Duration: 207636365
+Duration (s): 207
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -123,29 +123,29 @@ Duration (s): 151
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 15
-     >    (3) Duration (s): 15
-     >    (4) Duration (s): 15
-     >    (5) Duration (s): 15
-     >    (6) Duration (s): 15
-     >    (7) Duration (s): 15
-     >    (8) Duration (s): 15
-     >    (9) Duration (s): 15
-     >    (10) Duration (s): 15
+     >    (1) Duration (s): 29
+     >    (2) Duration (s): 30
+     >    (3) Duration (s): 30
+     >    (4) Duration (s): 30
+     >    (5) Duration (s): 29
+     >    (6) Duration (s): 30
+     >    (7) Duration (s): 30
+     >    (8) Duration (s): 29
+     >    (9) Duration (s): 29
+     >    (10) Duration (s): 30
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
 ------------------------------------------------------
    > Lmer Sequences generated: 0 (s)
-   > Search Motif is done: 3 (s)
+   > Search Motif is done: 6 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: CGCTAAGGGTCGCAATA
-   > Found Motifs:  AAAGACCGCGACATGCG CGCTAAGGGTCGCAATA
+   > Planted Motif: GAAGCCTTAGATTGCTG
+   > Found Motifs:  GAAGCCTTAGATTGCTG TCTGGTCAATATTGTGT
 -------------------------------------------------------
-Duration: 154705472
-Duration (s): 154
+Duration: 307289340
+Duration (s): 307
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -160,16 +160,16 @@ Duration (s): 154
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 19
+     >    (2) Duration (s): 20
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 21
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -178,11 +178,11 @@ Duration (s): 154
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: CTGTCAACAGCAAGCCA
-   > Found Motifs:  CTCAAAACTTTCAACAG CTGTCAACAGCAAGCCA GACTAGGGGAGAAAATC GTTAACGGCTTCACTCA
+   > Planted Motif: CGCGGCGGTCTCACACG
+   > Found Motifs:  CGCGGCGGTCTCACACG GGGGGGCAGCTACCTCG
 -------------------------------------------------------
-Duration: 150150264
-Duration (s): 150
+Duration: 208743967
+Duration (s): 208
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -197,16 +197,16 @@ Duration (s): 150
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 15
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 20
+     >    (2) Duration (s): 20
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -215,11 +215,11 @@ Duration (s): 150
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: AAAAAGGCTGCCCTCAC
-   > Found Motifs:  AAAAAGGCTGCCCTCAC
+   > Planted Motif: TTACGCAGATGCCGAGC
+   > Found Motifs:  ACCAGTTGCGCGCCAGG CCACTAGGGAGAATTCA CTGCGCACGTGGATAGC GACCAGAATGTCTAAGT TTACGCAGATGCCGAGC
 -------------------------------------------------------
-Duration: 150509064
-Duration (s): 150
+Duration: 206684763
+Duration (s): 206
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -234,16 +234,16 @@ Duration (s): 150
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 20
+     >    (2) Duration (s): 20
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -252,11 +252,11 @@ Duration (s): 150
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: GTGCAGGCCCCGATTCC
-   > Found Motifs:  ACCCAGCGCGGGGGCCC GTGCAGGCCCCGATTCC
+   > Planted Motif: TGCTTTTGACCTTACTA
+   > Found Motifs:  ACGGTACTACGTGGCAG TGCTTTTGACCTTACTA
 -------------------------------------------------------
-Duration: 149557462
-Duration (s): 149
+Duration: 207589564
+Duration (s): 207
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -271,16 +271,16 @@ Duration (s): 149
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 15
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 19
+     >    (2) Duration (s): 20
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -289,11 +289,11 @@ Duration (s): 149
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: GGTTTACTACAGCGACA
-   > Found Motifs:  GGTTTACTACAGCGACA
+   > Planted Motif: GGCAGTCTGTGCGGGCA
+   > Found Motifs:  CACGAGACCTGATATCC GGCAGTCTGTGCGGGCA
 -------------------------------------------------------
-Duration: 150025463
-Duration (s): 150
+Duration: 207651965
+Duration (s): 207
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -308,16 +308,16 @@ Duration (s): 150
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 20
+     >    (2) Duration (s): 20
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -326,11 +326,11 @@ Duration (s): 150
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: CTACATAATGTAGCAAT
-   > Found Motifs:  CTACATAATGTAGCAAT
+   > Planted Motif: TCTGAGGGGCGTACTAA
+   > Found Motifs:  TCTGAGGGGCGTACTAA
 -------------------------------------------------------
-Duration: 149729063
-Duration (s): 149
+Duration: 207667565
+Duration (s): 207
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -345,16 +345,16 @@ Duration (s): 149
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 20
+     >    (2) Duration (s): 21
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -363,11 +363,11 @@ Duration (s): 149
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: AAATCTAAAATACGGGA
-   > Found Motifs:  AAATCTAAAATACGGGA GGGGGACAAGCAACTTT
+   > Planted Motif: TTGCTCGGCCCCTGTGA
+   > Found Motifs:  CGCTAGGACTCTCACGC TGCTCGGCCCCTGTGAA TTGCTCGGCCCCTGTGA
 -------------------------------------------------------
-Duration: 149401462
-Duration (s): 149
+Duration: 209539568
+Duration (s): 209
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -382,16 +382,16 @@ Duration (s): 149
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 15
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 19
+     >    (2) Duration (s): 21
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -400,11 +400,11 @@ Duration (s): 149
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: TTCGTGCAAAATGAAAC
-   > Found Motifs:  GAATGCAGACCGGCAAT TTCGTGCAAAATGAAAC
+   > Planted Motif: GACAAACCGGGCTGGAT
+   > Found Motifs:  CTCAGAGCATCAGCTGC GACAAACCGGGCTGGAT GCCGCGCGTAACATTTA TTCGCTCCGATATGGGC
 -------------------------------------------------------
-Duration: 149167462
-Duration (s): 149
+Duration: 209133968
+Duration (s): 209
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -419,16 +419,16 @@ Duration (s): 149
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 15
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 20
+     >    (2) Duration (s): 21
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -437,11 +437,11 @@ Duration (s): 149
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: TATACGGACATGGCATA
-   > Found Motifs:  TATACGGACATGGCATA TGTCTGGGTTCCTCGAG
+   > Planted Motif: TCGGTATTGATAGGCTT
+   > Found Motifs:  TCGGTATTGATAGGCTT
 -------------------------------------------------------
-Duration: 149947464
-Duration (s): 149
+Duration: 209976368
+Duration (s): 209
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -456,16 +456,16 @@ Duration (s): 149
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 20
+     >    (2) Duration (s): 21
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -474,11 +474,11 @@ Duration (s): 149
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: ACACTTGGTTGTCTCCT
-   > Found Motifs:  ACACTTGGTTGTCTCCT GAGTACCATTAAGACAT TCGTCGGGTGCTCACAG
+   > Planted Motif: GTAGGTTCCCTCTTGTA
+   > Found Motifs:  GTAGGTTCCCTCTTGTA TTGGGGTATACCCTGCG
 -------------------------------------------------------
-Duration: 149495063
-Duration (s): 149
+Duration: 209352367
+Duration (s): 209
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -493,16 +493,16 @@ Duration (s): 149
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 15
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 20
+     >    (2) Duration (s): 20
+     >    (3) Duration (s): 21
+     >    (4) Duration (s): 21
+     >    (5) Duration (s): 21
+     >    (6) Duration (s): 21
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -511,11 +511,11 @@ Duration (s): 149
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: TTGGAATAGTTCTTGGA
-   > Found Motifs:  TTGGAATAGTTCTTGGA
+   > Planted Motif: GGGATATTATGGGCTCA
+   > Found Motifs:  GGGATATTATGGGCTCA TAATAGTTAGCATTGGA
 -------------------------------------------------------
-Duration: 149713462
-Duration (s): 149
+Duration: 211005971
+Duration (s): 211
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -530,16 +530,16 @@ Duration (s): 149
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 20
+     >    (2) Duration (s): 21
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -548,11 +548,11 @@ Duration (s): 149
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: AGGTGTTAGCTACTTGA
-   > Found Motifs:  AGGTGTTAGCTACTTGA
+   > Planted Motif: CTAGATGCGCCAAGCGA
+   > Found Motifs:  CTAGATGCGCCAAGCGA
 -------------------------------------------------------
-Duration: 149042662
-Duration (s): 149
+Duration: 209133968
+Duration (s): 209
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -567,16 +567,16 @@ Duration (s): 149
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 19
+     >    (2) Duration (s): 20
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -585,11 +585,11 @@ Duration (s): 149
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: AATAACGGAGCTAAGTA
-   > Found Motifs:  AATAACGGAGCTAAGTA ACGTCGATAGTGTTACG CCTGTTAGGGAAATACG CGGAGGGAAGTTGATCC
+   > Planted Motif: GTCGCTCAGTTACGCGT
+   > Found Motifs:  CCTCAACCCAGTGTTGT CTGATGGCCGTTGGTTT GAACGGCCGTGGTTACG GGTCGTCATGTCAGCCG GTCGCTCAGTTACGCGT
 -------------------------------------------------------
-Duration: 149869463
-Duration (s): 149
+Duration: 206856364
+Duration (s): 206
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -604,16 +604,16 @@ Duration (s): 149
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 15
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 20
+     >    (2) Duration (s): 20
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -622,11 +622,11 @@ Duration (s): 149
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: TGCGCCGTAATTATCAA
-   > Found Motifs:  TACCGCGGCTTTGGTCA TGCGCCGTAATTATCAA
+   > Planted Motif: TTTGAGGGGGGTGTACC
+   > Found Motifs:  ACCGTCTGGGGTGAAGA AGTTTGGACCGAGAATC GAGAGACGACCGCGGAC TTGTATAAATGATCTTG TTTGAGGGGGGTGTACC
 -------------------------------------------------------
-Duration: 149229862
-Duration (s): 149
+Duration: 207932765
+Duration (s): 207
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -641,16 +641,16 @@ Duration (s): 149
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 20
+     >    (2) Duration (s): 20
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -659,11 +659,11 @@ Duration (s): 149
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: TGGATACAGTTGGTTCT
-   > Found Motifs:  TGGATACAGTTGGTTCT
+   > Planted Motif: GTGAAACCTTATCGAAT
+   > Found Motifs:  GCCTATTTATGAATCGT GTGAAACCTTATCGAAT TCATTATATTCGCTACA
 -------------------------------------------------------
-Duration: 150025463
-Duration (s): 150
+Duration: 209118367
+Duration (s): 209
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -678,16 +678,16 @@ Duration (s): 150
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 20
+     >    (2) Duration (s): 20
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 21
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -696,11 +696,11 @@ Duration (s): 150
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: CGACACTGGGAGCTATC
-   > Found Motifs:  CGACACTGGGAGCTATC
+   > Planted Motif: CCCTCACGACGCTAATT
+   > Found Motifs:  AGAAGGTAACGTGGTCT CCCTCACGACGCTAATT
 -------------------------------------------------------
-Duration: 149120662
-Duration (s): 149
+Duration: 207558365
+Duration (s): 207
 ======================================================
  EMS_GT v2.0
 ======================================================
@@ -715,16 +715,16 @@ Duration (s): 149
 ------------------------------------------------------
    > Hamming Distance count generated
    > BlockMasks generated
-     >    (1) Duration (s): 14
-     >    (2) Duration (s): 14
-     >    (3) Duration (s): 14
-     >    (4) Duration (s): 14
-     >    (5) Duration (s): 14
-     >    (6) Duration (s): 14
-     >    (7) Duration (s): 14
-     >    (8) Duration (s): 14
-     >    (9) Duration (s): 14
-     >    (10) Duration (s): 14
+     >    (1) Duration (s): 20
+     >    (2) Duration (s): 20
+     >    (3) Duration (s): 20
+     >    (4) Duration (s): 20
+     >    (5) Duration (s): 20
+     >    (6) Duration (s): 20
+     >    (7) Duration (s): 20
+     >    (8) Duration (s): 20
+     >    (9) Duration (s): 20
+     >    (10) Duration (s): 20
    > Candidate Motifs generated
 
  TEST CANDIDATE MOTIFS
@@ -733,8 +733,8 @@ Duration (s): 149
    > Search Motif is done: 3 (s)
 --------------------------------------------------------
  RESULTS: 
-   > Planted Motif: TATTCAAGCCTTGCCGT
-   > Found Motifs:  TATTCAAGCCTTGCCGT
+   > Planted Motif: GTACCAGTCGGAGTAGC
+   > Found Motifs:  GTACCAGTCGGAGTAGC
 -------------------------------------------------------
-Duration: 149417063
-Duration (s): 149
+Duration: 208229166
+Duration (s): 208
