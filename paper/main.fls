@@ -221,6 +221,11 @@ INPUT contents/chapter_04/pruning-strategy.tex
 INPUT contents/chapter_04/pruning-strategy.tex
 INPUT contents/chapter_04/block-flags.tex
 INPUT contents/chapter_04/block-flags.tex
+INPUT contents/00_figure/boolean-flags.tex
+INPUT contents/00_figure/boolean-flags.tex
+INPUT contents/00_images/boolean-flags.png
+INPUT ./contents/00_images/boolean-flags.png
+INPUT ./contents/00_images/boolean-flags.png
 INPUT contents/chapter_04/fast-candidate-elimination.tex
 INPUT contents/chapter_04/fast-candidate-elimination.tex
 INPUT contents/00_figure/search_space.tex

@@ -15,24 +15,15 @@ In EMS-GT, each testing of candidate motif is independent of each other. We prop
 % include figure that shows how we partition the search space
 \input{contents/00_figure/block_search_space}
 
-We process the testing of candidate motifs now by blocks. If candidate motifs $x$ and $y$ are within a block and $x$ has been eliminated as a candidate motif in sequence $S_i$ $(n' \leq i \leq n)$, we can filter out $l$-mers $z \in S_i$ where $d_H(x,z) > d + k$. We collect the remaining $l$-mers in $S_i$ and use it for testing the remaining candidate motifs in the block along with the other $l$-mers in the remaining sequences in ${S_n', S_n'+1, ..., S_n} - {S_i}$. The theorem below formalized the main property used in this speedup technique.
+We process the testing of candidate motifs now by blocks. If candidate motifs $x$ and $y$ are within a block and $x$ has been eliminated as a candidate motif in sequence $S_i$ $(n' \leq i \leq n)$, we can filter out $l$-mers $z \in S_i$ where $d_H(x,z) > d + k$. We collect the remaining $l$-mers in $S_i$ and use it for testing the remaining candidate motifs in the block along with the other $l$-mers in the remaining sequences in ${S_n', S_n'+1, ..., S_n} - {S_i}$. The theorem below formalizes the main property used in this speedup technique.
 
 \begin{thm} \label{thm:triangle}
-	Let x and y be $l$-mers in a block in the search space containing $4^k$ $l$-mers and $d_H(x, y) \leq k$. Let $d$ be the number of allowed mutations in the problem. Let z be another $l$-mer. If $d_H(x, z) > (d + k)$ then $d_H(y, z) > d$ and $z \not\in N(y, d)$
+	Let x and y be $l$-mers in a block in the search space containing $4^k$ $l$-mers. Let $d$ be the number of allowed mutations in the problem instacne. Let z be another $l$-mer. If $d_H(x, z) > (k + d)$ then $d_H(y, z) > d$ and therefore $z$ is not in $N(y, d)$
 \end{thm}
 
 \begin{proof}[Proof of Theorem \ref{thm:triangle}]
-Using proof by contradiction, suppose that $d_H(y, z) \leq d$. We know that $d_H(x, z) < d_H(y, z) + d_H(x, y)$ from the triangle inequality. We can write this equation into $d_H(x, z) < d + k$ thus a contradiction to the previous assumption that $d_H(x, z) > (d + k)$.
+Using proof by contradiction, we first suppose that $d_H(y, z) \leq d$. Since the $l$-mers $x$ and $y$ belong to the same block, then $d_H(x, y) \leq k$. We use these bound in the triangle of inequality $d_H(x, z) \leq d_H(x, y) + d_H(y, z)$ to derive the result $d_H(x, z) \leq k + d$ . This result contradicts the given condition that $d_H(x, z) > (k + d)$. Hence, we are sure that $d_H(y, z) > d$.
 \end{proof}
 
-The $k$-value affects the number of $l$-mers that is filtered in a sequence. The lower its value, the larger the number of filtered $l$-mers and faster candidate motif testing will be. But since $k$ also affects the number of $l$-mers in a block, the lower its value, the fewer the candidate motifs that might benefit from the speedup technique.
+The $k$-value affects the number of $l$-mers that is filtered in a sequence. The lower its value, the larger the number of filtered $l$-mers and faster candidate motif testing will be. But since $k$ also affects the number of $l$-mers in a block, the lower its value, the fewer the candidate motifs that might benefit from the speedup technique. In our implementation we use $k = 5$ where every block is 32 rows of 32 bit flags representing a total of $4^5$ $l$-mers.
 
-The Test phase now is executed as follows:
-
-\itemize{}
-
-1. Divide into blocks
-2. Will only apply on those blocks with 2 or more candidate motifs
-3. Will wait until one candidate motif is eliminated
-4. Will filter lmers in the sequence where it got eliminated
-5. will use the fileterd sequence instead of the original sequence.

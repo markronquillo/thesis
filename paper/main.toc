@@ -16,11 +16,13 @@
 \contentsline {subsection}{\numberline {3.4.2}Real Datasets}{16}
 \contentsline {chapter}{\hspace *{30pt}\numberline {IV} Results and Analysis}{17}
 \contentsline {section}{\numberline {4.1}Pruning strategy in Neighborhood Generation of a Sequence}{17}
-\contentsline {section}{\numberline {4.2}Block flags implementation in Generate phase}{17}
-\contentsline {section}{\numberline {4.3}Faster Candidate Motif Elimination through Block Processing}{17}
-\contentsline {subsection}{\numberline {4.3.1}Pre-computation of Mismatch Values}{20}
-\contentsline {section}{\numberline {4.4}Performance of EMS-GT with speedup techniques}{21}
-\contentsline {chapter}{\hspace *{30pt}\numberline {V} Conclusions}{25}
-\contentsline {section}{\numberline {5.1}Conclusions}{25}
+\contentsline {section}{\numberline {4.2}Block boolean flags strategy in Generate phase}{17}
+\contentsline {subsection}{\numberline {4.2.1}Maintaining block boolean flags for the candidate motifs array}{18}
+\contentsline {subsection}{\numberline {4.2.2}Usage of block boolean flags strategy}{19}
+\contentsline {section}{\numberline {4.3}Faster Candidate Motif Elimination through Block Processing}{20}
+\contentsline {subsection}{\numberline {4.3.1}Pre-computation of Mismatch Values}{23}
+\contentsline {section}{\numberline {4.4}Performance of EMS-GT with speedup techniques}{24}
+\contentsline {chapter}{\hspace *{30pt}\numberline {V} Conclusions}{28}
+\contentsline {section}{\numberline {5.1}Conclusions}{28}
 \vspace *{-15pt}\contentsline {part}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \textnormal {APPENDIX}}{}
-\contentsline {chapter}{\MakeUppercase {Bibliography}}{26}
+\contentsline {chapter}{\MakeUppercase {Bibliography}}{29}
