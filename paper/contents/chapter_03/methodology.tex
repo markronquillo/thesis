@@ -27,7 +27,7 @@ Table 3.1 shows the ideal $n'$ values for each ($l$, $d$)-challenge instances me
 Additionally, the block flags speedup technique also defines another parameter $n''$ where $1 < n'' < n'$. This parameter represents the sequence number where the algorithm will start using the block flags. We also run an experimentation to assess the best value for the parameter $n''$. Table 3.2 shows the runtime performance of EMS-GT with the block flags speedup technique using different $n''$ values. The experiments show that the ideal value for the $n''$ parameter is 6.
 
 % nprime_prime-speedup
-
+\input{contents/00_tables/nprime-prime-start-value}
 
 \section{Evaluation}
 We first assess different combinations of speedup techniques for EMS-GT. The combination with the fastest runtime performance will become the proposed EMS-GT2. The different combinations are composed of the following: (1) EMS-GT with pruning technique, (2) EMS-GT with block flags, (3) EMS-GT with block flags and improved Hamming distance computation, (4) EMS-GT with faster candidate motif elimination, (5) EMS-GT with faster candidate motif elimination and improved Hamming distance computation and (6) EMS-GT with block flags, faster candidate motif elimination and improved Hamming distance computation. 

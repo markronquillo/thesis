@@ -215,6 +215,8 @@ INPUT ./contents/00_images/methodology.png
 INPUT ./contents/00_images/methodology.png
 INPUT contents/00_tables/nprime-speedup.tex
 INPUT contents/00_tables/nprime-speedup.tex
+INPUT contents/00_tables/nprime-prime-start-value.tex
+INPUT contents/00_tables/nprime-prime-start-value.tex
 INPUT contents/chapter_04/results.tex
 INPUT contents/chapter_04/results.tex
 INPUT contents/chapter_04/pruning-strategy.tex

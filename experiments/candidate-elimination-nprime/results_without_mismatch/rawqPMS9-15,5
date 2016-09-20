@@ -1,189 +1,0 @@
-Reading file FASTA/15,5,1
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 37 out of 586; current time 2s; projected 31s       [P0] Index 91 out of 586; current time 4s; projected 26s       [P0] Index 145 out of 586; current time 6s; projected 24s       [P0] Index 189 out of 586; current time 8s; projected 24s       [P0] Index 240 out of 586; current time 10s; projected 24s       [P0] Index 290 out of 586; current time 12s; projected 24s       [P0] Index 338 out of 586; current time 14s; projected 24s       [P0] Index 389 out of 586; current time 16s; projected 24s       [P0] Index 437 out of 586; current time 18s; projected 24s       [P0] Index 488 out of 586; current time 20s; projected 24s       [P0] Index 540 out of 586; current time 22s; projected 23s       AACCGTACCGTCTTC
-ACCTTCTTCAACCGA
-GTACTTCTGTGAACG
-GTCTTCGAACTTCTG
-GTGTAGCTACTCAAC
-TAGGACCGTAAGCGA
-TCGCCGTCATCGGAT
-TCGTACCTCAATAGA
-TTGGCTACAAACCTC
-Total motifs found: 9
-Time on processor 0: 23.68s; file FASTA/15,5,1
-Reading file FASTA/15,5,2
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 34 out of 586; current time 2s; projected 35s       [P0] Index 79 out of 586; current time 4s; projected 29s       [P0] Index 126 out of 586; current time 6s; projected 27s       [P0] Index 177 out of 586; current time 8s; projected 26s       [P0] Index 222 out of 586; current time 10s; projected 26s       [P0] Index 270 out of 586; current time 12s; projected 26s       [P0] Index 319 out of 586; current time 14s; projected 25s       [P0] Index 370 out of 586; current time 16s; projected 25s       [P0] Index 415 out of 586; current time 18s; projected 25s       [P0] Index 463 out of 586; current time 20s; projected 25s       [P0] Index 509 out of 586; current time 22s; projected 25s       [P0] Index 557 out of 586; current time 24s; projected 25s       AAACGCATCTCGCCT
-AACTCTACGAGGGAT
-AGACGACTAGCTCAG
-ATGCCTCGCTGGGGA
-GTCGGATGGAGTGAC
-TCCTACTTTCGTACG
-Total motifs found: 6
-Time on processor 0: 25.178s; file FASTA/15,5,2
-Reading file FASTA/15,5,3
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 28 out of 586; current time 2s; projected 42s       [P0] Index 77 out of 586; current time 4s; projected 30s       [P0] Index 125 out of 586; current time 6s; projected 28s       [P0] Index 174 out of 586; current time 8s; projected 27s       [P0] Index 223 out of 586; current time 10s; projected 26s       [P0] Index 271 out of 586; current time 12s; projected 25s       [P0] Index 316 out of 586; current time 14s; projected 25s       [P0] Index 357 out of 586; current time 16s; projected 26s       [P0] Index 402 out of 586; current time 18s; projected 26s       [P0] Index 442 out of 586; current time 20s; projected 26s       [P0] Index 488 out of 586; current time 22s; projected 26s       [P0] Index 536 out of 586; current time 24s; projected 26s       CTGGCATAACTAGTT
-GCTCCTACTGTGATT
-TAGTAGCAGCCTATA
-Total motifs found: 3
-Time on processor 0: 25.958s; file FASTA/15,5,3
-Reading file FASTA/15,5,4
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 18 out of 586; current time 2s; projected 66s       [P0] Index 60 out of 586; current time 4s; projected 39s       [P0] Index 105 out of 586; current time 6s; projected 33s       [P0] Index 159 out of 586; current time 8s; projected 29s       [P0] Index 211 out of 586; current time 10s; projected 27s       [P0] Index 258 out of 586; current time 12s; projected 27s       [P0] Index 301 out of 586; current time 14s; projected 27s       [P0] Index 346 out of 586; current time 16s; projected 27s       [P0] Index 395 out of 586; current time 18s; projected 26s       [P0] Index 438 out of 586; current time 20s; projected 26s       [P0] Index 488 out of 586; current time 22s; projected 26s       [P0] Index 530 out of 586; current time 24s; projected 26s       [P0] Index 576 out of 586; current time 26s; projected 26s       CGGCACAATAAAGTT
-CGTGCCCAATAGCAC
-GCCACATCAGGCCCC
-GTCGGAAATTCGCGA
-Total motifs found: 4
-Time on processor 0: 26.442s; file FASTA/15,5,4
-Reading file FASTA/15,5,5
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 30 out of 586; current time 2s; projected 39s       [P0] Index 75 out of 586; current time 4s; projected 31s       [P0] Index 126 out of 586; current time 6s; projected 28s       [P0] Index 171 out of 586; current time 8s; projected 27s       [P0] Index 220 out of 586; current time 10s; projected 26s       [P0] Index 267 out of 586; current time 12s; projected 26s       [P0] Index 314 out of 586; current time 14s; projected 26s       [P0] Index 363 out of 586; current time 16s; projected 25s       [P0] Index 407 out of 586; current time 18s; projected 25s       [P0] Index 454 out of 586; current time 20s; projected 25s       [P0] Index 502 out of 586; current time 22s; projected 25s       [P0] Index 549 out of 586; current time 24s; projected 25s       ACGCGCCCACTGCTA
-ATGTAAACTCTGTAA
-TGAATCTTCGCGGTC
-Total motifs found: 3
-Time on processor 0: 25.537s; file FASTA/15,5,5
-Reading file FASTA/15,5,6
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 31 out of 586; current time 2s; projected 38s       [P0] Index 76 out of 586; current time 4s; projected 31s       [P0] Index 121 out of 586; current time 6s; projected 29s       [P0] Index 168 out of 586; current time 8s; projected 27s       [P0] Index 215 out of 586; current time 10s; projected 27s       [P0] Index 265 out of 586; current time 12s; projected 26s       [P0] Index 315 out of 586; current time 14s; projected 26s       [P0] Index 364 out of 586; current time 16s; projected 25s       [P0] Index 411 out of 586; current time 18s; projected 25s       [P0] Index 457 out of 586; current time 20s; projected 25s       [P0] Index 508 out of 586; current time 22s; projected 25s       [P0] Index 551 out of 586; current time 24s; projected 25s       AGGGGCGTGCCATAA
-CGCTCTGCCGGCCTT
-CGGGGTCGTTCAGTT
-TCAACTCGCCACTAG
-TTAAACGATTCTCCG
-Total motifs found: 5
-Time on processor 0: 25.412s; file FASTA/15,5,6
-Reading file FASTA/15,5,7
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 30 out of 586; current time 2s; projected 39s       [P0] Index 68 out of 586; current time 4s; projected 34s       [P0] Index 113 out of 586; current time 6s; projected 31s       [P0] Index 163 out of 586; current time 8s; projected 28s       [P0] Index 216 out of 586; current time 10s; projected 27s       [P0] Index 266 out of 586; current time 12s; projected 26s       [P0] Index 311 out of 586; current time 14s; projected 26s       [P0] Index 365 out of 586; current time 16s; projected 25s       [P0] Index 417 out of 586; current time 18s; projected 25s       [P0] Index 464 out of 586; current time 20s; projected 25s       [P0] Index 507 out of 586; current time 22s; projected 25s       [P0] Index 550 out of 586; current time 24s; projected 25s       AGTTAGCACGGTATC
-CGGGTCTTTATGAGA
-Total motifs found: 2
-Time on processor 0: 25.693s; file FASTA/15,5,7
-Reading file FASTA/15,5,8
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 28 out of 586; current time 2s; projected 42s       [P0] Index 75 out of 586; current time 4s; projected 31s       [P0] Index 123 out of 586; current time 6s; projected 28s       [P0] Index 171 out of 586; current time 8s; projected 27s       [P0] Index 220 out of 586; current time 10s; projected 26s       [P0] Index 269 out of 586; current time 12s; projected 26s       [P0] Index 317 out of 586; current time 14s; projected 25s       [P0] Index 366 out of 586; current time 16s; projected 25s       [P0] Index 411 out of 586; current time 18s; projected 25s       [P0] Index 454 out of 586; current time 20s; projected 25s       [P0] Index 491 out of 586; current time 22s; projected 26s       [P0] Index 538 out of 586; current time 24s; projected 26s       [P0] Index 585 out of 586; current time 26s; projected 26s       CCGCATGCCTGTGTG
-GCCTTTTCAAGACGT
-GCTAGCTAAGCACGT
-TGGAGTGTTCCCACA
-Total motifs found: 4
-Time on processor 0: 26.036s; file FASTA/15,5,8
-Reading file FASTA/15,5,9
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 21 out of 586; current time 2s; projected 56s       [P0] Index 68 out of 586; current time 4s; projected 34s       [P0] Index 120 out of 586; current time 6s; projected 29s       [P0] Index 171 out of 586; current time 8s; projected 27s       [P0] Index 219 out of 586; current time 10s; projected 26s       [P0] Index 272 out of 586; current time 12s; projected 25s       [P0] Index 320 out of 586; current time 14s; projected 25s       [P0] Index 368 out of 586; current time 16s; projected 25s       [P0] Index 417 out of 586; current time 18s; projected 25s       [P0] Index 468 out of 586; current time 20s; projected 25s       [P0] Index 516 out of 586; current time 22s; projected 24s       [P0] Index 565 out of 586; current time 24s; projected 24s       AGTCTGATCCTGCCA
-GAGTCGCACCGGGGG
-TCGCACATGGATTAT
-Total motifs found: 3
-Time on processor 0: 24.928s; file FASTA/15,5,9
-Reading file FASTA/15,5,10
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 23 out of 586; current time 2s; projected 51s       [P0] Index 76 out of 586; current time 4s; projected 30s       [P0] Index 127 out of 586; current time 6s; projected 27s       [P0] Index 174 out of 586; current time 8s; projected 27s       [P0] Index 224 out of 586; current time 10s; projected 26s       [P0] Index 274 out of 586; current time 12s; projected 25s       [P0] Index 318 out of 586; current time 14s; projected 25s       [P0] Index 363 out of 586; current time 16s; projected 25s       [P0] Index 411 out of 586; current time 18s; projected 25s       [P0] Index 455 out of 586; current time 20s; projected 25s       [P0] Index 500 out of 586; current time 22s; projected 25s       [P0] Index 547 out of 586; current time 24s; projected 25s       ACCTATCCGGTGCTC
-ACCTTGCACCACTGG
-ATCCCCAAAGAGCTT
-CAGCGTTGCACCGGA
-GCAGTCCCGACTGGG
-GCCTTACCGGGCTCG
-GGCAGACCTGTTCCG
-Total motifs found: 7
-Time on processor 0: 25.646s; file FASTA/15,5,10
-Reading file FASTA/15,5,11
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 31 out of 586; current time 2s; projected 38s       [P0] Index 72 out of 586; current time 4s; projected 32s       [P0] Index 120 out of 586; current time 6s; projected 29s       [P0] Index 164 out of 586; current time 8s; projected 28s       [P0] Index 210 out of 586; current time 10s; projected 28s       [P0] Index 257 out of 586; current time 12s; projected 27s       [P0] Index 308 out of 586; current time 14s; projected 26s       [P0] Index 358 out of 586; current time 16s; projected 26s       [P0] Index 408 out of 586; current time 18s; projected 25s       [P0] Index 453 out of 586; current time 20s; projected 25s       [P0] Index 498 out of 586; current time 22s; projected 25s       [P0] Index 547 out of 586; current time 24s; projected 25s       CATATGTCATTAAGT
-GTGGTCAGGCCTGGT
-Total motifs found: 2
-Time on processor 0: 25.599s; file FASTA/15,5,11
-Reading file FASTA/15,5,12
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 29 out of 586; current time 2s; projected 40s       [P0] Index 75 out of 586; current time 4s; projected 31s       [P0] Index 123 out of 586; current time 6s; projected 28s       [P0] Index 174 out of 586; current time 8s; projected 27s       [P0] Index 220 out of 586; current time 10s; projected 26s       [P0] Index 269 out of 586; current time 12s; projected 26s       [P0] Index 312 out of 586; current time 14s; projected 26s       [P0] Index 356 out of 586; current time 16s; projected 26s       [P0] Index 394 out of 586; current time 18s; projected 26s       [P0] Index 447 out of 586; current time 20s; projected 26s       [P0] Index 494 out of 586; current time 22s; projected 26s       [P0] Index 532 out of 586; current time 24s; projected 26s       ACAGCAGCATTCTCA
-CTGCCTTATACTCAA
-GATATTCCGACCTGT
-GCGCTTTACCCACCC
-Total motifs found: 4
-Time on processor 0: 25.926s; file FASTA/15,5,12
-Reading file FASTA/15,5,13
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 23 out of 586; current time 2s; projected 51s       [P0] Index 66 out of 586; current time 4s; projected 35s       [P0] Index 113 out of 586; current time 6s; projected 31s       [P0] Index 161 out of 586; current time 8s; projected 29s       [P0] Index 205 out of 586; current time 10s; projected 28s       [P0] Index 247 out of 586; current time 12s; projected 28s       [P0] Index 292 out of 586; current time 14s; projected 28s       [P0] Index 331 out of 586; current time 16s; projected 28s       [P0] Index 375 out of 586; current time 18s; projected 28s       [P0] Index 421 out of 586; current time 20s; projected 27s       [P0] Index 468 out of 586; current time 22s; projected 27s       [P0] Index 514 out of 586; current time 24s; projected 27s       [P0] Index 557 out of 586; current time 26s; projected 27s       ACGGTTATAGGTCTC
-AGGGCTTTCAAATCA
-CCCTGATACGCGTTA
-CTGATTTACTTTAAC
-GGCGCCACGGTTATA
-GGCTAAGGTTTTACT
-GTTAGCGCGACAATC
-TATGTTTCATCTACG
-TTCTAAGGTTATAGC
-Total motifs found: 9
-Time on processor 0: 27.299s; file FASTA/15,5,13
-Reading file FASTA/15,5,14
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 28 out of 586; current time 2s; projected 42s       [P0] Index 75 out of 586; current time 4s; projected 31s       [P0] Index 118 out of 586; current time 6s; projected 29s       [P0] Index 156 out of 586; current time 8s; projected 30s       [P0] Index 205 out of 586; current time 10s; projected 28s       [P0] Index 252 out of 586; current time 12s; projected 28s       [P0] Index 296 out of 586; current time 14s; projected 27s       [P0] Index 346 out of 586; current time 16s; projected 27s       [P0] Index 392 out of 586; current time 18s; projected 26s       [P0] Index 440 out of 586; current time 20s; projected 26s       [P0] Index 491 out of 586; current time 22s; projected 26s       [P0] Index 534 out of 586; current time 24s; projected 26s       [P0] Index 581 out of 586; current time 26s; projected 26s       GAGATTGCTCCTTGT
-TAACACAATTGTGCG
-TTCATGTTCGCACCG
-Total motifs found: 3
-Time on processor 0: 26.224s; file FASTA/15,5,14
-Reading file FASTA/15,5,15
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 30 out of 586; current time 2s; projected 39s       [P0] Index 77 out of 586; current time 4s; projected 30s       [P0] Index 125 out of 586; current time 6s; projected 28s       [P0] Index 171 out of 586; current time 8s; projected 27s       [P0] Index 221 out of 586; current time 10s; projected 26s       [P0] Index 274 out of 586; current time 12s; projected 25s       [P0] Index 321 out of 586; current time 14s; projected 25s       [P0] Index 370 out of 586; current time 16s; projected 25s       [P0] Index 418 out of 586; current time 18s; projected 25s       [P0] Index 466 out of 586; current time 20s; projected 25s       [P0] Index 514 out of 586; current time 22s; projected 25s       [P0] Index 563 out of 586; current time 24s; projected 24s       AGCCTGATACAAGCA
-ATGTACCACCGTATA
-CGGTGTGATCGGCTT
-CTTATAACGGTGGAA
-GCAGGAGTATCCTTG
-GGAGCGACAACGGCT
-TTACAATGACTCGAA
-Total motifs found: 7
-Time on processor 0: 25.022s; file FASTA/15,5,15
-Reading file FASTA/15,5,16
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 26 out of 586; current time 2s; projected 45s       [P0] Index 71 out of 586; current time 4s; projected 33s       [P0] Index 117 out of 586; current time 6s; projected 30s       [P0] Index 167 out of 586; current time 8s; projected 28s       [P0] Index 209 out of 586; current time 10s; projected 28s       [P0] Index 255 out of 586; current time 12s; projected 27s       [P0] Index 300 out of 586; current time 14s; projected 27s       [P0] Index 350 out of 586; current time 16s; projected 26s       [P0] Index 392 out of 586; current time 18s; projected 26s       [P0] Index 438 out of 586; current time 20s; projected 26s       [P0] Index 480 out of 586; current time 22s; projected 26s       [P0] Index 523 out of 586; current time 24s; projected 26s       [P0] Index 570 out of 586; current time 26s; projected 26s       CACCTGCGGAATGCT
-TAAGTACCGGCGCAC
-TGGGGCGCCACCAAG
-TGTACACGATTACGC
-Total motifs found: 4
-Time on processor 0: 26.707s; file FASTA/15,5,16
-Reading file FASTA/15,5,17
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 27 out of 586; current time 2s; projected 44s       [P0] Index 74 out of 586; current time 4s; projected 31s       [P0] Index 125 out of 586; current time 6s; projected 28s       [P0] Index 174 out of 586; current time 8s; projected 27s       [P0] Index 220 out of 586; current time 10s; projected 26s       [P0] Index 262 out of 586; current time 12s; projected 26s       [P0] Index 307 out of 586; current time 14s; projected 26s       [P0] Index 355 out of 586; current time 16s; projected 26s       [P0] Index 402 out of 586; current time 18s; projected 26s       [P0] Index 451 out of 586; current time 20s; projected 26s       [P0] Index 498 out of 586; current time 22s; projected 25s       [P0] Index 549 out of 586; current time 24s; projected 25s       CGAATTGTACAATGA
-GTACAACCGAGTTGC
-GTAGATAATATCATC
-Total motifs found: 3
-Time on processor 0: 25.662s; file FASTA/15,5,17
-Reading file FASTA/15,5,18
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 24 out of 586; current time 2s; projected 49s       [P0] Index 69 out of 586; current time 4s; projected 34s       [P0] Index 117 out of 586; current time 6s; projected 30s       [P0] Index 166 out of 586; current time 8s; projected 28s       [P0] Index 209 out of 586; current time 10s; projected 28s       [P0] Index 260 out of 586; current time 12s; projected 27s       [P0] Index 307 out of 586; current time 14s; projected 26s       [P0] Index 349 out of 586; current time 16s; projected 26s       [P0] Index 396 out of 586; current time 18s; projected 26s       [P0] Index 442 out of 586; current time 20s; projected 26s       [P0] Index 489 out of 586; current time 22s; projected 26s       [P0] Index 540 out of 586; current time 24s; projected 26s       [P0] Index 585 out of 586; current time 26s; projected 26s       CCATGTCCTCCGGGT
-CCCATCTGATCTCCG
-CTCTCACCGACGTTG
-GTGCTGTCCTCGCTG
-TGCATACCTGGTCCC
-Total motifs found: 5
-Time on processor 0: 26.036s; file FASTA/15,5,18
-Reading file FASTA/15,5,19
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 34 out of 586; current time 2s; projected 34s       [P0] Index 80 out of 586; current time 4s; projected 29s       [P0] Index 128 out of 586; current time 6s; projected 27s       [P0] Index 179 out of 586; current time 8s; projected 26s       [P0] Index 227 out of 586; current time 10s; projected 25s       [P0] Index 275 out of 586; current time 12s; projected 25s       [P0] Index 325 out of 586; current time 14s; projected 25s       [P0] Index 375 out of 586; current time 16s; projected 25s       [P0] Index 425 out of 586; current time 18s; projected 24s       [P0] Index 473 out of 586; current time 20s; projected 24s       [P0] Index 522 out of 586; current time 22s; projected 24s       [P0] Index 572 out of 586; current time 24s; projected 24s       CTCAGAGCAAACCAT
-CTTGTGCTGTCACTT
-TATAGAAGAGGTATC
-TGGTGCTTTCACCTC
-Total motifs found: 4
-Time on processor 0: 24.585s; file FASTA/15,5,19
-Reading file FASTA/15,5,20
-n=20 q=100% L=15 d=5 totalStringLength=12000 alphabet=ACGT of size=4
-s=4 n'=7
-[P0] Index 35 out of 586; current time 2s; projected 33s       [P0] Index 85 out of 586; current time 4s; projected 27s       [P0] Index 140 out of 586; current time 6s; projected 25s       [P0] Index 182 out of 586; current time 8s; projected 25s       [P0] Index 231 out of 586; current time 10s; projected 25s       [P0] Index 278 out of 586; current time 12s; projected 25s       [P0] Index 324 out of 586; current time 14s; projected 25s       [P0] Index 370 out of 586; current time 16s; projected 25s       [P0] Index 414 out of 586; current time 18s; projected 25s       [P0] Index 466 out of 586; current time 20s; projected 25s       [P0] Index 510 out of 586; current time 22s; projected 25s       [P0] Index 559 out of 586; current time 24s; projected 25s       GCCGATGTTGACGTC
-TTAGTGCTGTTCATA
-Total motifs found: 2
-Time on processor 0: 25.084s; file FASTA/15,5,20
