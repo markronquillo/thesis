@@ -50,7 +50,15 @@ int main(int argc, char* argv[]) {
     if (argc > 5)
         plantedMotif = argv[5];
     
-    config.tPrime_2 = 6;
+    // adjust tPrime2 (nPrimePrime) value depending on the dataset
+    // hardcoded
+    switch(dsParams.lengthOfMotif)  {
+        case 9: config.tPrime_2 = 8; break;
+        case 11: config.tPrime_2 = 10; break;
+        case 13: config.tPrime_2 = 7; break;
+        case 15: config.tPrime_2 = 7; break;
+        case 17: config.tPrime_2 = 7; break;
+    }
 
     // EMS_GT ems = EMS_GT(&dsParams, &config, plantedMotif);
     EMS_GT ems = EMS_GT(&dsParams, &config);

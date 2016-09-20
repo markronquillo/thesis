@@ -851,7 +851,6 @@ private:
 	}
 
 
-
 	string decode(long mapping, int strlen) {
 	    string decoding = "";
 
