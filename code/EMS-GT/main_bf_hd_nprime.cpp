@@ -45,7 +45,7 @@ int main(int argc, char* argv[]) {
 
     // override change if argument is passed
     if (argc > 2)
-        config.tPrime_2 = atoi(argv[2])
+        config.tPrime_2 = atoi(argv[2]);
 
 
     // config.tPrime_2 = 6;
