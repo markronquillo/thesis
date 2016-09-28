@@ -1,3 +1,24 @@
-\section{Conclusions}
 
-We have presented EMS-GT2, an improved exact solution for the planted-motif search problem. EMS-GT2 was able to efficiently test candidate motifs in block by filtering out $l$-mers using a property of the search space array that we have discovered. The previous implementation of EMS-GT already outperforms the state-of-the-art algorithm qPMS9 in $(l, d)$-challenge instances $(9, 2)$, $(11, 3)$, $(13, 4)$ and $(15, 5)$ but failed to beat qPMS9 in $(17, 6)$-challenge instance. EMS-GT2 improved the algorithm's performance on $(13, 4)$, $(15, 5)$ and $(17, 6)$ and was able to beat qPMS9 in all $(l, d)$-challenge instances where $l \leq 17$.
+% To explore more speedup techniques that improve the runtime performance of the EMS-GT algorithm.
+In this study we have presented EMS-GT2, an improved exact solution for the planted-motif search problem. EMS-GT2 was able to introduce speedup techniques both on the Generate and Test phases of the algorithm. This study introduced a speedup technique that uses boolean flags for empty blocks in the candidate motifs array for an efficient $d$-neighborhood of a sequence generation in the Generate phase. In the Test phase, EMS-GT2 was able to efficiently test candidate motifs in block by filtering out $l$-mers using a property of the search space array that we have discovered. A proof of this property is also provided. Lastly, we improved the way of hamming distance computation by using a pre-computed lookup table. However, to maximize the efficiency of these speedup techniques, we must use the optimum value for $n'$. Overall, the optimum value for $n'$ is 10, 10, 9, 8, and 7 for the (9, 2), (11, 3), (13, 4), (15, 5) and (17, 6) challenge instances respectively.
+
+% To evaluate the runtime performance of the proposed EMS-GT2 algorithm.
+EMS-GT2 algorithm, which implements the fast candidate motif elimination and improved hamming distance computation, was able to improve the runtime performance of EMS-GT with runtime reductions of 18.33\%, 25.46\%, 19.88\%, 14.81\% and 22.03\% for (9, 2), (11, 3), (13, 4), (15, 5) and (17, 6) challenge instances respectively.
+
+% To evaluate EMS-GT2 against its predecessor EMS-GT and the qPMS9 algorithm.
+The previous implementation of EMS-GT already outperforms the state-of-the-art algorithm qPMS9 in $(l, d)$-challenge instances $(9, 2)$, $(11, 3)$, $(13, 4)$ and $(15, 5)$ but failed to beat qPMS9 in $(17, 6)$-challenge instance. EMS-GT2 improved the algorithm's performance on $(13, 4)$, $(15, 5)$ and $(17, 6)$ and was able to beat qPMS9 in all $(l, d)$-challenge instances where $l \leq 17$. EMS-GT2 outperforms the qPMS9 algorithm with runtime reductions of 94.41\%, 91.65\%, 85.40\%, 59.22\%, and 5.8\% for (9, 2), (11, 3), (13, 4), (15, 5) and (17, 6) challenge instances respectively.
+
+Possible areas of improvement in this study includes:
+
+\begin{itemize}
+
+\item Further exploration of usage of the block-processing procedure in other parts of the algorithms.
+
+\item By default EMS-GT algorithm uses the first $n'$ sequences in the Generate phase without considering the rest of the sequences, pre-processing and analysis of the sequences may lead to runtime improvements
+
+\item Early testing of candidate motifs to increase the number of empty blocks can improve the block boolean flags technique. 
+
+\end{itemize}
+
+In conclusion, the speedup techniques introduced in this study can be useful in different algorithms that uses the same data structure. Improvement in the Hamming distance computation can also be useful in solutions that uses such computations.
+

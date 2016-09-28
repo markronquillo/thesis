@@ -1,3 +1,5 @@
 \section{Scope and limitations}
 
-This study focuses on improving the existing EMS-GT by exploring and optimizing different areas in the algorithm and thus proposing the EMS-GT2 algorithm. Since EMS-GT2 introduces a memory contstraint when $l$ is sufficiently large, each new speedup technique was evaluated using all synthetic datasets of ($l$, $d$)-challenge instance where $l < 18$. Finally, EMS-GT2 doesn't have the capability to run on multiple processors and, thus, we evaluate the algorithms in a single-processor execution.
+This study focuses on improving the existing EMS-GT by exploring and optimizing different areas in the algorithm and thus proposing the EMS-GT2 algorithm. Since EMS-GT2 requires significant amount of memory when $l$ is sufficiently large, each new speedup technique was evaluated using all synthetic datasets of ($l$, $d$)-challenge instance where $l < 18$. Generally this is acceptable since the motif lengths in actual biological applications is around 10 base pairs (bp) only \cite{basepairslength}. Finally, EMS-GT2 is not yet designed to run on multiple processors and, thus, we evaluate the algorithms in a single-processor execution.
+
+% TODO: cite base pairs

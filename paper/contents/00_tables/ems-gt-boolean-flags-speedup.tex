@@ -1,0 +1,22 @@
+\begin{table}[h] %speedup_blockmasking
+	\renewcommand{\arraystretch}{1.3}
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+	\hline 
+	\bfseries\boldmath $(l,d)$ & 
+	\bfseries\boldmath EMS-GT & 
+	\bfseries\boldmath EMS-GT with BBF & 
+	\bfseries \% speedup\\
+	\hline
+	(9, 2) & 0.0468 s &		0.049 s &	-\\
+	(11, 3) & 0.168 s &		0.172 s &	-\\
+	(13, 4) & 1.180 s &		1.107 s &	6.21 \%\\
+	(15, 5) & 12.767 s &	11.937 s &	6.51 \%\\
+	(17, 6) & 143.215 s &	131.776 s &	7.99 \%\\
+	\hline\end{tabular}
+	
+	\caption{EMS-GT with block boolean flags strategy.}
+	\label{tbl:ems-gt-bf-speedup}
+\end{table}
+
+

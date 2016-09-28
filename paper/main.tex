@@ -1,0 +1,84 @@
+\documentclass[oneside,12pt]{DISCSthesis}
+	\usepackage{graphicx}
+	\usepackage{multirow}
+	\usepackage{fancyvrb}
+	% \usepackage{rotating}
+	\usepackage{longtable}
+	\usepackage{pdflscape}
+	\usepackage{enumerate}
+	\usepackage{enumitem}	\setlist[itemize]{leftmargin=*,itemsep=5pt}
+	% \usepackage{setspace}
+	\usepackage{algpseudocode}
+	\usepackage{amsmath}
+	\usepackage{amsthm}
+	\usepackage[normalem]{ulem}
+
+	\usepackage{algpseudocode}
+		\renewcommand{\algorithmiccomment}[1]{\hskip0em$\triangleright$ \emph{#1}}
+		\renewcommand{\algorithmicrequire}{\hspace*{6pt}\textbf{Input:}}
+		\renewcommand{\algorithmicensure}{\hspace*{6pt}\textbf{Output:}}
+
+	\theoremstyle{plain}
+	\newtheorem{thm}{Theorem}
+
+	% \usepackage[justification=centering]{caption}
+	% \usepackage[titletoc]{appendix}
+	% \graphicspath{ {./contents/img/} }
+
+\begin{document}
+
+	% ------------ Header ------------
+	\ThesisAuthor{\textbf{Mark Joseph D. Ronquillo}}
+	\ThesisTitle{\textbf{An Improved Exact Solution for Planted Motif Search Problem}}
+	\ThesisArea{Computer Science}
+	\ThesisDefenseYear{2016}
+
+	\DepartmentHead{MARLENE M. DE LEON, Ph.D.}
+	\SchoolHead{EVANGELINE P. BAUTISTA, Ph.D.}
+	\ThesisAdviser{PROCESO L. FERNANDEZ, JR., Ph.D.}
+	% \FirstPanelMember{\hspace{1 mm} JOHN PAUL C. VERGARA, Ph.D.}
+	% \SecondPanelMember{WILLIAM EMMANUEL S. YU, Ph.D.}
+	% \ThirdPanelMember{\hspace{1 mm} MA. REGINA E. ESTUAR, Ph.D. \hspace{1 mm}}
+	% \FourthPanelMember{PABLO R. MANALASTAS, JR., Ph.D.}
+
+	\ThesisStyle{MS}{FinalWithCorner}{-10pt}{15pt}
+
+	% ------------ Paper's Content ------------ 
+	\FrontMatter
+		% \input{frontmatter/acknowledgements}
+		\input{contents/abstract}
+
+		\tableofcontents
+
+	\MainMatter
+		% CHAPTER 1
+		\chapter{Introduction}
+			\input{contents/chapter_01/introduction}
+				\input{contents/chapter_01/context}
+				\input{contents/chapter_01/objectives}
+				\input{contents/chapter_01/research-questions}
+				\input{contents/chapter_01/significance}
+				\input{contents/chapter_01/scope-limitations}
+
+		% CHAPTER 2
+		\chapter{Review of Related Literature}
+			\input{contents/chapter_02/related-literature}
+			% \input{contents/chapter_02/ems-gt}
+
+		% CHAPTER 3
+		\chapter{Methodology}
+			\input{contents/chapter_03/methodology}
+
+		% CHAPTER 4
+		\chapter{Results and Analysis}
+			\input{contents/chapter_04/results}
+
+		% CHAPTER 5
+		\chapter{Conclusions}
+			\input{contents/chapter_05/conclusions}
+
+	\BackMatter
+		\bibliographystyle{plain}
+		\bibliography{sources}
+  
+\end{document}

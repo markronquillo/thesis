@@ -1,0 +1,24 @@
+
+% {\setstretch{1.0} % Algorithm 4.1. Block Pattern Generation
+\begin{figure}[h]
+	\noindent \hspace*{6pt}{\bf Algorithm 2.1}
+	\textsc{Block Pattern Generation}\small
+	\begin{algorithmic}[1]\label{alg:block-pattern-gen}
+		\Require block degree $k$
+		\Ensure 3D bit-array $\mathcal{P}$ containing all possible non-trivial block patterns \vspace*{6pt}
+
+		\State $\mathcal{P}[\ ][\ ][\ ] \leftarrow \{\}$ \hspace*{90pt}
+		\Comment{retrieve a pattern $P$ as $\mathcal{P}[z][d - d_{y'}]$ }
+
+		\For {$z \leftarrow 0$ to $4^k$}
+		\For {$j \leftarrow 1$ to $k-1$}
+		\For {$z' \leftarrow 0$ to $4^k$}
+		\If{$dH(z,z') \leq j$} 
+			\State $\mathcal{P}[z][j][z'] \leftarrow 1$
+		\Else
+			\State $\mathcal{P}[z][j][z'] \leftarrow 0$
+		\EndIf\EndFor\EndFor\EndFor
+		\State\Return $\mathcal{P}$
+		\end{algorithmic}
+\end{figure}
+

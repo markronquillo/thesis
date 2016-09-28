@@ -1,0 +1,10 @@
+ tPrime:		 3
+ l:		 10
+ d:		 4
+--------------------------------------------------------
+ RESULTS: 
+   > Planted Motif: motif
+   > Found Motifs:  CACAGGATGT
+-------------------------------------------------------
+Duration: 93600
+Duration (s): 0.0936

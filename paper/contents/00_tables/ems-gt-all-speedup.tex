@@ -1,0 +1,22 @@
+\begin{table}[h] %speedup_blockmasking
+	\renewcommand{\arraystretch}{1.3}
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+	\hline 
+	\bfseries\boldmath $(l,d)$ & 
+	\bfseries\boldmath EMS-GT & 
+	\bfseries\boldmath EMS-GT with FCE, BFF and IHD & 
+	\bfseries \% speedup\\
+	\hline
+	(9, 2) & 0.0468 s &		0.040 s 	&	15.0 \%\\
+	(11, 3) & 0.168 s &		0.134 s 	&	20.37 \%\\
+	(13, 4) & 1.180 s &		1.112 s 	&	5.88 \%\\
+	(15, 5) & 12.767 s &	11.252 s  	&	11.87 \%\\
+	(17, 6) & 143.215 s &	111.634 s 	&	22.05 \%\\
+	\hline\end{tabular}
+	
+	\caption{Runtime comparison of EMS-GT and EMS-GT with all speedup techniques.}
+	\label{tbl:ems-gt-all-speedup}
+\end{table}
+
+

@@ -1,5 +1,8 @@
 \section{Pruning strategy in Neighborhood Generation of a Sequence}
 % rephrase
-EMS-GT generates the $d$-neighborhood of a sequence by collecting all the $d$-neighbors of every $l$-mer in the sequence. It is easy to see that generating the neighborhood of an $l$-mer identical to the already processed $l$-mers would be a waste of time.
+EMS-GT generates the $d$-neighborhood of a sequence by collecting all the $d$-neighbors of every $l$-mer in the sequence. 
+
+% rephrase
+It is obvious that identical $l$-mers has a hamming distance of 0 and will generate the same $d$-neighborhood. Thus we only need to generate the $d$-neighborhood of distinct $l$-mers in a sequence. This observation can be extended into a pruning strategy as we process the neighborhood generation of $l$-mers in a sequence.
 
 % DEFER

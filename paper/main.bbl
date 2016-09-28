@@ -98,6 +98,12 @@ Charles~E Lawrence, Stephen~F Altschul, Mark~S Boguski, Jun~S Liu, Andrew~F
   multiple alignment.
 \newblock {\em science}, 262(5131):208--214, 1993.
 
+\bibitem{nabos2015dissertation}
+Julieta~Q. Nabos.
+\newblock {\em New Heuristics and Exact Algorithms for the Planted DNA
+  ($l,d$)-Motif Finding Problem}.
+\newblock PhD thesis, Ateneo de Manila University, 2015.
+
 \bibitem{pms2014}
 Marius Nicolae and Sanguthevar Rajasekaran.
 \newblock Efficient sequential and parallel algorithms for planted motif

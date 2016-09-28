@@ -1,10 +1,10 @@
 ## TODO:
-. Update final paper based on the changes in conference paper .docx
-. Review Sia's Thesis for formatting
-. qPMS9 - challenging instance
-. Review the block mask algorithm
-. Monday: Final Experimentation
-	. Include the parameter fine tuning
+. qPMS9 - challenging instance - review
+. Experimentation Results and Analysis:
+	. Real datasets
+. RRL
+	. Finish EMS-GT
+	. Finish qPMS9
 
 . Manuscript
 	. Title page -- LAST

@@ -1,9 +1,17 @@
-\subsection{Pre-computation of Mismatch Values}
-The EMS-GT2 uses the hamming distance computation heavily on the Test phase. To compute the hamming distance of two binary represented $l$-mers, the algorithm uses the boolean operator XOR between the two $l$-mers and results an integer with nonzero pair of bits at every mismatch position. Counting these pair of bits results to the hamming distance value. The total number of pairs of bits is equal to the length of the motif and is also equal to the total number of comparisons it has to do in the hamming distance computation. 
+% \subsection{Pre-computation of mismatch values for hamming distance computation (IHD)}
+\subsection{Improved Hamming distance computation by pre-computation of mismatch values (IHD)}
+The EMS-GT2 uses the hamming distance computation heavily during the Test phase. As discussed earlier for the original EMS-GT, the hamming distnace of two binary represented $l$-mers, can be efficiently computed usign the boolean operator XOR. In EMS-GT2, instead of repeatedly counting this non-zero pairs of bits every time we compute the hamming distance, we use a pre-computed lookup table to help reduce computational time. Figure \ref{fig:pre-computed-hd} shows a snapshot of this table of pre-computed number of non-zero pairs of bits.
 
-Instead of repeatedly counting this nonzero pairs of bits everytime we compute the hamming distance, using a lookup table of nonzero pair of bits count for all possible integer values will help save computational time. Although, pre-computing these nonzero pair counts for all possible 32 bit values will introduce an overhead computation problem. A more efficient approach is to pre-compute only up to $b$ number of bits where $b < 32$ and $b$ is an even number. Then we count for the hamming distance by looking up the nonzero counts $b$ number of bits at a time as shown in Algorithm 1. In our experimentation the maximum bits that we are considering to represent $l$-mers is 34 bits (for $(17, 6)$-instance). Given this, we pre-compute up to 18 bit ($2^9$) values only and use the lookup table twice for the computation of hamming distance.
+\input{contents/00_figure/pre-computed-hd}
+
+A naive pre-computation of these nonzero pair counts for all possible $l$-mers (each represented by 2$l$ bit values) will introduce an unacceptable overhead computation time when $l$ is sufficiently large, i.e., when $l \geq 10$ (based on actual runs on our current machine configurations). A more efficient approach is to pre-compute only up to $l$-mers of length $l' < l$, which required $b = 2l'$ number of bits. Then we determine the hamming distance by looking up to the nonzero counts in the XOR results, b number of bits at a time, as described in Algorithm 1. To illustrate the new process, Figure \ref{fig:usage-improved-hd} shows a demonstration of the improved hamming distance computation.
 
 \input{contents/00_pseudocodes/improved-xor-computation} 
+
+\input{contents/00_figure/usage-improved-hd}
+
+In our experimentation the maximum required bits to represent $l$-mers is 34 bits (for (17, 6)-instance). Given this, we pre-compute up to 18 bits ($l' = 9$) values only and use the lookup table twice for the computation of the actual hammign distance between any given pair of $l$-mers.
+
 
 
 
