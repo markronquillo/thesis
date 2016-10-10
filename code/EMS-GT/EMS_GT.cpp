@@ -1076,12 +1076,24 @@ private:
 	    blockFlags[(int)blockStart/32] = 1;
 	}
 
+	// int isSetBlockFlag(int blockRow) {
+	// 	int bs = (int)(blockRow/32);
+	// 	if (bs < config->numberOfBlockRows-1 && blockRow % 32 != 0)
+	// 		return blockFlags[bs] || blockFlags[bs+1];
+	//     return blockFlags[bs];
+	// }
+	// 
+	// 
 	int isSetBlockFlag(int blockRow) {
+		// if (blockRow > config->numberOfBlockRows-1) {
+			// cout << blockRow << endl;
+		// }
 		int bs = (int)(blockRow/32);
-		if (bs < config->numberOfBlockRows-1 && blockRow % 32 != 0)
-			return blockFlags[bs] || blockFlags[bs+1];
+		// if (bs < config->numberOfBlockRows-1 && blockRow % 32 != 0)
+			// return blockFlags[bs];
 	    return blockFlags[bs];
 	}
+
 
 	int countBlockFlags() {
 	    int count = 0;

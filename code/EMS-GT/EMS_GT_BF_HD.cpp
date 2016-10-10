@@ -477,20 +477,6 @@ private:
 	        int blockStart2 = (int) alt2 << config->prefixShift;
 	        int blockStart3 = (int) alt3 << config->prefixShift;
 
-	        // int level = (ds->numberOfAllowedMutations - allowedMutations + 1);
-	        // if (pruneLmers.size() > 0 && level < ds->numberOfAllowedMutations && !pruneLmers[level].empty()) {
-	        // 	vector<long> lmers = pruneLmers[level];
-
-	        // 	if (find(lmers.begin(), lmers.end(), mapping1) != lmers.end()) {
-	        // 		continue;
-	        // 	}
-	        // 	if (find(lmers.begin(), lmers.end(), mapping2) != lmers.end()) {
-	        // 		continue;
-	        // 	}
-	        // 	if (find(lmers.begin(), lmers.end(), mapping3) != lmers.end()) {
-	        // 		continue;
-	        // 	}
-	        // }
 
 	        int allow_d = allowedMutations - 1;
 	        if (allow_d >= config->blockDegree)  {
@@ -870,12 +856,16 @@ private:
 
 	void setBlockFlag(int blockStart) {
 	    blockFlags[(int)blockStart/32] = 1;
+	    // blockFlags[blockStart] = 1;
 	}
 
 	int isSetBlockFlag(int blockRow) {
+		// if (blockRow > config->numberOfBlockRows-1) {
+			// cout << blockRow << endl;
+		// }
 		int bs = (int)(blockRow/32);
-		if (bs < config->numberOfBlockRows-1 && blockRow % 32 != 0)
-			return blockFlags[bs] || blockFlags[bs+1];
+		// if (bs < config->numberOfBlockRows-1 && blockRow % 32 != 0)
+			// return blockFlags[bs];
 	    return blockFlags[bs];
 	}
 
