@@ -1,6 +1,6 @@
 % \subsection{Pre-computation of mismatch values for hamming distance computation (IHD)}
-\subsection{Improved Hamming distance computation by pre-computation of mismatch values (IHD)}
-The EMS-GT2 uses the hamming distance computation heavily during the Test phase. As discussed earlier for the original EMS-GT, the hamming distnace of two binary represented $l$-mers, can be efficiently computed usign the boolean operator XOR. In EMS-GT2, instead of repeatedly counting this non-zero pairs of bits every time we compute the hamming distance, we use a pre-computed lookup table to help reduce computational time. Figure \ref{fig:pre-computed-hd} shows a snapshot of this table of pre-computed number of non-zero pairs of bits.
+\section{Improved Hamming distance computation by pre-computation of mismatch values (IHD)}
+The EMS-GT2 uses the hamming distance computation heavily during the Test phase. As discussed for the original EMS-GT, the hamming distnace of two binary represented $l$-mers, can be efficiently computed using the boolean operator XOR. In EMS-GT2, instead of repeatedly counting this non-zero pairs of bits every time we compute the hamming distance, we use a pre-computed lookup table to help reduce computational time. Figure \ref{fig:pre-computed-hd} shows a snapshot of this table of pre-computed number of non-zero pairs of bits.
 
 \input{contents/00_figure/pre-computed-hd}
 
@@ -10,7 +10,7 @@ A naive pre-computation of these nonzero pair counts for all possible $l$-mers (
 
 \input{contents/00_figure/usage-improved-hd}
 
-In our experimentation the maximum required bits to represent $l$-mers is 34 bits (for (17, 6)-instance). Given this, we pre-compute up to 18 bits ($l' = 9$) values only and use the lookup table twice for the computation of the actual hammign distance between any given pair of $l$-mers.
+In our experimentation the maximum required bits to represent $l$-mers is 34 bits (for (17, 6)-instance). Given this, we pre-compute up to 18 bits ($l' = 9$) values only and use the lookup table twice for the computation of the actual hamming distance between any given pair of $l$-mers.
 
 
 

@@ -146,7 +146,7 @@
 %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \NeedsTeXFormat{LaTeX2e}
- \ProvidesClass{DISCSthesis}[2005/05/11 v3.0 Ateneo de Manila University DISCS Thesis Class]
+ \ProvidesClass{discsthesis}[2005/05/11 v3.0 Ateneo de Manila University DISCS Thesis Class]
 % \RequirePackage{amsmath,fancyhdr,newcent,curves,epic,eepic,floatfig,epsfig,
  %                amssymb,calc,multicol,array,rotating,tabularx,pifont,fancybox,
   %               ulem,enumerate,latexsym,ifthen}
@@ -189,14 +189,15 @@
  \setlength\marginparsep{0pt}
  %\setlength\footskip{.375truein}
  \setlength\footskip{0truein}
+ \setlength{\skip\footins}{1cm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Set up default values.
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \newcommand{\@ThesisTitle}{\textbf{BUILDING A FITNESS FUNCTION FOR AUTOMATED CLASSICAL MELODY EVALUATION}}
+  \newcommand{\@ThesisTitle}{1}
   \newcommand{\ThesisTitle}[1]{\gdef\@ThesisTitle{#1}}
   \newcommand{\@ThesisAuthor}{1}
   \newcommand{\ThesisAuthor}[1]{\gdef\@ThesisAuthor{#1}}
-  \newcommand{\@DefenseDate}{11 November 2013}
+  \newcommand{\@DefenseDate}{1}
   \newcommand{\DefenseDate}[1]{\gdef\@DefenseDate{#1}}
   \newcommand{\@ThesisDefenseYear}{1}
   \newcommand{\ThesisDefenseYear}[1]{\gdef\@ThesisDefenseYear{#1}}
@@ -226,7 +227,7 @@
   \newcommand{\ThirdPanelMember}[1]{\gdef\@ThirdPanelMember{#1}}
   \newcommand{\@FourthPanelMember}{1}
   \newcommand{\FourthPanelMember}[1]{\gdef\@FourthPanelMember{#1}}
-  \newcommand{\@ThesisGrade}{\textbf{Very Good}}
+  \newcommand{\@ThesisGrade}{1}
   \newcommand{\ThesisGrade}[1]{\gdef\@ThesisGrade{#1}}
   \newcommand{\@ThesisDegree}{1}
   \newcommand{\ThesisDegree}[1]{\gdef\@ThesisDegree{#1}}
@@ -254,8 +255,7 @@
  % \FourthPanelMember{JUMELA P. SARMIENTO, Ph.D.}
  % \ThesisGrade{ABOVE AVERAGE}
  % \DefenseDate{May 12, 2005}
- % \ThesisDegree{Master of Science}
-   \ThesisDegree{Doctor of Philosophy}
+  \ThesisDegree{Master of Science}
   \ThesisArea{Computer Science}
   \UniversityName{Ateneo de Manila University}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -275,15 +275,11 @@
   %% Adjusting the Column of MS Approval Sheet
   \newcommand{\@FirstColumnAdjust}{1}
   \newcommand{\FirstColumnAdjust}[1]{\gdef\@FirstColumnAdjust{#1}}
-  %\newcommand{\@SecondColumnAdjust}{1}
-  %\newcommand{\SecondColumnAdjust}[1]{\gdef\@SecondColumnAdjust{#1}}
-  
   \newcommand{\@SecondColumnAdjust}{1}
   \newcommand{\SecondColumnAdjust}[1]{\gdef\@SecondColumnAdjust{#1}}
 
   \FirstColumnAdjust{\hspace*{0pt}}
   \SecondColumnAdjust{\hspace*{0pt}}
-  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Set up other commands.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -300,8 +296,8 @@
   \FirstColumnAdjust{\hspace*{#3}}
   \SecondColumnAdjust{\hspace*{#4}}
    \ifthenelse{\equal{#1}{MS}}
-              {\ThesisType{Thesis}
-               \ThesisDegree{Master of Science}
+              {\ThesisType{THESIS}
+               \ThesisDegree{MASTER OF SCIENCE}
                \newcommand{\ThesisDegreeAbbreviation}{M.S.}
                \ifthenelse{\equal{#2}{FinalWithCorner}}
                           {\ThesisTitlePage
@@ -422,29 +418,36 @@
  \newcommand{\ThesisTitlePage}{
    \pagestyle{empty}
   \begin{center}
+  ATENEO DE MANILA UNIVERSITY
+  \vfill
   \textbf{\@ThesisTitle}
 
   \vfill
-  A \@ThesisType
+  A \uppercase{\@ThesisType} SUBMITTED TO
 
- Presented to the
+ THE GRADUATE FACULTY OF
+ 
+ THE SCHOOL OF SCIENCE AND ENGINEERING
+ 
+ IN CANDIDACY FOR THE DEGREE OF
+ 
+ \MakeUppercase{\@ThesisDegree} IN
+ 
+ COMPUTER SCIENCE
+ 
+ \vfill
+ DEPARTMENT OF INFORMATION SYSTEMS AND COMPUTER SCIENCE
 
- Faculty of the Graduate School
+ 
 
- \@UniversityName
 
  \vfill
- In Partial Fulfillment
+ BY
 
- of the Requirements for the Degree
-
- \@ThesisDegree
-
-
+ \MakeUppercase{\textnormal{\@ThesisAuthor}}
+ 
  \vfill
- By
-
- \@ThesisAuthor
+ QUEZON CITY, PHILIPPINES
 
  \@ThesisDefenseYear
 \end{center}
@@ -459,29 +462,26 @@
   \setlength{\topmargin}{0.0in}
    \pagestyle{empty}
 
- The \lowercase\expandafter{\@ThesisType} entitled:
+ \noindent The \uppercase\expandafter{\@ThesisType} entitled:
 
 
  \begin{center}
- {\@ThesisTitle}
+ \textbf{\@ThesisTitle}
  \end{center}
 
- \noindent submitted by \textbf{\@ThesisAuthor{}} has been examined and is recommended for oral defense.
+ \noindent submitted by \textnormal{\@ThesisAuthor{}} has been examined and is recommended for \textbf{Oral Defense}.
 
   \vfill
   \begin{center}
-  %\begin{tabular}{lcl}
-  \begin{tabular}{l}
+  \begin{tabular}{lcl}
    \@FirstColumnAdjust\shortstack[]{
     \underline{\phantom{\@DepartmentHead}}\\[0pt]
     \@DepartmentHead\\[0pt]
     \@DepartmentHeadPosition\\[0pt]}
-   %&
-   %   \hspace{2 mm}
-   %&
-   %\hspace{0.5 mm}
-    \!
-    \@SecondColumnAdjust\shortstack[]{
+   &
+   \quad
+   &
+   \@SecondColumnAdjust\shortstack[]{
     \underline{\phantom{\@ThesisAdviser}}\\[0pt]
     \@ThesisAdviser\\[0pt]
     Adviser\\[0pt]
@@ -514,34 +514,35 @@
  \newcommand{\MSThesisAcceptancePage}{
     \setlength{\topmargin}{0.0in}
     \pagestyle{empty}
-   The Faculty of the Graduate School of
-   \@UniversityName{}\\
-   \mbox{accepts} the \uppercase\expandafter{\@ThesisType} entitled:
+   \noindent The Faculty of the Department of Information Systems and Computer Science, School of Science and Engineering, 
+   \@UniversityName{} ACCEPTS THE THESIS entitled:
+   %\mbox{accepts} the \lowercase\expandafter{\@ThesisType} entitled:
+   
 
   \vfill
   \begin{center}
-  \uppercase{\textbf{\@ThesisTitle}}
+  \textbf{\@ThesisTitle}
   \end{center}
 
    \vfill
-  \noindent submitted by \textbf{\@ThesisAuthor{}} in partial fulfillment of the requirements for the Degree of
-  \@ThesisDegree{} in \@ThesisArea.
+  \noindent submitted by \textnormal{\@ThesisAuthor{}} in partial fulfillment of the requirements for the Degree of
+ {\@ThesisDegree{}} in \@ThesisArea.
 
   \vfill  
   \begin{center}
-  \begin{tabular}{lll}
+  \begin{tabular}{ccc}
    \@FirstColumnAdjust\shortstack{
     \underline{\phantom{\@FirstPanelMember}}\\[0pt]
     \@FirstPanelMember\\[0pt]
     Member}
    &
    \@SecondColumnAdjust\shortstack{
-    \underline{\phantom{\@ThesisAdviser}}\\[0pt]
+    \underline{\phantom{\@SecondPanelMember}}\\[0pt]
     \@SecondPanelMember\\[0pt]
     Member}\\[28pt]
 
   \@FirstColumnAdjust\shortstack{
-   \underline{\phantom{\@FirstPanelMember}}\\[0pt]
+   \underline{\phantom{\@ThirdPanelMember}}\\[0pt]
    \@ThirdPanelMember\\[0pt]
    Member
    }
@@ -566,8 +567,11 @@
  \end{center}
 
  \vfill
- \noindent Grade: \textbf{\@ThesisGrade}\\[8pt]
-   Date:$\;\;\;$ \@DefenseDate
+ \noindent
+ \shortstack[l]{
+  Grade$\;\;$: {\@ThesisGrade}\\[0pt]
+  Date$\;\;\;\;$: \@DefenseDate
+ } 
 \newpage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -576,8 +580,8 @@
  \newcommand{\PhDThesisAcceptancePage}{
     \setlength{\topmargin}{0.0in}
     The Faculty of the Graduate School of \@UniversityName\\
-    accepts the
-    \lowercase\expandafter{\@ThesisType} entitled:
+        \uppercase{accepts the}
+    \uppercase\expandafter{\@ThesisType} entitled:
 
   \begin{center}
   {\@ThesisTitle}
@@ -601,7 +605,7 @@
    \@SecondColumnAdjust\shortstack{
     \underline{\phantom{\@SecondPanelMember}}\\[0pt]
     \@SecondPanelMember\\[0pt]
-    Member}\\[24pt]
+    Member}\\[28pt]
 
   \@FirstColumnAdjust\shortstack{
    \underline{\phantom{\@ThirdPanelMember}}\\[0pt]
@@ -610,7 +614,6 @@
    }
    &
      \quad 
-	 
    &
    \@SecondColumnAdjust\shortstack{
    \underline{\phantom{\@FourthPanelMember}}\\[0pt]
@@ -760,7 +763,7 @@
     \else
       \@restonecolfalse
     \fi
-    \vspace*{-1.5cm}
+    \vspace*{0cm}
     \centerline{\textbf{\listtablename}}
     \vspace*{18pt}
     %\chapter*{
@@ -788,7 +791,7 @@
     \else
       \@restonecolfalse
     \fi
-    \vspace*{-1.5cm}
+    \vspace*{0cm}
     \centerline{\textbf{\listfigurename}}
     \vspace*{18pt}
     %\chapter*{
@@ -819,6 +822,7 @@
    \else
       \renewcommand{\@chaptertype}{\chaptername}
    \fi
+   \vspace*{0cm}
    \thispagestyle{empty}%
    \global\@topnum\z@
    \@afterindentfalse

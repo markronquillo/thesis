@@ -4,16 +4,16 @@ This section formally defines the $(l, d)$-planted motif search problem and some
 
 % l-mer
 \noindent{\bf\boldmath DEFINITION 1. $l$-mer} \newline
-\noindent An \textbf{\boldmath $l$-mer} is a string of length $l$ over a specified alphabet $\Sigma$. In this study, $\Sigma$ = \{\texttt{a}, \texttt{c}, \texttt{g}, \texttt{t}\} since we are dealing with DNA sequences. Formally, an $l$-mer is an element of the set $\Sigma^l$. 
+\noindent An \textbf{\boldmath $l$-mer} is a string of length $l$ over a specified alphabet $\Sigma$. In this study, $\Sigma$ = \{\texttt{a}, \texttt{c}, \texttt{g}, \texttt{t}\} since we are dealing with DNA sequences. Formally, an $l$-mer is an element of the set $\Sigma^l$. An $l$-mer that is common in all sequences in the dataset, considering the number of mutations allowed $d$, is called a motif.
 
-\noindent \hspace*{35pt} Ex. \texttt{agagt} is a $5$-mer and \texttt{agagtca} is a $7$-mer.  \newline
+\noindent \hspace*{35pt} Ex. \texttt{agagt} is a $5$-mer and \texttt{agagtca} is a $7$-mer.  \newline\newline
 
 % Hamming distance
 \noindent{\bf\boldmath DEFINITION 2. Hamming distance $d_H$} \newline
-\noindent The \textbf{\boldmath Hamming distance $d_H$} between two $l$-mers $x$ and $y$ is equal to the number of positions where the $l$-mers have mismatches. Formally, the hamming distance between $x$ and $y$ is $d_H(x, y) = |{i | x[i] \neq y[i], 1 \leq i \leq l}$ where $x[i]$ is the $i^th$ character of $l$-mer $x$.
+\noindent The \textbf{\boldmath Hamming distance $d_H$} between two $l$-mers $x$ and $y$ is equal to the number of positions where the $l$-mers have mismatches. Formally, the hamming distance between $x$ and $y$ is $d_H(x, y) = | \{i\ |\ x[i] \neq y[i], 1 \leq i \leq l\} |$, where $x[i]$ and $y[i]$ are the $i^th$ characters of $l$-mers $x$ and $y$.
 
 \noindent \hspace*{35pt} Ex. $d_H(\texttt{\uline{a}ct\uline{tg}ca}, \texttt{\uline{t}ct\uline{aa}ca}) = 3$.\newline
-\noindent \hspace*{55pt} The underlined characters represents the mismatch positions. \newline
+\noindent \hspace*{55pt} The underlined characters represent the mismatch positions. \newline
 
 % d-neighbor
 \noindent{\bf\boldmath DEFINITION 3. $d$-neighbor} \newline
@@ -24,9 +24,9 @@ This section formally defines the $(l, d)$-planted motif search problem and some
 
 % d-neighborhood of an l-mer
 \noindent{\bf\boldmath DEFINITION 4. $d$-neighborhood of an $l$-mer $x$} \newline
-\noindent The \textbf{\boldmath $d$-neighborhood of an $l$-mer $x$} is the set {\boldmath $N(x, d)$} of all $l$-mers $x'$ with Hamming distance, of at most $d$, from $x$. i.e., {\boldmath $d_H (x, x') \leq d$}.
+\noindent The \textbf{\boldmath $d$-neighborhood of an $l$-mer $x$} is the set {\boldmath $N(x, d)$} of all $l$-mers $x'$ with Hamming distance, of at most $d$, from $x$, i.e., {\boldmath $d_H (x, x') \leq d$}.
 
-\noindent \hspace*{35pt} Ex. \texttt{ccgga}, \texttt{ccaaa}, and \texttt{gctta} are all in $N(\texttt{cctta}, 2)$ \newline
+\noindent \hspace*{35pt} Ex. \texttt{ccgga}, \texttt{ccaaa}, and \texttt{gctta} are all in $N(\texttt{cctta}, 2)$ \newline\newline
 
 % d-neighborhood of a sequence
 \noindent{\bf\boldmath DEFINITION 5. $d$-neighborhood of a sequence $S$} \newline
@@ -36,10 +36,10 @@ This section formally defines the $(l, d)$-planted motif search problem and some
 \noindent \hspace*{55pt} if $l = 5$. \newline
 
 \noindent{\bf\boldmath DEFINITION 6. $(l, d)$ Planted Motif Problem} \newline
-\noindent Given a set of $n$ sequences over $\Sigma$ = $\{\texttt{a}, \texttt{c}, \texttt{g}, \texttt{t}\}$, where each sequence is of length $m$, two integer values $l$ and $d$ corresponding to the length of planted motif and the number of allowed mutations respectively, the goal is to find a motif of length $l$. It is also given that a $d$-neighbor of the motif is planted in each of the $n$ sequences exactly once at a random position.
+\noindent Given a set of $n$ sequences over $\Sigma$ = $\{\texttt{a}, \texttt{c}, \texttt{g}, \texttt{t}\}$, where each sequence is of length $m$, two integer values $l$ and $d$ corresponding to the length of planted motif and the number of allowed mutations respectively, the goal is to find a motif of length $l$. It is also given that a $d$-neighbor of the motif is planted in each of the $n$ sequences exactly once at a random position. \newline
 
 \noindent{\bf\boldmath DEFINITION 7. EMS-GT, EMS-GT2 and qPMS9} \newline
-\noindent EMS-GT is an exact enumerative algorithm, with Generate and Test phase, that uses the pattern-driven approach and quickly filters the $4^l$ search space by generating the neighborhood of sequences and intersecting them. EMS-GT2 improved EMS-GT by improving the Test phase of the algorithm. The qPMS9 algorithm, one of the state-of-the-art algorithm, uses a combined sample-driven approach and pattern-driven approach and introduces pruning conditions that improves the runtime of the algorithm. EMS-GT was developed recently is better than previous state of the art qPMS9 on some challenge instances.
+\noindent The EMS-GT algorithm is an exact enumerative algorithm, with Generate and Test phase, that uses the pattern-driven approach and quickly filters the $4^l$ search space by generating the neighborhood of sequences and intersecting them. The EMS-GT2 algorithm extends the EMS-GT by improving the Test phase of the algorithm. The qPMS9 algorithm, one of the state-of-the-art algorithm, uses a combined sample-driven approach and pattern-driven approach. It also introduces pruning conditions that improves the runtime of the algorithm. The EMS-GT algorithm was developed recently and is better than previous state of the art qPMS9 on some challenge instances.
 
 
 

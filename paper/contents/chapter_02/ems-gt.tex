@@ -1,16 +1,16 @@
 
-The Exact Motif Search - Generate and Test algorithm for the planted motif search problem, first developed by Nabos \cite{nabos2015dissertation}, is composed of main two phases, the Generate phase and the Test phase. The Generate phase takes the first $n'$ number of string sequences in the dataset and generates the set $d$-neighborhood one sequence at a time then intersects it. This accumulates and outputs the set of candidate motifs $\mathcal{C}$ and is composed of $l$-mers that have at least one $d$-neighbor in each of the first $n'$ sequences. The Test phase evaluates each candidate motif $c \in C$ by comparing $c$ if it has at least one $d$-neighbor in each of the remaining $n - n'$ string sequences. \newline
+The Exact Motif Search - Generate and Test algorithm for the planted motif search problem, first developed by Nabos \cite{nabos2015dissertation}, is composed of two main phases, the Generate phase and the Test phase. The Generate phase takes the first $n'$ number of string sequences in the dataset and generates the set $d$-neighborhood one sequence at a time then intersects it. This accumulates and outputs the set of candidate motifs $\mathcal{C}$ and is composed of $l$-mers that have at least one $d$-neighbor in each of the first $n'$ sequences. The Test phase evaluates each candidate motif $c \in C$ by comparing $c$ if it has at least one $d$-neighbor in each of the remaining $n - n'$ string sequences. \newline
 
 \noindent These phases are formally defined below:
 % show the formal definition of EMS-GT algorithm steps
 \begin{enumerate} [label={\em (\alph*)}]
 
 	\item {Generate phase} \newline
-	This phase operates on the first $n'$ sequences. The intersection of the $d$-neighborhood of each sequence will result to the set of candidate motifs $C$.\newline
+	This phase operates on the first $n'$ sequences. The intersection of the $d$-neighborhood of each sequence will result to the set of candidate motifs $C$.
 
 	\begin{equation}
 		C = \mathcal{N}(S_{1}, d) \cap \mathcal{N}(S_{2}, d) \cap...\cap \mathcal{N}(S_{n'}, d).
-	\end{equation} 
+	\end{equation} \newline
 
 	\item {Test phase}\newline
 	Each candidate motif in $C$ will be evaluated if it appears in all of the remaining $n - n'$ string sequences. If a candidate motif pass the test, it is then included in the set of motifs $M$. 
@@ -21,7 +21,7 @@ The Exact Motif Search - Generate and Test algorithm for the planted motif searc
 
 % \input{contents/pseudocode/recursive-neighborhood-gen}
 
-Data structures and the how an algorithm deals with the data commonly drive the performance of an algorithm. The EMS-GT algorithm uses a compressed bit-flag array for fast candidate motif elimination. Some key techniques that EMS-GT uses are defined in this section.
+Data structures and how an algorithm deals with the data commonly drive the performance of an algorithm. The EMS-GT algorithm uses a compressed bit-flag array for fast candidate motif elimination. Some key techniques that EMS-GT uses are defined in this section.
 
 	\subsubsection{Integer mapping of $l$-mers}
 	EMS-GT converts $l$-mers into its corresponding integer values. To achieve this, each character in the $l$-mer is translated using 2 bits (a=00, c=01, g=10, t=11). \newline
@@ -31,7 +31,7 @@ Data structures and the how an algorithm deals with the data commonly drive the 
 	The EMS-GT maintains a $4^l$ array for enumerating all the possible $l$-mer values. The $l$-mer's integer value is used as the index value for the array. It uses the value of 1 if the $l$-mer is a member of the set, else it sets the value to 0.
 
 	\subsubsection{Bit-array compression}
-	To efficiently store these $l$-mers and save memory space, EMS-GT implements an approach that compresses the search space array using integer value bit flags. Instead of one $l$-mer per index value, the implementation can flag up to 32 $l$-mers (since we are using 32-bit integers) per index value. The explanation on how the algorithm accesses the bit flag is defined below: \newline
+	To efficiently store these $l$-mers and save memory space, EMS-GT implements an approach that compresses the search space array using integer value bit flags. Instead of one $l$-mer per index value, the implementation can flag up to 32 $l$-mers (since we are using 32-bit integers) per index value. Figure \ref{fig:sample_search_space} shows a snapshot of the compressed bit array data structure. The explanation on how the algorithm accesses the bit flag is defined below: \newline
 
 		{\small Ex. \texttt{gacgt} maps to \texttt{1000011011} = 539 in decimal.\newline
 			\hspace*{64pt} \emph{bit position} = 539 mod 32 = 27;\newline
@@ -39,10 +39,10 @@ Data structures and the how an algorithm deals with the data commonly drive the 
 			\hspace*{64pt} The bit flag for \texttt{gacgt} is in the 27$^{th}$ least significant bit\newline
 			\hspace*{64pt} of the integer at array index 16.}
 
-	\input{contents/00_figure/search_space}
+	\input{contents/00_figure/sample_search_space}
 
 	\subsubsection{XOR-based Hamming distance computation}
-	The mapping of an $l$-mer to its integer value has an additional advantage in computing for mismatch positions. Applying the boolean operator exclusive-or (XOR) between two integer values will return another integer value that contains nonzero value for mismatch position. Counting this nonzero positions result to the hamming distance value. An example of this computation is shown below: \newline
+	The mapping of an $l$-mer to its integer value has an additional advantage in computing for mismatch positions. Applying the boolean operator exclusive-or (XOR) between two integer values will return another integer value that contains nonzero value for mismatch positions. Counting this nonzero pairs of bits result to the hamming distance value. An example of this computation is shown below: \newline
 
 	{\small Ex.	\texttt{aacgt} maps to \texttt{0000011011} \newline
 		\vspace*{2pt}\hspace*{53pt} \underline{\texttt{tacgc} maps to \texttt{1100011001}} \newline
@@ -51,7 +51,7 @@ Data structures and the how an algorithm deals with the data commonly drive the 
 
 
 	\subsubsection{Recursive neighborhood generation}
-	The Generate step of the algorithm produces the $d$-neighborhood of a string sequence by generating the $d$-neighborhood of all $l$-mers in that sequence. Our implementation of EMS-GT uses a recursive approach for generating the $d$-neighborhood of an $l$-mer. The recursive generation can be visualized by a tree $\mathcal{T}(x)$ of height $d$ that is generated in depth-first manner. Each node is a tuple of $(w, p)$ where $w$ is an $l$-mer and $p$ corresponds to a position in the $l$-mer $0 \leq p \leq l$. At a given node $(w, p)$ and $p \neq l$, three children nodes are generated where each node is variant of $w$ that has a different character in $p + 1$ position. The root node is $(x, 0)$ and any $l$-mer in nodes at depth $t$ has a hamming distance of $t$ from the $l$-mer $x$. Given this, the expected size of $N(x, d)$ can be computed using the equation: \newline
+	The Generate phase of the algorithm produces the $d$-neighborhood of a string sequence by generating the $d$-neighborhood of all $l$-mers in that sequence. The implementation of EMS-GT uses a recursive approach for generating the $d$-neighborhood of an $l$-mer. The recursive generation can be visualized by a tree $\mathcal{T}(x)$ of height $d$ that is generated in depth-first manner. Each node is a tuple of $(w, p)$ where $w$ is an $l$-mer and $p$ corresponds to a position in the $l$-mer $0 \leq p \leq l$. At a given node $(w, p)$ and $p \neq l$, three children nodes are generated where each node is variant of $w$ that has a different character in $p + 1$ position. The root node is $(x, 0)$ and any $l$-mer in nodes at depth $t$ has a hamming distance of $t$ from the $l$-mer $x$. Figure \ref{fig:neighborhood-generation} illustrates the recursion tree of the neighborhood generation. Given this, the expected size of $N(x, d)$ can be computed using the equation: \newline
 	\begin{equation}
 		|N(x,d)| = \sum_{i=0}^d \binom{l}{i} 3^{i}
 	\end{equation}
@@ -63,7 +63,7 @@ Data structures and the how an algorithm deals with the data commonly drive the 
 
 	\input{contents/00_figure/bit-patterns}
 
-	The algorithm divides the $l$-mer $x$ into its $(l - k)$-length prefix $y$ and suffix $z$ of length $k$. With the block patterns of $4^k$ $l$-mers generated, the algorithm recursively generates all possible prefix of $x$. For each prefix $y'$ generated, the algorithm applies the corresponding block pattern in $N_x$ based on $z$ and the remaining number of allowed mutations $d'$, where $d' = d - d_H(y, y')$. Specifically, EMS-GT builds the $\mathcal{N}_S$ using these steps:
+	The speedup-technique divides the $l$-mer $x$ into its $(l - k)$-length prefix $y$ and suffix $z$ of length $k$. With the block patterns of $4^k$ $l$-mers generated, the algorithm recursively generates all possible prefix of $x$. For each prefix $y'$ generated, the algorithm applies the corresponding block pattern in $N_x$ based on $z$ and the remaining number of allowed mutations $d'$, where $d' = d - d_H(y, y')$. As defined in the study, EMS-GT builds the $\mathcal{N}_S$ using these steps:
 
 	\begin{enumerate}
 		\item Initialize $\mathcal{N}_S$ as an array of $4^l$ bits set to zero, and select a value for $k$.
@@ -83,8 +83,9 @@ Data structures and the how an algorithm deals with the data commonly drive the 
 
 	\input{contents/00_pseudocodes/block-pattern-generation}
 
+	\input{contents/00_figure/sia-bar-results}
+	
 	% Elaborate and include results
 	% Mention its competitiveness and a bit of introduction on possible areas of improvement 
-	EMS-GT with this speedup technique has proven its competitiveness against algorithms qPMSPrune, qPMS7, PMS8 and qPMS9. Previous experimentations showed that EMS-GT with this speedup technique outperforms PMS8 in challenge instances (9, 2), (11, 3), (13, 4), (15, 5) and (17, 6). Compared to qPMS9, the improved EMS-GT is faster on all challenge instances mentioned except (17, 6). This study aims to outperform qPMS9 for challenges up to (17, 6).
+	EMS-GT with this speedup technique has proven its competitiveness against algorithms qPMSPrune, qPMS7, PMS8 and qPMS9. Previous experimentations showed that EMS-GT with this speedup technique outperforms PMS8 in challenge instances (9, 2), (11, 3), (13, 4), (15, 5) and (17, 6). Compared to qPMS9, the improved EMS-GT is faster on all challenge instances mentioned except (17, 6). This study aims to improve the EMS-GT algorithm so that it outperforms qPMS9 for challenges up to (17, 6).
 
-	\input{contents/00_figure/sia-bar-results}

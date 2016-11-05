@@ -1,0 +1,19 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of $4^{5}$ search space showing its first 8 rows with random flag values.}}{16}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Recursively generating the neighborhood of $l$-mer CACGT with $d = 2$}}{17}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Bit patterns followed by blocks of size $4^{5}=32\times 32$ in the bit-based representation of $\mathcal {N}(\texttt {acgtacgtacgt},5)$. Black signifies a 1. There are $(5+2)=7$ possible patterns---the empty pattern (all 0s) is not shown. Images from \cite {sia2015}}}{18}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Improved EMS-GT's performance vs. PMS8 (baseline) and qPMS9. Image from \cite {sia2015}}}{21}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Speedup technique development cycle.}}{22}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Assigning boolean flags for every $4^k$ $l$-mers block in the candidate motifs array.}}{31}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces First 8 rows of the $4^{5}$ search space with random flag values.}}{33}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Illustration of the block partitioning of a $4^{12}$ search space. There are $4^{5}$ $l$-mers in each block and has a height of 32. The illustration shows the first 3 blocks only.}}{34}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Illustration of the proof for the property used in the fast candidate motif elimination.}}{35}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces An illustration of the pre-computed number of non-zero pairs of bits up to 65535 integer value for the hamming distance value computation.}}{37}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces A demonstration of the improved hamming distance value computation.}}{39}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Runtime (s) of $d$-neighborhood generation of sequence for all sequence in Generation Phase using (17, 6) problem instance.}}{40}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

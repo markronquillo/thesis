@@ -1,0 +1,19 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Runtime evaluation of the algorithm with fast candidate elimination and pre-computed hamming distance values over different $n'$ values.}}{25}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Runtime evaluation of the algorithm with the block boolean flags technique and pre-computed hamming distance values over different $n''$ values.}}{26}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces EMS-GT with block boolean flags technique (BBF).}}{40}
+\contentsline {table}{\numberline {4.2}{\ignorespaces EMS-GT with block boolean flag technique (BBF) and improved hamming distance computation (IHD).}}{41}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Runtime comparison of EMS-GT and EMS-GT with fast candidate motif elimination (FCE).}}{42}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Runtime comparison of EMS-GT and EMS-GT with fast candidate motif elimination (FCE) and improved hamming distance computation (IHD).}}{42}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Runtime comparison of EMS-GT and EMS-GT with all speedup techniques.}}{43}
+\contentsline {table}{\numberline {4.6}{\ignorespaces EMS-GT and EMS-GT2 runtime evaluation.}}{44}
+\contentsline {table}{\numberline {4.7}{\ignorespaces EMS-GT2 and qPMS9 runtime evaluation.}}{44}
+\contentsline {table}{\numberline {4.8}{\ignorespaces EMS-GT, qPMS9 and EMS-GT2 runtime evaluation.}}{45}
+\contentsline {table}{\numberline {4.9}{\ignorespaces Test on promoter sequences of Saccharomyces cerevisiae.}}{46}
+\contentsline {table}{\numberline {4.10}{\ignorespaces Test on orthologous sequences of genes of eukaryotes.}}{48}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

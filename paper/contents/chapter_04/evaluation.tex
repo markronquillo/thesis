@@ -1,6 +1,6 @@
 % Runtime results
 \section{Performance of EMS-GT with speedup techniques}
-Every runtime evaluation using these speedup techniques was run using Intel Xeon, 2.10 Ghz machine. The performance of each algorithm was averaged over 20 synthetic datasets for each $(l, d)$-challenge instance where $l \leq 17$. This section shows the runtime performance of EMS-GT with different combinations of speedup techniques introduced in this study. The version of EMS-GT that yielded the faster runtime performance was used in the proposed EMS-GT2 algorithm. Overall, these speedup techniques improved the runtime performance of EMS-GT algorithm with at least 15\%, 20.37\%, 5.87\%, 6.50\% and 5.17\% for (9, 2), (11, 3), (13, 4), (15, 5) and (17, 6) challenge instances respectively. 
+Every runtime evaluation using these speedup techniques was run using Intel Xeon, 2.10 Ghz machine. The performance of each algorithm was averaged over 20 synthetic datasets for each $(l, d)$-challenge instance where $l \leq 17$. This section shows the runtime performance of EMS-GT with different combinations of speedup techniques introduced in this study. The version of EMS-GT that yielded the fastest runtime performance was used in the proposed EMS-GT2 algorithm. Overall, these speedup techniques improved the runtime performance of EMS-GT algorithm with at least 12.77\%, 18.13\%, 2.15\%, 5.03\% and 4.23\% for (9, 2), (11, 3), (13, 4), (15, 5) and (17, 6) challenge instances respectively. 
 
 
 % -------------------------------------------------------------------------------------------------
@@ -19,22 +19,22 @@ Every runtime evaluation using these speedup techniques was run using Intel Xeon
 
 	\input{contents/00_figure/bf-per-sequence-runtime}
 
-	Additionally, the we incorporated the improved hamming distance computation technique with block boolean flags technique resulting into faster runtime performance, which is shown in Table 4.\ref{tbl:ems-gt-bf-hd-speedup}.
+	Additionally, we incorporated the improved hamming distance computation technique with block boolean flags technique resulting into faster runtime performance, which is shown in Table \ref{tbl:ems-gt-bf-hd-speedup}.
 
 	\input{contents/00_tables/ems-gt-bf-hd-speedup}
 
 % -------------------------------------------------------------------------------------------------
 
 	\subsection{Evaluation of fast candidate motif elimination (FCE) technique}
-	Runtime performance of fast candidate motif elimination technique is shown in Table 4.\ref{tbl:ems-gt-fce-speedup}. Fast candidate motif elimination is used the Test phase of the algorithm. This technique is efficient if there are a significant number of candidate motifs left in a block, unlike the block boolean flags technique that is efficient when there are numerous empty blocks in the candidate motifs array. This technique uses different values for $n'$ which are 10, 10, 9, 8 and 7 for the mentioned $(l, d)$ challenge instances respectively. 
+	Runtime performance of fast candidate motif elimination technique is shown in Table \ref{tbl:ems-gt-fce-speedup}. Fast candidate motif elimination is used in the Test phase of the algorithm. This technique is efficient if there are a significant number of candidate motifs left in a block, unlike the block boolean flags technique that is efficient when there are numerous empty blocks in the candidate motifs array. This technique uses different values for $n'$ which are 10, 10, 9, 8 and 7 for the mentioned $(l, d)$ challenge instances respectively. 
 
 	\input{contents/00_tables/ems-gt-fce-speedup}
 
-	EMS-GT with fast candidate motif elimination technique alone only improved the runtime in (17, 6) by 5.17\%, but with the improved hamming distance computation the runtime performance has greatly increased in all of the challenge instances used in the experimentations. The Test phase uses the hamming distance computation heavily and choosing the right sequence to start the Test phase greatly affects the runtime with these speedup techniques. Table 4.\ref{tbl:ems-gt-fce-hd-speedup} shows the runtime performance of EMS-GT with fast candidate motif elimination technique and the improved hamming distance computation.
+	EMS-GT with fast candidate motif elimination technique alone only improved the runtime in (13, 4) and (17, 6) only by 2.15\% and 4.23\% respectively, but with the improved hamming distance computation, the runtime performance has greatly increased in all of the challenge instances used in the experimentations. The Test phase uses the hamming distance computation heavily and choosing the right sequence to start the Test phase greatly affects the runtime of the algorithm with these speedup techniques. Table \ref{tbl:ems-gt-fce-hd-speedup} shows the runtime performance of EMS-GT with fast candidate motif elimination technique and the improved hamming distance computation.
 
 	\input{contents/00_tables/ems-gt-fce-hd-speedup}
 
-	Finally, Table 4.\ref{tbl:ems-gt-all-speedup} shows the runtime evaluation of EMS-GT with all of the speedup techniques having $n'$ values used in the fast candidate motif elimination experiments. For all the $(l, d)$ challenge instances used except (17, 6), EMS-GT with fast candidate motif elimination and improved hamming distance computation is still faster than EMS-GT with all speedup techniques. EMS-GT with all speedup techniques failed to compensate for the computational overhead it has introduced in the block boolean flags technique. Given this result, we used the fast candidate motif elimination and improved hamming distance computation only in the proposed EMS-GT2 algorithm.
+	Finally, Table \ref{tbl:ems-gt-all-speedup} shows the runtime evaluation of EMS-GT with all of the speedup techniques having $n'$ values used in the fast candidate motif elimination experiments. For all the $(l, d)$ challenge instances used except (17, 6), EMS-GT with fast candidate motif elimination and improved hamming distance computation is still faster than EMS-GT with all speedup techniques. EMS-GT with all speedup techniques failed to compensate for the computational overhead it has introduced in the block boolean flags technique. Given this result, we used the fast candidate motif elimination and improved hamming distance computation only in the proposed EMS-GT2 algorithm.
 
 	\input{contents/00_tables/ems-gt-all-speedup}
 
@@ -42,7 +42,7 @@ Every runtime evaluation using these speedup techniques was run using Intel Xeon
 
 
 \section{Runtime performance comparison of EMS-GT2, EMS-GT and qPMS9}
-The EMS-GT2, EMS-GT and qPMS9 were evaluated in terms of actual runtime on an Intel Xeon, 2.10 Ghz machine. The performance of each algorithm was averaged over synthetic datasets for each $(l, d)$-challenge isntance where $l \leq 17$. Table 4.\ref{tbl:final-results-ems} shows the runtime results between EMS-GT2 vs EMS-GT while Table 4.\ref{tbl:final-results} shows the runtime results between EMS-GT2 vs the algorithm qPMS9.
+The EMS-GT2, EMS-GT and qPMS9 were evaluated in terms of actual runtime on an Intel Xeon, 2.10 Ghz machine. The performance of each algorithm was averaged over synthetic datasets for each $(l, d)$-challenge instance where $l \leq 17$. Table \ref{tbl:final-results-ems} shows the runtime results between EMS-GT2 vs EMS-GT, while Table \ref{tbl:final-results} shows the runtime results between EMS-GT2 vs the algorithm qPMS9.
 
 
 \input{contents/00_tables/final-results-ems}
@@ -53,7 +53,29 @@ The additional speedup techniques become more effective as the $l$ value in the 
 \input{contents/00_tables/final-results}
 
 % Explanation for Table final-results
-Previous implementations of EMS-GT failed to beat qPMS9 in $(17, 6)$-challenge instance. The proposed EMS-GT2 not only produces improved runtimes but also succeed in beating the qPMS9 in all of the $(l, d)$-challenge instances where $l \leq 17$. Even though the implementation of EMS-GT can only run in $(l, d)$-challenge instances where $l \leq 17$ because of computer memory constraint, studies have shown that typical length of motifs is around 10 base pairs (bp) \cite{stewart2012transcription}.
+Previous implementations of EMS-GT failed to beat qPMS9 in $(17, 6)$-challenge instance. The proposed EMS-GT2 not only produces improved runtimes but also outperforms the qPMS9 in all of the $(l, d)$-challenge instances where $l \leq 17$. The efficiency of qPMS9 algorithm improves as the $l$ value increases, due to the fewer $l$-mer tuple combinations to consider. The performance of EMS-GT improves as $l$ value decreases, since there are fewer candidate motifs to consider. This is one reason why the previous implementation of EMS-GT was unsuccessful in beating qPMS9 in $(17, 6)$-challenge instance. The EMS-GT maintains a parameter $n'$ that directly affects the number of candidate motifs left to process in the Test phase. Fixing the value of $n'$ for all challenge instances fails to maximize the efficiency of the additional speedup techniques used in the Test Phase. Thus the re-evaluation of the optimal $n'$ value, for all challenge instances considered in this study, helped improved the overall runtime performance of EMS-GT2. The parameter fine tuning returned the optimum $n'$ values 10, 10, 9, 8, and 7 for the (9, 2), (11, 3), (13, 4), (15, 5) and (17, 6) challenge instances respectively.
+
+\input{contents/00_tables/final-results-all}
+
+Aside from evaluating the EMS-GT2 algorithm on synthetic datasets, it was also run using real datasets. EMS-GT2 algorithm was able to find quickly the motifs in set promoter sequences of yeast (Saccharomyces cerevisiae) [16] as shown in Table \ref{tbl:yeast}. Table \ref{tbl:orthologous} shows the result of the algorithm run on real datasets involving orthologous sequences of different gene families of eukaryotes.
+
+\input{contents/00_tables/yeast}
+
+\input{contents/00_tables/orthologous}
+
+% Ending
+Even though the implementation of EMS-GT2 can only run in $(l, d)$-challenge instances where $l \leq 17$ due to a significant amount of memory requirement, studies have shown that typical length of motifs is around 10 base pairs (bp) \cite{stewart2012transcription}.
+
+
+\section{Difficulties and Failures Encountered}
+% Difficulties encountered
+
+This study explored numerous ways to improve the EMS-GT algorithm. In line with this, the study also faced numerous difficulties and failures in developing the speedup techniques for the algorithm.
+
+A pruning technique was developed in the $d$-neighborhood generation of a sequence. The idea is that, while recursively generating all possible prefix given an $l$-mer $x$ in a sequence, the algorithm can prune some recursive calls if $x$ has $d$-neighbor in the set of already processed $l$-mers in that sequence. To implement this technique, the algorithm has to check at each level of the recursion tree if the node $l$-mer is one of the already processed $d$-neighbors to prune. The technique's efficiency depends on the number of $d$-neighbor and their distance value with the current $l$-mer. The problem is that for all $(l, d)$-challenge instances considered in this study, the number of $d$-neighbors to prune and their distance number with the current $l$-mer failed to compensate for the additional computational time the technique introduced.
+
+Additionally, loading the pre-computed block patterns in a file, instead of generating it everytime, and iteratively generating the neighborhood instead of recursive generation did not improve the runtime performance of the algorithm significantly.
+
 
 
 

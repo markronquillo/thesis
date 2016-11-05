@@ -860,9 +860,9 @@ private:
 	}
 
 	int isSetBlockFlag(int blockRow) {
-		// if (blockRow > config->numberOfBlockRows-1) {
-			// cout << blockRow << endl;
-		// }
+		if (blockRow % 32 != 0) {
+			cout << blockRow << endl;
+		}
 		int bs = (int)(blockRow/32);
 		// if (bs < config->numberOfBlockRows-1 && blockRow % 32 != 0)
 			// return blockFlags[bs];

@@ -1,39 +1,46 @@
+\contentsline {chapter}{ACKNOWLEDGMENTS}{iv}
+\contentsline {chapter}{ABSTRACT}{v}
+\contentsline {chapter}{LIST OF FIGURES}{ix}
+\contentsline {chapter}{LIST OF TABLES}{x}
 \contentsline {part}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \textnormal {CHAPTER}}{}
-\contentsline {chapter}{\hspace *{30pt}\numberline {I} Introduction}{1}
+\contentsline {chapter}{\hspace *{30pt}\numberline {I} INTRODUCTION}{1}
 \contentsline {section}{\numberline {1.1}Context of the Study}{2}
 \contentsline {section}{\numberline {1.2}Objectives of the study}{5}
 \contentsline {section}{\numberline {1.3}Research questions}{5}
 \contentsline {section}{\numberline {1.4}Significance of the study}{6}
-\contentsline {section}{\numberline {1.5}Scope and limitations}{6}
-\contentsline {chapter}{\hspace *{30pt}\numberline {II} Review of Related Literature}{8}
+\contentsline {section}{\numberline {1.5}Scope and limitations}{7}
+\contentsline {chapter}{\hspace *{30pt}\numberline {II} REVIEW OF RELATED LITERATURE}{8}
 \contentsline {section}{\numberline {2.1}Approximate Algorithms}{8}
 \contentsline {section}{\numberline {2.2}Exact Algorithms}{9}
 \contentsline {subsection}{\numberline {2.2.1}PMS Algorithms Series}{10}
 \contentsline {subsubsection}{PMS8 and qPMS9 Algorithm}{11}
-\contentsline {subsection}{\numberline {2.2.2}EMS-GT Algorithm}{12}
+\contentsline {subsection}{\numberline {2.2.2}EMS-GT Algorithm}{13}
 \contentsline {subsubsection}{Integer mapping of $l$-mers}{14}
 \contentsline {subsubsection}{Bit-based set representation and l-mer enumeration}{14}
-\contentsline {subsubsection}{Bit-array compression}{14}
+\contentsline {subsubsection}{Bit-array compression}{15}
 \contentsline {subsubsection}{XOR-based Hamming distance computation}{15}
 \contentsline {subsubsection}{Recursive neighborhood generation}{16}
 \contentsline {subsubsection}{Block-based optimization for neighborhood generation}{17}
-\contentsline {chapter}{\hspace *{30pt}\numberline {III} Methodology}{21}
-\contentsline {section}{\numberline {3.1}Improving the EMS-GT algorithm}{22}
-\contentsline {section}{\numberline {3.2}Parameter Fine Tuning}{23}
-\contentsline {section}{\numberline {3.3}Evaluation}{24}
-\contentsline {section}{\numberline {3.4}Datasets}{26}
-\contentsline {subsection}{\numberline {3.4.1}Synthetic Datasets}{26}
+\contentsline {chapter}{\hspace *{30pt}\numberline {III} METHODOLOGY}{22}
+\contentsline {section}{\numberline {3.1}Improving the EMS-GT algorithm}{23}
+\contentsline {section}{\numberline {3.2}Parameter Fine Tuning}{24}
+\contentsline {section}{\numberline {3.3}Evaluation}{26}
+\contentsline {section}{\numberline {3.4}Datasets}{27}
+\contentsline {subsection}{\numberline {3.4.1}Synthetic Datasets}{27}
 \contentsline {subsection}{\numberline {3.4.2}Real Datasets}{27}
-\contentsline {chapter}{\hspace *{30pt}\numberline {IV} Results and Analysis}{28}
-\contentsline {section}{\numberline {4.1}Block boolean flags technique in the Generate phase (BBF)}{28}
-\contentsline {subsection}{\numberline {4.1.1}Maintaining block boolean flags for the candidate motifs array}{29}
-\contentsline {subsection}{\numberline {4.1.2}Usage of block boolean flags strategy}{30}
+\contentsline {chapter}{\hspace *{30pt}\numberline {IV} RESULTS AND DISCUSSION}{29}
+\contentsline {section}{\numberline {4.1}Block boolean flags technique in the Generate phase (BBF)}{29}
+\contentsline {subsection}{\numberline {4.1.1}Maintaining block boolean flags for the candidate motifs array}{30}
+\contentsline {subsection}{\numberline {4.1.2}Usage of block boolean flags strategy}{31}
 \contentsline {section}{\numberline {4.2}Fast Candidate Motif Elimination through Block Processing (FCE)}{32}
-\contentsline {subsection}{\numberline {4.2.1}Improved Hamming distance computation by pre-computation of mismatch values (IHD)}{36}
-\contentsline {section}{\numberline {4.3}Performance of EMS-GT with speedup techniques}{38}
-\contentsline {subsection}{\numberline {4.3.1}Evaluation of block boolean flag (BBF) technique}{39}
-\contentsline {subsection}{\numberline {4.3.2}Evaluation of fast candidate motif elimination (FCE) technique}{41}
-\contentsline {section}{\numberline {4.4}Runtime performance comparison of EMS-GT2, EMS-GT and qPMS9}{43}
-\contentsline {chapter}{\hspace *{30pt}\numberline {V} Conclusions}{45}
-\vspace *{-15pt}\contentsline {part}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \textnormal {APPENDIX}}{}
-\contentsline {chapter}{\MakeUppercase {Bibliography}}{48}
+\contentsline {section}{\numberline {4.3}Improved Hamming distance computation by pre-computation of mismatch values (IHD)}{36}
+\contentsline {section}{\numberline {4.4}Performance of EMS-GT with speedup techniques}{38}
+\contentsline {subsection}{\numberline {4.4.1}Evaluation of block boolean flag (BBF) technique}{39}
+\contentsline {subsection}{\numberline {4.4.2}Evaluation of fast candidate motif elimination (FCE) technique}{41}
+\contentsline {section}{\numberline {4.5}Runtime performance comparison of EMS-GT2, EMS-GT and qPMS9}{43}
+\contentsline {section}{\numberline {4.6}Difficulties and Failures Encountered}{46}
+\contentsline {chapter}{\hspace *{30pt}\numberline {V} CONCLUSION}{49}
+\contentsline {chapter}{\MakeUppercase {Bibliography}}{52}
+\contentsline {chapter}{Appendices}{56}
+\contentsline {chapter}{Appendix \hspace *{30pt}\numberline {A} Source Code Repository of the EMS-GT2 algorithm}{57}
+\contentsline {chapter}{Appendix \hspace *{30pt}\numberline {B} ECBA 2016 Conference Paper}{58}

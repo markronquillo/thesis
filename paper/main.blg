@@ -3,7 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: sources.bib
-Warning--I didn't find a database entry for "basepairslength"
 Name 1 in "Francis Y.L. Chin, AND Henry C.M. Leung" has a comma at the end for entry Chin2005
 while executing---line 1049 of file plain.bst
 Name 1 in "Francis Y.L. Chin, AND Henry C.M. Leung" has a comma at the end for entry Chin2005
@@ -11,7 +10,7 @@ while executing---line 1090 of file plain.bst
 Warning--can't use both author and editor fields in Davila2006
 You've used 27 entries,
             2118 wiz_defined-function locations,
-            684 strings with 9213 characters,
+            683 strings with 9198 characters,
 and the built_in function-call counts, 10363 in all, are:
 = -- 1045
 > -- 474

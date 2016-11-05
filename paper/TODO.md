@@ -1,31 +1,8 @@
 ## TODO:
-. qPMS9 - challenging instance - review
-. Experimentation Results and Analysis:
-	. Real datasets
-. RRL
-	. Finish EMS-GT
-	. Finish qPMS9
 
-. Manuscript
-	. Title page -- LAST
-	. Abstract -- last
-	. Table of Contents -- last
-	. Chapter 1 -- Tuesday
-		. Introduction -- DONE
-		. Context:  -- DONE
-		. Objectives: -- DONE 
-		. Research questions: -- DONE
-		. Significance:  -- 
-		. Scope:  -- DONE
-	. Related Literature
-	. Methodology -- Tuesday
-		. 	
-	. Structure Results
-		. Pruning - explain pruning
-		. Blockflag - explain blockflag
-		. Faster Candidate Motif Elimination
-		. Pre-computation
-		. Results
+. Appendix
+	. conference paper
+	. Codes
 
 -------------------------------------------------
 ## Targets: Task - Deadline
