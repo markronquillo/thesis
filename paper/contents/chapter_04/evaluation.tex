@@ -74,7 +74,7 @@ This study explored numerous ways to improve the EMS-GT algorithm. In line with 
 
 A pruning technique was developed in the $d$-neighborhood generation of a sequence. The idea is that, while recursively generating all possible prefix given an $l$-mer $x$ in a sequence, the algorithm can prune some recursive calls if $x$ has $d$-neighbor in the set of already processed $l$-mers in that sequence. To implement this technique, the algorithm has to check at each level of the recursion tree if the node $l$-mer is one of the already processed $d$-neighbors to prune. The technique's efficiency depends on the number of $d$-neighbor and their distance value with the current $l$-mer. The problem is that for all $(l, d)$-challenge instances considered in this study, the number of $d$-neighbors to prune and their distance number with the current $l$-mer failed to compensate for the additional computational time the technique introduced.
 
-Additionally, loading the pre-computed block patterns in a file, instead of generating it everytime, and iteratively generating the neighborhood instead of recursive generation did not improve the runtime performance of the algorithm significantly.
+Other approaches that we have explored includes, loading the pre-computed block patterns in a file, instead of generating it everytime, recursive engineering in the $d$-neighborhood generation and iteratively generating the neighborhood instead of recursive generation did not improve the runtime performance of the algorithm significantly.
 
 
 
